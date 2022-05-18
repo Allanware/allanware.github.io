@@ -92,19 +92,6 @@
     <loc>https://allanware.github.io/posts/2021/03/the-miracle-of-istanbul/</loc>
     <lastmod>2021-03-04T23:33:00-07:00</lastmod>
   </url><url>
-    <loc>https://allanware.github.io/about/</loc>
-    <lastmod>2021-04-19T20:00:00+03:30</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh"
-                href="https://allanware.github.io/zh/about/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://allanware.github.io/about/"
-                />
-  </url><url>
     <loc>https://allanware.github.io/archives/</loc>
     <xhtml:link
                 rel="alternate"
@@ -115,6 +102,18 @@
                 rel="alternate"
                 hreflang="en"
                 href="https://allanware.github.io/archives/"
+                />
+  </url><url>
+    <loc>https://allanware.github.io/about/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="https://allanware.github.io/zh/about/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://allanware.github.io/about/"
                 />
   </url><url>
     <loc>https://allanware.github.io/categories/</loc>
@@ -128,6 +127,8 @@
                 hreflang="en"
                 href="https://allanware.github.io/categories/"
                 />
+  </url><url>
+    <loc>https://allanware.github.io/film/</loc>
   </url><url>
     <loc>https://allanware.github.io/search/</loc>
     <xhtml:link

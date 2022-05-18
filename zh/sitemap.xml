@@ -53,19 +53,6 @@
     <loc>https://allanware.github.io/zh/tags/%E8%B6%B3%E7%90%83/</loc>
     <lastmod>2021-06-09T18:24:00-07:00</lastmod>
   </url><url>
-    <loc>https://allanware.github.io/zh/about/</loc>
-    <lastmod>2021-04-19T20:00:00+03:30</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://allanware.github.io/about/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh"
-                href="https://allanware.github.io/zh/about/"
-                />
-  </url><url>
     <loc>https://allanware.github.io/zh/archives/</loc>
     <xhtml:link
                 rel="alternate"
@@ -88,6 +75,18 @@
                 rel="alternate"
                 hreflang="zh"
                 href="https://allanware.github.io/zh/categories/"
+                />
+  </url><url>
+    <loc>https://allanware.github.io/zh/about/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://allanware.github.io/about/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="https://allanware.github.io/zh/about/"
                 />
   </url><url>
     <loc>https://allanware.github.io/zh/search/</loc>
