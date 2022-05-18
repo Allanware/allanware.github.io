@@ -5,11 +5,8 @@ author: Wenxuan Zhao
 
 rssFullContent: true
 
-images:
-  - images/avatar.jpg
-
 ShowReadingTime: true
-ShowShareButtons: true
+ShowShareButtons: false
 ShowCodeCopyButtons: true
 ShowPostNavLinks: true
 ShowBreadCrumbs: true

@@ -5,7 +5,6 @@ defaultContentLanguageInSubdir: true
 defaultContentLanguage: en
 languageCode: en
 languageName: English
-
 theme: PaperMod
 
 paginate: 10
@@ -28,3 +27,10 @@ outputs:
 permalinks:
   posts: /posts/:year/:month/:slug/
   pages: /:slug/
+
+assets:
+  favicon: "/static/favicons/favicon.ico"
+  favicon16x16: "/static/favicons/favicon-16x16.png"
+  favicon32x32: "/static/favicons/favicon-32x32.png"
+  apple_touch_icon: "/static/favicons/apple-touch-icon.png"
+  safari_pinned_tab: "/static/favicons/safari-pinned-tab.svg"
