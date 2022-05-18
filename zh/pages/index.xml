@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Pages on Wenxuan Zhao</title>
+    <link>https://allanware.github.io/zh/pages/</link>
+    <description>Recent content in Pages on Wenxuan Zhao</description>
+    <image>
+      <url>https://allanware.github.io/images/avatar.jpg</url>
+      <link>https://allanware.github.io/images/avatar.jpg</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language><atom:link href="https://allanware.github.io/zh/pages/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title></title>
+      <link>https://allanware.github.io/zh/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://allanware.github.io/zh/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://allanware.github.io/zh/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://allanware.github.io/zh/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
