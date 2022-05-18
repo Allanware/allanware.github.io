@@ -1,6 +1,7 @@
 ---
-title: "关于我"
-hideMeta: true
+title: "Film"
+hidemeta: true
+
 # cover:
 #     image: avatar.jpg
 #     alt: Picture of 
