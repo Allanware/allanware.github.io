@@ -15,3 +15,8 @@ main:
     identifier: archives
     name: Archives
     url: /archives/
+  - weight: 5
+    identifier: search
+    name: Search
+    url: /search/
+  

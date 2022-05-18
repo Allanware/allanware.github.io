@@ -1,7 +1,7 @@
 baseURL: https://allanware.github.io/
 title: Wenxuan Zhao
 
-defaultContentLanguageInSubdir: true
+defaultContentLanguageInSubdir: false
 defaultContentLanguage: en
 languageCode: en
 languageName: English
@@ -21,12 +21,18 @@ minify:
   minifyOutput: true
 
 outputs:
-  home:
-    - HTML
+    home:
+        - HTML
+        - RSS
+        - JSON 
 
 permalinks:
   posts: /posts/:year/:month/:slug/
   pages: /:slug/
+
+taxonomies:
+  tags: tags
+  category: categories
 
 assets:
   favicon: "/static/favicons/favicon.ico"
