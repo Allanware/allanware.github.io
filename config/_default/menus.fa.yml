@@ -1,0 +1,21 @@
+main:
+  - weight: 1
+    identifier: posts
+    name: نوشته‌ها
+    url: /
+  - weight: 2
+    identifier: services
+    name: خدمات
+    url: /خدمات/
+  - weight: 3
+    identifier: about
+    name: دربارهٔ من
+    url: /دربارهٔ-من/
+  - weight: 4
+    identifier: tags
+    name: تگ‌ها
+    url: /tags/
+  - weight: 5
+    identifier: archives
+    name: آرشیو
+    url: /archives/

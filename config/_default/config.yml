@@ -1,0 +1,30 @@
+baseURL: https://allanware.github.io/
+title: Wenxuan Zhao
+
+defaultContentLanguageInSubdir: true
+defaultContentLanguage: en
+languageCode: en
+languageName: English
+
+theme: PaperMod
+
+paginate: 10
+
+googleAnalytics: G-Y7CDN6L98B
+
+enableRobotsTXT: true
+buildDrafts: false
+buildFuture: false
+buildExpired: false
+
+minify:
+  disableXML: true
+  minifyOutput: true
+
+outputs:
+  home:
+    - HTML
+
+permalinks:
+  posts: /posts/:year/:month/:slug/
+  pages: /:slug/

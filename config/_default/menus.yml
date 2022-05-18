@@ -1,0 +1,17 @@
+main:
+  - weight: 1
+    identifier: home
+    name: Home
+    url: /
+  - weight: 2
+    identifier: about
+    name: About
+    url: /about/
+  - weight: 3
+    identifier: tags
+    name: Tags
+    url: /tags/
+  - weight: 4
+    identifier: archives
+    name: Archives
+    url: /archives/
