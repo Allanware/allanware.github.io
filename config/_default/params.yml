@@ -18,7 +18,7 @@ TocOpen: true
  
 
 homeInfoParams:
-  Title: Wenxuan Zhao
+  Title: 
   Content:
 
 socialIcons:
@@ -32,3 +32,7 @@ socialIcons:
     url: https://www.linkedin.com/in/allan-wenxuan-zhao
   - name: email
     url: mailto:xiaodoubizwx@gmail.com
+  # - name: youtube 
+  #   url:
+  # - name: bilibili 
+  #   url: 
