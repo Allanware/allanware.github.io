@@ -34,7 +34,7 @@ coul <- suppressWarnings(brewer.pal(2, "Set2"))
 barplot(height=mvSums$value, names=mvSums$name, col=coul, main = "Market value of Starting XI", sub = "184M £ vs 109M £", ylab = "in million pounds", font.sub = 4)
 ```
 
-![](unnamed-chunk-3-1.png)
+![](/common_imgs/the-miracle-of-istanbul/unnamed-chunk-3-1.png)
 
 ``` r
 mv <- data.frame(name = c(milanLineup, liverpoolLineup), value = c(milanmv, liverpoolmv))
@@ -49,7 +49,7 @@ mvtop10 %>%
     theme_bw()
 ```
 
-![](unnamed-chunk-3-2.png)
+![](/common_imgs/the-miracle-of-istanbul/unnamed-chunk-3-2.png)
 
 我们可以看到米兰首发十一人的市值明显高于利物浦。单从每个球员个体而言，
 米兰球员在两队首发球员市值最高的前 10 名球员中占据 8 席。队长杰拉德和前锋巴罗斯是唯二的例外。
@@ -150,7 +150,7 @@ library(timevis)
 timevis(data, groups = timevisDataGroups)
 ```
 
-![](timeline.png)
+![](/common_imgs/the-miracle-of-istanbul/timeline.png)
 
 总结一下上面的时间表。上半场，米兰在比赛开始时就立即取得进球，并在上半场快结束时又打入两球。另一方面，利物浦在上半场因伤换人。下半场开始前，利物浦已经 3-0 落后，而且被迫（非战术意图）用了 1 次换人。下半场开始，利物浦又换人。这次换人是由于利物浦主帅的战术考虑，试图扭转局面，而且确实做到了。约 10 分钟后，利物浦打进首球，将比分扳为 3-1，并且在 6 分钟的神奇表现中，他们一共打进 3 球，将比分扳成3-3。两队在比赛的后期面都没有再进球。最后利物浦在点球大战中 3-2 击败了米兰（图中的红X代表点球罚失，圆圈代表罚进）。 
 
@@ -173,7 +173,7 @@ is %>%
   soccerShotmap(theme = "dark")
 ```
 
-![](unnamed-chunk-9-1.png)
+![](/common_imgs/the-miracle-of-istanbul/unnamed-chunk-9-1.png)
 
 我们可以看到，上半场米兰 8 次射门（上图 8 个点），利物浦 5 次。不过，米兰的大部分射门（ 8 次中有 6 次）都在禁区内，而利物浦只有 2 次.
 
@@ -184,7 +184,7 @@ is %>%
   soccerShotmap(theme = "dark")
 ```
 
-![](unnamed-chunk-10-1.png)
+![](/common_imgs/the-miracle-of-istanbul/unnamed-chunk-10-1.png)
 
 在下半场，我们预计利物浦会在射门和禁区内射门这一项中占据主导地位。相反，米兰在射门次数和禁区射门次数上仍占主导地位。利物浦禁区内仅 2 次射门就全部入网，利物浦还打进了一个远射。米兰禁区内 6 次射门，禁区外 6 次，却无一成功。
 
@@ -196,7 +196,7 @@ is %>%
   soccerShotmap(theme = "dark")
 ```
 
-![](unnamed-chunk-11-1.png)
+![](/common_imgs/the-miracle-of-istanbul/unnamed-chunk-11-1.png)
 
 令人吃惊的是（也许在看到比赛下半场的射门后并不那么令人惊讶），利物浦没有机会尝试任何射门，米兰又射门 7 次，其中 3次在禁区内，并且 1 次靠近球门柱（差一点！）。然而，米兰一球未进。
 
@@ -212,7 +212,7 @@ is %>%
                 title = "Milan's passing map in the 1st half")
 ```
 
-![](unnamed-chunk-12-1.png)
+![](/common_imgs/the-miracle-of-istanbul/unnamed-chunk-12-1.png)
 _图一_
 
 ``` r
@@ -222,7 +222,7 @@ is %>%
                 title = "Milan's passing map in the 1st half (25' onwards)")
 ```
 
-![](unnamed-chunk-12-2.png)
+![](/common_imgs/the-miracle-of-istanbul/unnamed-chunk-12-2.png)
 _图二_
 
 ``` r
@@ -232,7 +232,7 @@ is %>%
                 title = "Liverpool's passing map in the 1st half")
 ```
 
-![](unnamed-chunk-12-3.png)
+![](/common_imgs/the-miracle-of-istanbul/unnamed-chunk-12-3.png)
 _图三_
 
 ``` r
@@ -242,7 +242,7 @@ is %>%
                 title = "Liverpool's passing map in the 1st half (25' onwards)")
 ```
 
-![](unnamed-chunk-12-4.png)
+![](/common_imgs/the-miracle-of-istanbul/unnamed-chunk-12-4.png)
 _图四_
 
 我们可以将上半场分成两半。**图一** 是AC米兰的在前 24 分钟传球地图，皮尔洛位于图的中心（图中的最大蓝点），米兰的由守转攻以及由攻转守都依赖于他。另一件需要注意的是，米兰前锋克雷斯波这时并没有真正参与比赛。**图二** 是 24 分钟以后上半场结束前米兰的传球图。与第一张图相比，米兰的阵型向门前收缩了。比如在前 24 分钟，马尔蒂尼（左后卫）、加图索、西多夫都站在皮尔洛的身前；而在上半场第二阶段他们都位于皮尔洛身后。我猜想这是因为他们早早就以 1-0 领先，因此利物浦增加了的侵略性，以及米兰实施了收缩防线和反击的策略。这个策略简直太棒了！他们在利物浦非常努力地进攻时（因为他们以 1-0 落后， 在 39' 和 44' 的反击中又进了两个球。两个进球的得分手都是克雷斯波，他在前 24 分钟的传球中没有“参与”，在上半场第二阶段却变得致命。
@@ -258,14 +258,14 @@ is %>%
                 title = "Milan's passing map in the 6 minute spell", minPass = 1)
 ```
 
-![](unnamed-chunk-13-1.png)
+![](/common_imgs/the-miracle-of-istanbul/unnamed-chunk-13-1.png)
 _图一_
 
 ``` r
 passMap(is, "AC Milan", 2, 54, 60)
 ```
 
-![](unnamed-chunk-13-2.png)
+![](/common_imgs/the-miracle-of-istanbul/unnamed-chunk-13-2.png)
 _图二_
 
 ``` r
@@ -275,14 +275,14 @@ is %>%
                 title = "Liverpool's passing map in the 6 minute spell", minPass = 1)
 ```
 
-![](unnamed-chunk-13-3.png)
+![](/common_imgs/the-miracle-of-istanbul/unnamed-chunk-13-3.png)
 _图三_
 
 ``` r
 passMap(is, "Liverpool", 2, 54, 60)
 ```
 
-![](unnamed-chunk-13-4.png)
+![](/common_imgs/the-miracle-of-istanbul/unnamed-chunk-13-4.png)
 _图四_
 
 我们已经看过了利物浦的地狱，即在上半场中米兰早早领先并且利用反击又进了两球，而利物浦则在进攻中挣扎。然而，正如时间表所显示的那样，在比赛的下半场，在 6 分钟里利物浦打进了3球扳平了比分。这神奇的 6 分钟真可谓是利物浦和利物浦球迷的天堂。这之间发生了什么？让我们看看这 6 分钟里发生的所有传球。**图一**：米兰传球 27 次，传球完成率不到 60%。米兰只有 8 名球员参与了一次或多次传球。如果我们仔细看，**图二** 显示米兰从防守到中场，以及从中场传到进攻线的传球全都失败了（红色：失败，蓝色：成功）。
@@ -301,7 +301,7 @@ soccerPitch(arrow = "r",
   geom_point(data = d2, aes(x = location.x, y = location.y, col = type.name), size = 3, alpha = 0.5)
 ```
 
-![](unnamed-chunk-14-1.png)
+![](/common_imgs/the-miracle-of-istanbul/unnamed-chunk-14-1.png)
 _图一_
 
 ``` r
@@ -314,7 +314,7 @@ soccerPitch(arrow = "r",
   geom_point(data = d2, aes(x = location.x, y = location.y, col = type.name), size = 3, alpha = 0.5)
 ```
 
-![](unnamed-chunk-14-2.png)
+![](/common_imgs/the-miracle-of-istanbul/unnamed-chunk-14-2.png)
 _图二_
 
 **图一**是利物浦球员在这 6 分钟做的防守动作。令人咋舌的是，他们竟然做到了 7 次抢断，从而导致米兰传球准确率下降。**图二**则是米兰的防守动作，仅仅只有 1 次夺回球权，几乎没有影响到利物浦的控球。
@@ -336,7 +336,7 @@ is %>%
                     subtitle = "Average position (1st half)")
 ```
 
-![](unnamed-chunk-15-1.png)
+![](/common_imgs/the-miracle-of-istanbul/unnamed-chunk-15-1.png)
 _图一_
 
 ``` r
@@ -348,7 +348,7 @@ is %>%
                     subtitle = "Average position (1st half)")
 ```
 
-![](unnamed-chunk-15-2.png)
+![](/common_imgs/the-miracle-of-istanbul/unnamed-chunk-15-2.png)
 _图二_
 
 **图一**是米兰在上半场的平均位置。平均位置是球员采取任何动作时的平均坐标，而不仅仅是传球。正如我们所见，米兰的阵型收缩在中场中央附近。除了 4 名中场球员外，其中一名前锋克雷斯波也接近中场。出于某种原因，他们在中心靠得很近（后面会解释）。
@@ -366,7 +366,7 @@ is %>%
                     subtitle = "Average position (2nd half)")
 ```
 
-![](unnamed-chunk-16-1.png)
+![](/common_imgs/the-miracle-of-istanbul/unnamed-chunk-16-1.png)
 _图一_
 
 ``` r
@@ -378,7 +378,7 @@ is %>%
                     subtitle = "Average position (2nd half)")
 ```
 
-![](unnamed-chunk-16-2.png)
+![](/common_imgs/the-miracle-of-istanbul/unnamed-chunk-16-2.png)
 _图二_
 
 当利物浦 3-0 落后后，利物浦做出了战术调整：在下半场开始时用哈曼换下右后卫芬南（因此放弃了边路进攻战术。结果我们大家都知道了。在**图二**，哈曼接替了杰拉德上半场的位置，并释放杰拉德。通过牺牲右后卫，利物浦将他们的阵型挤向中路。杰拉德和桑斯、巴罗斯一起，不断地冲向米兰的禁区并且不需要担心自己的身后，因为哈曼在身后负责防守。然后Boom！杰拉德通过禁区内头球攻门打进了第一个进球，并创造了一个点球（后来转换为第 3 个进球）。
@@ -451,4 +451,4 @@ sessionInfo()
     ## [45] xml2_1.3.2        rmarkdown_2.8     R6_2.5.0          compiler_4.1.0
 
 ## 源代码
-- <https://github.com/Allanware/Allanware.github.io/posts/2021/03/the-miracle-of-istanbul/2021-03-04-The-Miracle-of-Istanbul.Rmd>
+- [代码](/src-code/2021-03-04-The-Miracle-of-Istanbul.Rmd)

@@ -1,6 +1,6 @@
 env: production # to enable google analytics, opengraph, twitter-cards and schema.
 title: Wenxuan Zhao
-description: Passionate about software engineering, startups and leadership.
+description: 
 author: Wenxuan Zhao
 
 rssFullContent: true
@@ -19,7 +19,7 @@ TocOpen: true
 
 homeInfoParams:
   Title: Wenxuan Zhao
-  Content: Passionate about software engineering, startups and leadership.
+  Content:
 
 socialIcons:
   # - name: twitter
