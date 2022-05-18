@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Tags on مهدی خوشنودی</title>
+    <link>https://allanware.github.io/fa/tags/</link>
+    <description>Recent content in Tags on مهدی خوشنودی</description>
+    <image>
+      <url>https://allanware.github.io/images/avatar.jpg</url>
+      <link>https://allanware.github.io/images/avatar.jpg</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language><atom:link href="https://allanware.github.io/fa/tags/index.xml" rel="self" type="application/rss+xml" />
+  </channel>
+</rss>
