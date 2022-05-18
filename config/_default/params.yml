@@ -19,13 +19,13 @@ homeInfoParams:
   Content: Passionate about software engineering, startups and leadership.
 
 socialIcons:
-  - name: twitter
-    url: https://twitter.com/mehdy314
-  - name: stackoverflow
-    url: https://stackoverflow.com/users/3654352/mehdy
+  # - name: twitter
+  #   url: 
+  # - name: stackoverflow
+  #   url: 
   - name: github
-    url: https://github.com/mehdy
+    url: https://github.com/allanware
   - name: linkedin
-    url: https://www.linkedin.com/in/mehdy314
+    url: https://www.linkedin.com/in/allan-wenxuan-zhao
   - name: email
-    url: mailto:mehdy.khoshnoody+blog@gmail.com
+    url: mailto:xiaodoubizwx@gmail.com

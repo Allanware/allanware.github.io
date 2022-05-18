@@ -1,13 +1,13 @@
 en:
   weight: 1
   languageName: English
-# zh:
-#   weight: 2
-#   languageName: 中文
-#   languagedirection: rtl
-#   # title: 
-fa:
+zh:
   weight: 2
-  languageName: فارسی
+  languageName: 中文
   languagedirection: rtl
-  title: مهدی خوشنودی
+  # title: 
+# fa:
+#   weight: 2
+#   languageName: فارسی
+#   languagedirection: rtl
+#   title: مهدی خوشنودی
