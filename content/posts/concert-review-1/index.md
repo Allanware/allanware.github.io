@@ -1,5 +1,5 @@
 ---
-title: Concert Review 1
+title: Isle of the Dead
 author: Wenxuan Zhao
 date: 2022-03-28 23:33:00 -0700
 tags: ['beethoven', 'kodály', 'rachmaninoff', 'classical music', 'concert']

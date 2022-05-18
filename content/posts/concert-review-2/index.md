@@ -1,5 +1,5 @@
 ---
-title: Concert Review 2
+title: The Emperor
 author: Wenxuan Zhao
 date: 2022-04-28 23:33:00 -0700
 tags: ['janáček', 'cherubini', 'beethoven', 'classical music', 'concert']

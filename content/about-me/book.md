@@ -1,0 +1,4 @@
+---
+title: "Book"
+hidemeta: true
+---
