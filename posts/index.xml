@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Posts on Wenxuan Zhao</title>
+    <link>https://allanware.github.io/posts/</link>
+    <description>Recent content in Posts on Wenxuan Zhao</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Thu, 04 Mar 2021 23:33:00 -0700</lastBuildDate><atom:link href="https://allanware.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>The Miracle of Istanbul</title>
+      <link>https://allanware.github.io/posts/2021/03/the-miracle-of-istanbul/</link>
+      <pubDate>Thu, 04 Mar 2021 23:33:00 -0700</pubDate>
+      
+      <guid>https://allanware.github.io/posts/2021/03/the-miracle-of-istanbul/</guid>
+      <description>What happened in the 2nd half of the 2005 Champions League final, compared to the 1st half? This post uses R to expose details that the highlights and/or the match itself ignored.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -2,7 +2,58 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://allanware.github.io/en/about/</loc>
+    <loc>https://allanware.github.io/tags/data-visualization/</loc>
+    <lastmod>2021-03-04T23:33:00-07:00</lastmod>
+  </url><url>
+    <loc>https://allanware.github.io/tags/football/</loc>
+    <lastmod>2021-03-04T23:33:00-07:00</lastmod>
+  </url><url>
+    <loc>https://allanware.github.io/posts/</loc>
+    <lastmod>2021-03-04T23:33:00-07:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="https://allanware.github.io/zh/posts/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://allanware.github.io/posts/"
+                />
+  </url><url>
+    <loc>https://allanware.github.io/tags/r/</loc>
+    <lastmod>2021-03-04T23:33:00-07:00</lastmod>
+  </url><url>
+    <loc>https://allanware.github.io/tags/</loc>
+    <lastmod>2021-03-04T23:33:00-07:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="https://allanware.github.io/zh/tags/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://allanware.github.io/tags/"
+                />
+  </url><url>
+    <loc>https://allanware.github.io/posts/2021/03/the-miracle-of-istanbul/</loc>
+    <lastmod>2021-03-04T23:33:00-07:00</lastmod>
+  </url><url>
+    <loc>https://allanware.github.io/</loc>
+    <lastmod>2021-03-04T23:33:00-07:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="https://allanware.github.io/zh/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://allanware.github.io/"
+                />
+  </url><url>
+    <loc>https://allanware.github.io/about/</loc>
     <lastmod>2021-04-19T20:00:00+03:30</lastmod>
     <xhtml:link
                 rel="alternate"
@@ -12,10 +63,10 @@
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://allanware.github.io/en/about/"
+                href="https://allanware.github.io/about/"
                 />
   </url><url>
-    <loc>https://allanware.github.io/en/archives/</loc>
+    <loc>https://allanware.github.io/archives/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh"
@@ -24,10 +75,10 @@
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://allanware.github.io/en/archives/"
+                href="https://allanware.github.io/archives/"
                 />
   </url><url>
-    <loc>https://allanware.github.io/en/categories/</loc>
+    <loc>https://allanware.github.io/categories/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh"
@@ -36,31 +87,19 @@
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://allanware.github.io/en/categories/"
+                href="https://allanware.github.io/categories/"
                 />
   </url><url>
-    <loc>https://allanware.github.io/en/tags/</loc>
+    <loc>https://allanware.github.io/search/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh"
-                href="https://allanware.github.io/zh/tags/"
+                href="https://allanware.github.io/zh/search/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://allanware.github.io/en/tags/"
-                />
-  </url><url>
-    <loc>https://allanware.github.io/en/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh"
-                href="https://allanware.github.io/zh/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://allanware.github.io/en/"
+                href="https://allanware.github.io/search/"
                 />
   </url>
 </urlset>

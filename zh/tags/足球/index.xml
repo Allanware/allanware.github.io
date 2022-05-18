@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>足球 on 赵文轩</title>
+    <link>https://allanware.github.io/zh/tags/%E8%B6%B3%E7%90%83/</link>
+    <description>Recent content in 足球 on 赵文轩</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Wed, 09 Jun 2021 18:24:00 -0700</lastBuildDate><atom:link href="https://allanware.github.io/zh/tags/%E8%B6%B3%E7%90%83/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>伊斯坦布尔奇迹</title>
+      <link>https://allanware.github.io/zh/posts/2021/06/%E4%BC%8A%E6%96%AF%E5%9D%A6%E5%B8%83%E5%B0%94%E5%A5%87%E8%BF%B9/</link>
+      <pubDate>Wed, 09 Jun 2021 18:24:00 -0700</pubDate>
+      
+      <guid>https://allanware.github.io/zh/posts/2021/06/%E4%BC%8A%E6%96%AF%E5%9D%A6%E5%B8%83%E5%B0%94%E5%A5%87%E8%BF%B9/</guid>
+      <description>引言 2005年5月25日，欧洲冠军联赛决赛在伊斯坦布尔的阿塔图尔克奥林匹克体育场举行。 体育场的 65000 名观众和全球数亿球迷即将见证一场后来被称为伊斯坦布尔奇迹的足球比赛。 才华横溢的AC米兰队在第一分钟就由队长马尔蒂尼先拔头筹；半场结束前，他们又进了两个球，直到 3-0 领先。 有传言说，米兰队在中场休息时就在更衣室里开香槟以庆祝他们即将在三年内第二次夺得欧冠冠军。 然而，下半场利物浦卷土重来，在戏剧性的6分钟内打进3球，将比分扳平为 3-3， 并在残酷的点球大战中以 3-2 击败米兰。英国解说员在比赛结束时说：“如果这都不能证明命运存在， 那么什么可以”。可以肯定的是，这个史诗般的逆转很难言传，但我将尝试用可视化来完成这项工作， 并且尝试弄清楚这一切是如何发生的。
+弱者 利物浦队长史蒂文·杰拉德在赛前将他的球队称为与全明星米兰队相比的弱者，而且他是对的。 根据 transfermarkt.co.uk 的数据，
+# get the data for the miracle of istanbul Matches &amp;lt;- FreeMatches(FreeCompetitions()) istanbul &amp;lt;- get.matchFree(Matches[which(Matches$match_id == 2302764),]) milanLineup &amp;lt;- istanbul[[24]][[1]]$player.name liverpoolLineup &amp;lt;- istanbul[[24]][[2]]$player.name milanmv &amp;lt;- c(13.5, 2.7, 9.0, 29.7, 2.7, 18.9, 22.5, 16.2, 23.4, 31.5, 13.5) liverpoolmv &amp;lt;- c(4.05, 3.6, 6.75, 6.08, 1.8, 13.5, 7.88, 27, 11.25, 11.7, 15.75) mvSums &amp;lt;- data.</description>
+    </item>
+    
+  </channel>
+</rss>

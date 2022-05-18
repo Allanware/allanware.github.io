@@ -2,12 +2,63 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://allanware.github.io/zh/posts/</loc>
+    <lastmod>2021-06-09T18:24:00-07:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://allanware.github.io/posts/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="https://allanware.github.io/zh/posts/"
+                />
+  </url><url>
+    <loc>https://allanware.github.io/zh/tags/r%E8%AF%AD%E8%A8%80/</loc>
+    <lastmod>2021-06-09T18:24:00-07:00</lastmod>
+  </url><url>
+    <loc>https://allanware.github.io/zh/tags/</loc>
+    <lastmod>2021-06-09T18:24:00-07:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://allanware.github.io/tags/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="https://allanware.github.io/zh/tags/"
+                />
+  </url><url>
+    <loc>https://allanware.github.io/zh/tags/%E5%8F%AF%E8%A7%86%E5%8C%96/</loc>
+    <lastmod>2021-06-09T18:24:00-07:00</lastmod>
+  </url><url>
+    <loc>https://allanware.github.io/zh/posts/2021/06/%E4%BC%8A%E6%96%AF%E5%9D%A6%E5%B8%83%E5%B0%94%E5%A5%87%E8%BF%B9/</loc>
+    <lastmod>2021-06-09T18:24:00-07:00</lastmod>
+  </url><url>
+    <loc>https://allanware.github.io/zh/</loc>
+    <lastmod>2021-06-09T18:24:00-07:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://allanware.github.io/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="https://allanware.github.io/zh/"
+                />
+  </url><url>
+    <loc>https://allanware.github.io/zh/tags/%E8%B6%B3%E7%90%83/</loc>
+    <lastmod>2021-06-09T18:24:00-07:00</lastmod>
+  </url><url>
     <loc>https://allanware.github.io/zh/about/</loc>
     <lastmod>2021-04-19T20:00:00+03:30</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://allanware.github.io/en/about/"
+                href="https://allanware.github.io/about/"
                 />
     <xhtml:link
                 rel="alternate"
@@ -19,7 +70,7 @@
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://allanware.github.io/en/archives/"
+                href="https://allanware.github.io/archives/"
                 />
     <xhtml:link
                 rel="alternate"
@@ -31,7 +82,7 @@
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://allanware.github.io/en/categories/"
+                href="https://allanware.github.io/categories/"
                 />
     <xhtml:link
                 rel="alternate"
@@ -39,28 +90,16 @@
                 href="https://allanware.github.io/zh/categories/"
                 />
   </url><url>
-    <loc>https://allanware.github.io/zh/tags/</loc>
+    <loc>https://allanware.github.io/zh/search/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://allanware.github.io/en/tags/"
+                href="https://allanware.github.io/search/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh"
-                href="https://allanware.github.io/zh/tags/"
-                />
-  </url><url>
-    <loc>https://allanware.github.io/zh/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://allanware.github.io/en/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh"
-                href="https://allanware.github.io/zh/"
+                href="https://allanware.github.io/zh/search/"
                 />
   </url>
 </urlset>
