@@ -2,7 +2,34 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://allanware.github.io/en/about/</loc>
+    <lastmod>2021-04-19T20:00:00+03:30</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="https://allanware.github.io/zh/%E5%85%B3%E4%BA%8E%E6%88%91/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://allanware.github.io/en/about/"
+                />
+  </url><url>
+    <loc>https://allanware.github.io/en/pages/</loc>
+    <lastmod>2021-04-19T20:00:00+03:30</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="https://allanware.github.io/zh/pages/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://allanware.github.io/en/pages/"
+                />
+  </url><url>
     <loc>https://allanware.github.io/en/</loc>
+    <lastmod>2021-04-19T20:00:00+03:30</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh"
@@ -14,16 +41,16 @@
                 href="https://allanware.github.io/en/"
                 />
   </url><url>
-    <loc>https://allanware.github.io/en/</loc>
+    <loc>https://allanware.github.io/en/archives/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh"
-                href="https://allanware.github.io/zh/"
+                href="https://allanware.github.io/zh/archives/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://allanware.github.io/en/"
+                href="https://allanware.github.io/en/archives/"
                 />
   </url><url>
     <loc>https://allanware.github.io/en/categories/</loc>
@@ -38,18 +65,6 @@
                 href="https://allanware.github.io/en/categories/"
                 />
   </url><url>
-    <loc>https://allanware.github.io/en/pages/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh"
-                href="https://allanware.github.io/zh/pages/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://allanware.github.io/en/pages/"
-                />
-  </url><url>
     <loc>https://allanware.github.io/en/tags/</loc>
     <xhtml:link
                 rel="alternate"
@@ -60,18 +75,6 @@
                 rel="alternate"
                 hreflang="en"
                 href="https://allanware.github.io/en/tags/"
-                />
-  </url><url>
-    <loc>https://allanware.github.io/en/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh"
-                href="https://allanware.github.io/zh/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://allanware.github.io/en/"
                 />
   </url>
 </urlset>
