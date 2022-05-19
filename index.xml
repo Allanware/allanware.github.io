@@ -43,16 +43,15 @@
       <description>What happened in the 2nd half of the 2005 Champions League final, compared to the 1st half? This post uses R to expose details that the highlights and/or the match itself ignored.</description>
     </item>
     
-    
     <item>
-      <title>About Me</title>
+      <title></title>
       <link>https://allanware.github.io/about/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://allanware.github.io/about/</guid>
-      <description>Film Music Football
-Book Go/Baduk</description>
+      <description>Film Music Football Book Go/Baduk</description>
     </item>
+    
     
     <item>
       <title>Book</title>

@@ -16,16 +16,61 @@
       <description>2005年欧冠决赛下半场发生了什么？这篇文章用R语言揭露了集锦与比赛没有展现的细节。</description>
     </item>
     
-    
     <item>
-      <title>关于我是谁这问题</title>
+      <title></title>
       <link>https://allanware.github.io/zh/about/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://allanware.github.io/zh/about/</guid>
+      <description>电影 音乐 足球 书 围棋</description>
+    </item>
+    
+    
+    <item>
+      <title>电影</title>
+      <link>https://allanware.github.io/zh/film/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://allanware.github.io/zh/film/</guid>
       <description></description>
     </item>
     
+    <item>
+      <title>书</title>
+      <link>https://allanware.github.io/zh/book/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://allanware.github.io/zh/book/</guid>
+      <description></description>
+    </item>
+    
+    
+    <item>
+      <title>围棋</title>
+      <link>https://allanware.github.io/zh/go/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://allanware.github.io/zh/go/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>音乐</title>
+      <link>https://allanware.github.io/zh/music/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://allanware.github.io/zh/music/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>足球</title>
+      <link>https://allanware.github.io/zh/football/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://allanware.github.io/zh/football/</guid>
+      <description></description>
+    </item>
     
   </channel>
 </rss>
