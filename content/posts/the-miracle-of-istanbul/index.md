@@ -4,6 +4,10 @@ author: Wenxuan Zhao
 date: 2021-03-04 23:33:00 -0700
 tags: ['football', 'data-visualization', 'r']
 summary: What happened in the 2nd half of the 2005 Champions League final, compared to the 1st half? This post uses R to expose details that the highlights and/or the match itself ignored.
+cover:
+    image: /common_imgs/the-miracle-of-istanbul/3-3.jpeg
+    alt: Isle of the dead 
+    relative: false
 ---
 
 ## Introduction

@@ -4,6 +4,10 @@ author: 赵文轩
 date: 2021-06-09 18:24:00 -0700
 tags: [足球, 可视化, R语言]
 summary: 2005年欧冠决赛下半场发生了什么？这篇文章用R语言揭露了集锦与比赛没有展现的细节。
+cover:
+    image: /common_imgs/the-miracle-of-istanbul/3-3.jpeg
+    alt: Isle of the dead 
+    relative: false
 ---
 
 ## 引言

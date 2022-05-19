@@ -4,6 +4,10 @@ author: Wenxuan Zhao
 date: 2022-03-28 23:33:00 -0700
 tags: ['beethoven', 'kodály', 'rachmaninoff', 'classical music', 'concert']
 summary: Isle of the Dead, Suite from the opera Háry János, Concerto in D Major for Violin and Orchestra, Op. 61
+cover:
+    image: isle_of_the_dead_bw.jpeg
+    alt: Isle of the dead 
+    relative: true
 ---
 
 # Concert Overview
