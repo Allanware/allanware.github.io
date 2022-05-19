@@ -1,5 +1,4 @@
 ---
-title: "About Me"
 hidemeta: true
 ShowToc: false
 TocOpen: false
@@ -13,7 +12,5 @@ ShowBreadCrumbs: false
 [Film]({{< ref "/film" >}})
 [Music]({{< ref "/music" >}})
 [Football]({{< ref "/football" >}})
-
-
 [Book]({{< ref "/book" >}})
 [Go/Baduk]({{< ref "/go" >}})

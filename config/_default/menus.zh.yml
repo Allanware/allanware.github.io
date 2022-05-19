@@ -9,7 +9,7 @@ main:
     url: /about/
   - weight: 3
     identifier: tags
-    name: 标签
+    name: 附笺
     url: /tags/
   - weight: 4
     identifier: archives
