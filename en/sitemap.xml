@@ -92,18 +92,6 @@
     <loc>https://allanware.github.io/posts/2021/03/the-miracle-of-istanbul/</loc>
     <lastmod>2021-03-04T23:33:00-07:00</lastmod>
   </url><url>
-    <loc>https://allanware.github.io/about/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh"
-                href="https://allanware.github.io/zh/about/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://allanware.github.io/about/"
-                />
-  </url><url>
     <loc>https://allanware.github.io/archives/</loc>
     <xhtml:link
                 rel="alternate"
@@ -116,9 +104,19 @@
                 href="https://allanware.github.io/archives/"
                 />
   </url><url>
-    <loc>https://allanware.github.io/about-me/</loc>
+    <loc>https://allanware.github.io/about/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="https://allanware.github.io/zh/about/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://allanware.github.io/about/"
+                />
   </url><url>
-    <loc>https://allanware.github.io/about-me/book/</loc>
+    <loc>https://allanware.github.io/book/</loc>
   </url><url>
     <loc>https://allanware.github.io/categories/</loc>
     <xhtml:link
@@ -132,13 +130,13 @@
                 href="https://allanware.github.io/categories/"
                 />
   </url><url>
-    <loc>https://allanware.github.io/about-me/film/</loc>
+    <loc>https://allanware.github.io/film/</loc>
   </url><url>
-    <loc>https://allanware.github.io/about-me/football/</loc>
+    <loc>https://allanware.github.io/football/</loc>
   </url><url>
-    <loc>https://allanware.github.io/about-me/go/</loc>
+    <loc>https://allanware.github.io/go/</loc>
   </url><url>
-    <loc>https://allanware.github.io/about-me/music/</loc>
+    <loc>https://allanware.github.io/music/</loc>
   </url><url>
     <loc>https://allanware.github.io/search/</loc>
     <xhtml:link
