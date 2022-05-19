@@ -1,4 +1,5 @@
 ---
+title: "About Me"
 hidemeta: true
 ShowToc: false
 TocOpen: false
@@ -8,14 +9,11 @@ ShowBreadCrumbs: false
 #     alt: Picture of 
 #     relative: true
 ---
-### [Film]({{< ref "/about-me/film" >}})
 
-### [Music]({{< ref "/about-me/music" >}})
+[Film]({{< ref "/film" >}})
+[Music]({{< ref "/music" >}})
+[Football]({{< ref "/football" >}})
 
-### [Football]({{< ref "/about-me/football" >}})
-![](/FCB.jpg)
 
-### [Book]({{< ref "/about-me/book" >}})
-
-### [Go/Baduk]({{< ref "/about-me/go" >}})
-
+[Book]({{< ref "/book" >}})
+[Go/Baduk]({{< ref "/go" >}})
