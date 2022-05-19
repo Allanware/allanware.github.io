@@ -18,7 +18,10 @@ TocOpen: true
  
 
 homeInfoParams:
-  Content: I am a computer science grad student at UW-Madison. Previously, I was an undergrad at UC Davis. For more info about who I am, please visit **About**, which lists my major interests that are often the inspiration of my articles. Please click on **Tag** to navigate through articles through tags, **Archives** for a chronicle view of the articles, and **Search** to find articles based on a keyphrase. 
+  Content: > 
+    Welcome! I am a computer science grad student at UW-Madison. Previously, I was an undergrad at UC Davis. For more info about who I am, please visit [**About**](/about), which lists my major interests that are often the inspiration of my articles. Please click on [**Tags**](/tags) to navigate through articles through tags, [**Archives**](/archives) for a chronicle view of the articles, and [**Search**](/search) to find articles based on a keyphrase. 
+    
+    - 如需访问中文版，请移步[**Zh**](/zh)。
 
 socialIcons:
   # - name: twitter
