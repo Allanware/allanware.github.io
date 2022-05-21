@@ -5,6 +5,19 @@
     <loc>https://allanware.github.io/tags/beethoven/</loc>
     <lastmod>2022-04-28T23:33:00-07:00</lastmod>
   </url><url>
+    <loc>https://allanware.github.io/categories/</loc>
+    <lastmod>2022-04-28T23:33:00-07:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="https://allanware.github.io/zh/categories/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://allanware.github.io/categories/"
+                />
+  </url><url>
     <loc>https://allanware.github.io/tags/cherubini/</loc>
     <lastmod>2022-04-28T23:33:00-07:00</lastmod>
   </url><url>
@@ -15,6 +28,9 @@
     <lastmod>2022-04-28T23:33:00-07:00</lastmod>
   </url><url>
     <loc>https://allanware.github.io/tags/jan%C3%A1%C4%8Dek/</loc>
+    <lastmod>2022-04-28T23:33:00-07:00</lastmod>
+  </url><url>
+    <loc>https://allanware.github.io/categories/music/</loc>
     <lastmod>2022-04-28T23:33:00-07:00</lastmod>
   </url><url>
     <loc>https://allanware.github.io/posts/</loc>
@@ -29,6 +45,9 @@
                 hreflang="en"
                 href="https://allanware.github.io/posts/"
                 />
+  </url><url>
+    <loc>https://allanware.github.io/tags/review/</loc>
+    <lastmod>2022-04-28T23:33:00-07:00</lastmod>
   </url><url>
     <loc>https://allanware.github.io/tags/</loc>
     <lastmod>2022-04-28T23:33:00-07:00</lastmod>
@@ -86,6 +105,9 @@
     <loc>https://allanware.github.io/tags/football/</loc>
     <lastmod>2021-03-04T23:33:00-07:00</lastmod>
   </url><url>
+    <loc>https://allanware.github.io/categories/football/</loc>
+    <lastmod>2021-03-04T23:33:00-07:00</lastmod>
+  </url><url>
     <loc>https://allanware.github.io/tags/r/</loc>
     <lastmod>2021-03-04T23:33:00-07:00</lastmod>
   </url><url>
@@ -126,18 +148,6 @@
                 rel="alternate"
                 hreflang="en"
                 href="https://allanware.github.io/book/"
-                />
-  </url><url>
-    <loc>https://allanware.github.io/categories/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh"
-                href="https://allanware.github.io/zh/categories/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://allanware.github.io/categories/"
                 />
   </url><url>
     <loc>https://allanware.github.io/film/</loc>

@@ -5,6 +5,25 @@
     <link>https://allanware.github.io/categories/</link>
     <description>Recent content in Categories on Wenxuan Zhao</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en</language><atom:link href="https://allanware.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
+    <language>en</language>
+    <lastBuildDate>Thu, 28 Apr 2022 23:33:00 -0700</lastBuildDate><atom:link href="https://allanware.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>music</title>
+      <link>https://allanware.github.io/categories/music/</link>
+      <pubDate>Thu, 28 Apr 2022 23:33:00 -0700</pubDate>
+      
+      <guid>https://allanware.github.io/categories/music/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>football</title>
+      <link>https://allanware.github.io/categories/football/</link>
+      <pubDate>Thu, 04 Mar 2021 23:33:00 -0700</pubDate>
+      
+      <guid>https://allanware.github.io/categories/football/</guid>
+      <description></description>
+    </item>
+    
   </channel>
 </rss>
