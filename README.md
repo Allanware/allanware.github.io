@@ -14,4 +14,5 @@ cover:
 
 ## tips 
 - youtube shortcode: {{< youtube videoid >}}
-- refernce another page: [film]({{< ref "/film" >}} "films")
+- refernce page2 inside page1: [film]({{< ref "/film" >}} "films")
+    - can use {{< ref "/page2#key1" >}} to reference the key inside another page
