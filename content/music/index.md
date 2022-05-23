@@ -4,59 +4,59 @@ hidemeta: true
 ---
 
 # Playlists 
-- Classical Music 
-    - I took a orchestral music apprecication course, and this playlist (a different one from above) contains the pieces we covered in class (it has better structure in terms of music history and musical periods).
-- Film Music
-    - these film scores at least make me appreciate.
-- Pop Music 
+- My Favorite Pieces in [Classical Music](https://music.apple.com/us/playlist/freiburger-barockorchester-gottfried-von-der-goltz/pl.u-JPAZZK2IJEKZ6X)
+    - I took a orchestral music apprecication course, and [this playlist](https://music.apple.com/us/playlist/mus-106-symphonic-music/pl.u-V9D77WNsPEbp8q)(a different one from above) contains the pieces we covered in class (it has better structure in terms of music history and musical periods).
+- [Film Music](https://music.apple.com/us/playlist/joe-hisaishi-princess-mononoke-original-soundtrack/pl.u-11zBBdouj2oE3x)
+- [Songs](https://music.apple.com/us/playlist/andrea-bocelli-amore/pl.u-JPAZZg3tJEKZ6X)
 
 # Favorites 
 ## Symphony
-- Tchaikovsky: Symphony No. 6 in B Minor 
-- Shostakovich: Symphony No. 5 in D Minor
+- Tchaikovsky: Symphony No. 6 in B minor 
+- Shostakovich: Symphony No. 5 in D minor
 - Brahms: Symphony No. 3 in F Major
-- Brahms: Symphony No. 4 in E Minor
+- Brahms: Symphony No. 4 in E minor
 - Berlioz: Symphonie Fantastique
     - a TV crime drama
-- Dvořák: Symphony No. 9 in E Minor
+- Dvořák: Symphony No. 9 in E minor
 - Beethoven: Symphony No. 3 in E♭ Major
-- Beethoven: Symphony No. 5 in C Minor
+- Beethoven: Symphony No. 5 in C minor
 - Beethoven: Symphony No. 7 in A Major
-- Beethoven: Symphony No. 9 in D Minor 
-- Mozart: Symphony No. 40 in G Minor
+- Beethoven: Symphony No. 9 in D minor 
+- Mozart: Symphony No. 40 in G minor
 - Mozart: Symphony No. 41 in C Major
     - listen to the last movement, gosh, and talk about the GRAND FINALE
-- Mozart: Symphony No. 25 in G Minor
-- Mahler: Symphony No. 5 in C♯ Minor
+- Mozart: Symphony No. 25 in G minor
+- Mahler: Symphony No. 5 in C♯ minor
+    - just epic
 - Sibelius: Symphony No. 7 in C Major
-- Schubert: Symphony No. 8 in B Minor
+- Schubert: Symphony No. 8 in B minor
 - [Cherubini: Symphony in D Major]({{< ref "posts/concert-review-2/index.md#symphony-in-d-major" >}})
-- Rachmaninoff: Symphony No. 2 in E Minor
+- Rachmaninoff: Symphony No. 2 in E minor
 - Bartók: Concerto for Orchestra
 
 ## Concerto
-- Rachmaninoff: Piano Concerto No. 2 in C Minor
-- Rachmaninoff: Piano Concerto No. 3 in D Minor
+- Rachmaninoff: Piano Concerto No. 2 in C minor
+- Rachmaninoff: Piano Concerto No. 3 in D minor
     - after listening to No. 2, the first few bars alone of No. 3 could excite me.
 - [Beethoven: Piano Concerto No. 5 in E♭ Major]({{< ref "posts/concert-review-2/index.md#piano-concerto-no-5-the-emperor" >}})
-- Felix Mendelssohn: Concerto in E Minor for Violin and Orchestra
+- Felix Mendelssohn: Concerto in E minor for Violin and Orchestra
 - Beethoven: Violin Concerto in D Major
-- Tchaikovsky: Piano Concerto No. 1 in B♭ Minor
+- Tchaikovsky: Piano Concerto No. 1 in B♭ minor
 - Tchaikovsky: Violin Concerto in D Major
 - Joaquín Rodrigo: Concierto de Aranjuez
 - Haydn: Concerto in C Major for Cello and Orchestra
     - if there isn't a Haydn piece, then Haydn is hidden!
-- Sibelius: Violin Concerto in D Minor, Op. 47
-- Saint-Saëns: Violin Concerto No. 3 in B Minor
-- Grieg: Piano Concerto in A Minor
+- Sibelius: Violin Concerto in D minor, Op. 47
+- Saint-Saëns: Violin Concerto No. 3 in B minor
+- Grieg: Piano Concerto in A minor
 - Brahms: Concerto for Violin and Orchestra in D major
-- Brahms: Piano Concerto No. 1 in D Minor
+- Brahms: Piano Concerto No. 1 in D minor
 
 ## Chamber Music
-- Brahms: Piano Quintet in F Minor, Op. 34
+- Brahms: Piano Quintet in F minor, Op. 34
 - Schubert: Quintet in A Major for Piano and Strings, "the Trout Quintet"
     - this quintet along with its inspiration (Schubert's Lied "Die Forelle") earn him the title (in my heart) "the Prince of Trout". He died at the age of 31, and his music, as Robert Schumann put it, "bears within it the seeds of everlasting youth". 
-- Clara Schumann: Piano Trio In G Minor, Op. 17
+- Clara Schumann: Piano Trio In G minor, Op. 17
 - Fanny Mendelssohn: String Quartet in E-Flat Major
 - Messiaen: Quartet for the End of Time
 - Beethoven: Sonata for Violin and Piano No. 9 in A Major, "Kreutzer"
@@ -84,7 +84,6 @@ Program Music includes program symphonies, concert overtures, symphonic/tone poe
 - [Kodály: Háry János Suite]({{< ref "posts/concert-review-1/index.md#suite-from-the-opera-háry-jános" >}})
 - Tchaikovsky: Marche slave
 - Holst: the Planets 
-    - Jupiter & Mars are the most popular ones 
 - Ravel: Boléro
 - Wagner: Ride of the Valkyries
 - Mozart: Don Giovanni, Overture
@@ -114,26 +113,29 @@ The Suites here are more "absolute" than, for example, the suites extracted from
 - Organ: 
     - Bach: Toccata and Fugue in D minor, BWV 565
 - Piano: 
-    - Chopin: 24 Préludes, Op. 28, No. 4 in E Minor: Largo
+    - Chopin: 24 Préludes, Op. 28, No. 4 in E minor: Largo
     - Robert Schumann: Fantasiestücke, Op. 12: Aufschwung
     - Chopin: Nocturnes, Op. 9
     - Chopin: Polonaise in A-Flat Major
     - Liszt: Hungarian Rhapsody No. 2 in C-sharp minor
         - AKA the Cat Concerto (based on its orchestral arrangement)
-    - Chopin: Ballade No. 1 in G Minor
+    - Chopin: Ballade No. 1 in G minor
     - Debussy: Reverie
     - Robert Schumann: Kinderszenen, Op. 15: VII. Träumerei
     - Erik Satie: Gymnopédie No. 1
-    - Beethoven: Piano Sonata No. 23, "Appassionata" in F Minor
+    - Beethoven: Piano Sonata No. 23, "Appassionata" in F minor
     - Debussy: Suite bergamasque, L. 75: III. Clair de lune
 - Violin: 
-    - Vitali: Chaconne in G Minor
-    - Bach: Violin Partita No. 2 in D Minor, BWV 1004
+    - Vitali: Chaconne in G minor
+    - Bach: Violin Partita No. 2 in D minor, BWV 1004
 
 ## Song, Opera aria, Choir 
 - Rachmaninoff: Songs, Op. 34: Vocalise, No. 14
 - Bizet: Habanera
 - Bizet: Carmen: Act II - "Votre Toast Je Peux Vous Rendre" (Toreador's Song)
-- Bach: Mass in B Minor, BWV 232
+- Bach: Mass in B minor, BWV 232
 
 ## Pop Music
+- 我们的爱 by F.I.R
+- 喜欢 by Deserts Chang
+- Vast & Hazy, my favorite Taiwanese band. 
