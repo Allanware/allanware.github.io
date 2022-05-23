@@ -1,12 +1,12 @@
 ---
 title: Books to Read in Summer 2022
 author: Wenxuan Zhao
-date: 2022-05-23 13:33:00 -0700
+date: 2022-05-23 13:13:00 -0500
 tags: ['douglas hofstadter', 'logic', 'cultural revolution', 'classical music', 'tchaikovsky', 'rachmaninoff']
 categories: ['book']
 summary: 
 cover:
-    image: geb.jpeg
+    image: drawing-hands.jpg
     alt: "Gödel, Escher, Bach: an Eternal Golden Braid"
     relative: true
 ---
