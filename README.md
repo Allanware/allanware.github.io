@@ -4,8 +4,11 @@
 ## default front matter
 \---
 title: "{{ replace .Name "-" " " | title }}"
-date: {{ .Date }}
-draft: true
+date: 
+author: Wenxuan Zhao
+tags: ['']
+summary: 
+mathjax: true
 cover:
     image: 
     alt: 

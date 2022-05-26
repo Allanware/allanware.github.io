@@ -7,7 +7,7 @@ categories: ['足球']
 summary: 2005年欧冠决赛下半场发生了什么？这篇文章用R语言揭露了集锦与比赛没有展现的细节。
 cover:
     image: 3-3.jpeg
-    alt: Isle of the dead 
+    alt: The Miracle of Istanbul 
     relative: true
 ---
 

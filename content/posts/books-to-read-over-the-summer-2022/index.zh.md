@@ -4,21 +4,18 @@ author: 赵文轩
 date: 2022-05-23 13:13:00 -0500
 tags: ['侯世達', '逻辑', '文化大革命', '古典音乐', '柴可夫斯基', '拉赫曼尼诺夫']
 categories: ['书']
-summary: 
-cover:
-    image: drawing-hands.jpg
-    alt: "哥德尔、艾舍尔、巴赫：集异璧之大成"
-    relative: true
+summary: 2022暑期计划读的书
+# cover:
+#     image: drawing-hands.jpg
+#     alt: "哥德尔、艾舍尔、巴赫：集异璧之大成"
+#     relative: true
 ---
 
-## 侯世達
-- [] 哥德尔、艾舍尔、巴赫：集异璧之大成 (1979)
-- [] The Mind’s I: Fantasies and Reflections on Self and Soul (1981)
-- [] Metamagical Themas: Questing for the Essence of Mind and Pattern (1985)
-- [] Fluid Concepts and Creative Analogies (1991)
-- [] Le Ton beau de Marot: In Praise of the Music of Language (1997)
-- [] I Am a Strange Loop (2008)
-- [] Surfaces and Essences: Analogy as the Fuel and Fire of Thinking (2011) 
+## 无法归类的
+- [] GEB (1979)
+    - An Introduction to Formal Logic
+    - Gödel Without (Too Many) Tears
+    - An Introduction to Gödel's Theorems
 
 ## 文化大革命系列 & 中国
 - [] Mao's last revolution（毛泽东最后的革命）

@@ -9,8 +9,8 @@ ShowBreadCrumbs: false
 #     relative: true
 ---
 
-[Film]({{< ref "/film" >}})
-[Music]({{< ref "/music" >}})
-[Football]({{< ref "/football" >}})
-[Book]({{< ref "/book" >}})
-[Go/Baduk]({{< ref "/go" >}})
+## [Film]({{< ref "/film" >}})
+## [Music]({{< ref "/music" >}})
+## [Football]({{< ref "/football" >}})
+## [Book]({{< ref "/book" >}})
+## [Go/Baduk]({{< ref "/go" >}})

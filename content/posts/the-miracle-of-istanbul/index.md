@@ -7,7 +7,7 @@ summary: What happened in the 2nd half of the 2005 Champions League final, compa
 categories: ['football']
 cover:
     image: 3-3.jpeg
-    alt: Isle of the dead 
+    alt: The Miracle of Istanbul 
     relative: true
 ---
 
