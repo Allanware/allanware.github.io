@@ -5,7 +5,6 @@ date: 2022-05-23 13:13:00 -0500
 tags: ['douglas hofstadter', 'logic', 'cultural revolution', 'classical music', 'tchaikovsky', 'rachmaninoff']
 categories: ['book']
 summary: books to read during summer 2022
-lastmod: :git
 # cover:
 #     image: drawing-hands.jpg
 #     alt: "Gödel, Escher, Bach: an Eternal Golden Braid"

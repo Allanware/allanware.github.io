@@ -39,6 +39,6 @@ frontmatter:
   - date
   - lastmod
   lastmod:
-  - :git
   - lastmod
+  - :git
   - date

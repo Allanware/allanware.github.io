@@ -21,6 +21,7 @@ cover:
 ### Three-Part Invention
 
 ## Chapter II: Meaning and Form in Mathematics
+### Two-Part Invention
 
 ## Resources on GEB
 - the [fandom wiki](https://godel-escher-bach.fandom.com/wiki/G%C3%B6del,_Escher,_Bach_Wiki)
