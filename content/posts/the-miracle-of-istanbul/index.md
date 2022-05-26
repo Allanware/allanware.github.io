@@ -6,9 +6,9 @@ tags: ['football', 'data visualization', 'r']
 summary: What happened in the 2nd half of the 2005 Champions League final, compared to the 1st half? This post uses R to expose details that the highlights and/or the match itself ignored.
 categories: ['football']
 cover:
-    image: /common_imgs/the-miracle-of-istanbul/3-3.jpeg
+    image: 3-3.jpeg
     alt: Isle of the dead 
-    relative: false
+    relative: true
 ---
 
 ## Introduction
@@ -50,7 +50,7 @@ coul <- suppressWarnings(brewer.pal(2, "Set2"))
 barplot(height=mvSums$value, names=mvSums$name, col=coul, main = "Market value of Starting XI", sub = "184M £ vs 109M £", ylab = "in million pounds", font.sub = 4)
 ```
 
-![](/common_imgs/the-miracle-of-istanbul/unnamed-chunk-3-1.png)<!-- -->
+![](unnamed-chunk-3-1.png)<!-- -->
 
 ``` r
 mv <- data.frame(name = c(milanLineup, liverpoolLineup), value = c(milanmv, liverpoolmv))
@@ -65,7 +65,7 @@ mvtop10 %>%
     theme_bw()
 ```
 
-![](/common_imgs/the-miracle-of-istanbul/unnamed-chunk-3-2.png)<!-- -->
+![](unnamed-chunk-3-2.png)<!-- -->
 we can see that the market value of Milan’s starting XI is significantly
 higher than Liverpool’s. Individually, Milan’s players took 8 places out
 of the top 10 highest market value players of the joint teams. The
@@ -187,7 +187,7 @@ library(timevis)
 timevis(data, groups = timevisDataGroups)
 ```
 
-![](/common_imgs/the-miracle-of-istanbul/timeline.png)
+![](timeline.png)
 
 To summarize the timeline that we see above. In the first half, Milan
 scored immediately when the game began, and scored two more goals
@@ -238,7 +238,7 @@ is %>%
   soccerShotmap(theme = "dark")
 ```
 
-![](/common_imgs/the-miracle-of-istanbul/unnamed-chunk-9-1.png)
+![](unnamed-chunk-9-1.png)
 
 As we can see, in the 1st half, Milan made 8 shots (8 dots on the pic
 above) and Liverpool made 5. However, most of the shots by Milan (6 out
@@ -250,7 +250,7 @@ is %>%
   soccerShotmap(theme = "dark")
 ```
 
-![](/common_imgs/the-miracle-of-istanbul/unnamed-chunk-10-1.png)
+![](unnamed-chunk-10-1.png)
 In the 2nd half, we’d expect that Liverpool dominates the shots and
 shots in the box. On the contrary, Milan still dominates the number of
 shots and shots in the box. Liverpool made only 2 shots inside the box
@@ -267,7 +267,7 @@ is %>%
   soccerShotmap(theme = "dark")
 ```
 
-![](/common_imgs/the-miracle-of-istanbul/unnamed-chunk-11-1.png)
+![](unnamed-chunk-11-1.png)
 Surprisingly (or not so surprisingly after seeing the shots made in the
 2nd half of the game), Liverpool made no attempts and Milan made 7 more
 shots, 3 of them inside the box with 1 near the post of the goal (so
@@ -288,7 +288,7 @@ is %>%
                 title = "Milan's passing map in the 1st half")
 ```
 
-![](/common_imgs/the-miracle-of-istanbul/unnamed-chunk-12-1.png)
+![](unnamed-chunk-12-1.png)
 _picture 1_
 
 ``` r
@@ -298,7 +298,7 @@ is %>%
                 title = "Milan's passing map in the 1st half (25' onwards)")
 ```
 
-![](/common_imgs/the-miracle-of-istanbul/unnamed-chunk-12-2.png)
+![](unnamed-chunk-12-2.png)
 _picture 2_
 
 ``` r
@@ -308,7 +308,7 @@ is %>%
                 title = "Liverpool's passing map in the 1st half")
 ```
 
-![](/common_imgs/the-miracle-of-istanbul/unnamed-chunk-12-3.png)
+![](unnamed-chunk-12-3.png)
 _picture 3_
 
 ``` r
@@ -318,7 +318,7 @@ is %>%
                 title = "Liverpool's passing map in the 1st half (25' onwards)")
 ```
 
-![](/common_imgs/the-miracle-of-istanbul/unnamed-chunk-12-4.png)<!-- -->
+![](unnamed-chunk-12-4.png)<!-- -->
 _picture 4_
 
 We break the 1st half into two halves. The **picture 1** shows the
@@ -358,14 +358,14 @@ is %>%
                 title = "Milan's passing map in the 6 minute spell", minPass = 1)
 ```
 
-![](/common_imgs/the-miracle-of-istanbul/unnamed-chunk-13-1.png)
+![](unnamed-chunk-13-1.png)
 _picture 1_
 
 ``` r
 passMap(is, "AC Milan", 2, 54, 60)
 ```
 
-![](/common_imgs/the-miracle-of-istanbul/unnamed-chunk-13-2.png)
+![](unnamed-chunk-13-2.png)
 _picture 2_
 
 ``` r
@@ -375,14 +375,14 @@ is %>%
                 title = "Liverpool's passing map in the 6 minute spell", minPass = 1)
 ```
 
-![](/common_imgs/the-miracle-of-istanbul/unnamed-chunk-13-3.png)
+![](unnamed-chunk-13-3.png)
 _picture 3_
 
 ``` r
 passMap(is, "Liverpool", 2, 54, 60)
 ```
 
-![](/common_imgs/the-miracle-of-istanbul/unnamed-chunk-13-4.png)
+![](unnamed-chunk-13-4.png)
 _picture 4_
 
 We have seen the hell for Liverpool, i.e., the first half of the game,
@@ -419,7 +419,7 @@ soccerPitch(arrow = "r",
   geom_point(data = d2, aes(x = location.x, y = location.y, col = type.name), size = 3, alpha = 0.5)
 ```
 
-![](/common_imgs/the-miracle-of-istanbul/unnamed-chunk-14-1.png)
+![](unnamed-chunk-14-1.png)
 _picture 1_
 
 ``` r
@@ -432,7 +432,7 @@ soccerPitch(arrow = "r",
   geom_point(data = d2, aes(x = location.x, y = location.y, col = type.name), size = 3, alpha = 0.5)
 ```
 
-![](/common_imgs/the-miracle-of-istanbul/unnamed-chunk-14-2.png)
+![](unnamed-chunk-14-2.png)
 _picture 2_
 
 The **picture 1** is the defensive actions done by Liverpool players
@@ -461,7 +461,7 @@ is %>%
                     subtitle = "Average position (1st half)")
 ```
 
-![](/common_imgs/the-miracle-of-istanbul/unnamed-chunk-15-1.png)
+![](unnamed-chunk-15-1.png)
 _picture 1_
 
 ``` r
@@ -473,7 +473,7 @@ is %>%
                     subtitle = "Average position (1st half)")
 ```
 
-![](/common_imgs/the-miracle-of-istanbul/unnamed-chunk-15-2.png)
+![](unnamed-chunk-15-2.png)
 _picture 2_
 
 The **picture 1** is the average position of the Milan in the 1st
@@ -503,7 +503,7 @@ is %>%
                     subtitle = "Average position (2nd half)")
 ```
 
-![](/common_imgs/the-miracle-of-istanbul/unnamed-chunk-16-1.png)
+![](unnamed-chunk-16-1.png)
 _picture 1_
 
 ``` r
@@ -515,7 +515,7 @@ is %>%
                     subtitle = "Average position (2nd half)")
 ```
 
-![](/common_imgs/the-miracle-of-istanbul/unnamed-chunk-16-2.png)
+![](unnamed-chunk-16-2.png)
 _picture 2_
 
 With 3-0 down, Liverpool took right back Finnan down (therefore

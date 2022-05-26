@@ -13,8 +13,6 @@ cover:
 
 ## Douglas Hofstadter
 - [] GEB (1979)
-    - [] Gödel's Proof
-    - [] A Profile of Mathematical Logic
 - [] The Mind’s I: Fantasies and Reflections on Self and Soul (1981)
 - [] Metamagical Themas: Questing for the Essence of Mind and Pattern (1985)
 - [] Fluid Concepts and Creative Analogies (1991)

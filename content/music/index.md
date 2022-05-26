@@ -13,6 +13,7 @@ hidemeta: true
 ## Symphony
 - Tchaikovsky: Symphony No. 6 in B minor 
 - Shostakovich: Symphony No. 5 in D minor
+- Brahms: Symphony No. 1 in C minor
 - Brahms: Symphony No. 3 in F Major
 - Brahms: Symphony No. 4 in E minor
 - Berlioz: Symphonie Fantastique

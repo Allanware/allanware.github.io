@@ -13,8 +13,6 @@ cover:
 
 ## 侯世達
 - [] 哥德尔、艾舍尔、巴赫：集异璧之大成 (1979)
-    - [] Gödel's Proof
-    - [] A Profile of Mathematical Logic
 - [] The Mind’s I: Fantasies and Reflections on Self and Soul (1981)
 - [] Metamagical Themas: Questing for the Essence of Mind and Pattern (1985)
 - [] Fluid Concepts and Creative Analogies (1991)
