@@ -6,6 +6,6 @@ cover:
     image: go.png
     alt: "罗洗河三劫循环"
     relative: true
-summary: 我下的一些棋和其他著名的棋局
+summary: 人生如棋，如何取舍厚势与实地，如何不急又不缓。
 weight: 5
 ---
