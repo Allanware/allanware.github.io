@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>书 on 赵文轩</title>
+    <link>https://allanware.github.io/zh/about/book/</link>
+    <description>Recent content in 书 on 赵文轩</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language><atom:link href="https://allanware.github.io/zh/about/book/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>侯世达</title>
+      <link>https://allanware.github.io/zh/about/book/dh/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://allanware.github.io/zh/about/book/dh/</guid>
+      <description> [] Gödel, Escher, Bach: an Eternal Golden Braid (1979) [] The Mind’s I: Fantasies and Reflections on Self and Soul (1981) [] Metamagical Themas: Questing for the Essence of Mind and Pattern (1985) [] Fluid Concepts and Creative Analogies (1991) [] Le Ton beau de Marot: In Praise of the Music of Language (1997) [] I Am a Strange Loop (2008) [] Surfaces and Essences: Analogy as the Fuel and Fire of Thinking (2011)  </description>
+    </item>
+    
+  </channel>
+</rss>

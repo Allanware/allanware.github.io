@@ -52,59 +52,14 @@
       <description>What happened in the 2nd half of the 2005 Champions League final, compared to the 1st half? This post uses R to expose details that the highlights and/or the match itself ignored.</description>
     </item>
     
-    <item>
-      <title></title>
-      <link>https://allanware.github.io/about/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://allanware.github.io/about/</guid>
-      <description>Film Music Football Book Go/Baduk </description>
-    </item>
-    
     
     <item>
-      <title>Book</title>
-      <link>https://allanware.github.io/book/</link>
+      <title>Douglas Hofstadter</title>
+      <link>https://allanware.github.io/about/book/dh/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://allanware.github.io/book/</guid>
-      <description> books by DH  </description>
-    </item>
-    
-    <item>
-      <title>Film</title>
-      <link>https://allanware.github.io/film/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://allanware.github.io/film/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Football</title>
-      <link>https://allanware.github.io/football/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://allanware.github.io/football/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Go/Baduk</title>
-      <link>https://allanware.github.io/go/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://allanware.github.io/go/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Music</title>
-      <link>https://allanware.github.io/music/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://allanware.github.io/music/</guid>
-      <description>Playlists  My Favorite Pieces in Classical Music  I took a orchestral music apprecication course, and this playlist(a different one from above) contains the pieces we covered in class (it has better structure in terms of music history and musical periods).   Film Music Songs  Favorites Symphony  Tchaikovsky: Symphony No. 6 in B minor Shostakovich: Symphony No. 5 in D minor Brahms: Symphony No. 1 in C minor Brahms: Symphony No.</description>
+      <guid>https://allanware.github.io/about/book/dh/</guid>
+      <description> [] Gödel, Escher, Bach: an Eternal Golden Braid (1979) [] The Mind’s I: Fantasies and Reflections on Self and Soul (1981) [] Metamagical Themas: Questing for the Essence of Mind and Pattern (1985) [] Fluid Concepts and Creative Analogies (1991) [] Le Ton beau de Marot: In Praise of the Music of Language (1997) [] I Am a Strange Loop (2008) [] Surfaces and Essences: Analogy as the Fuel and Fire of Thinking (2011)  </description>
     </item>
     
     
