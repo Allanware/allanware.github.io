@@ -1,4 +1,0 @@
----
-title: "Film"
-hidemeta: true
----

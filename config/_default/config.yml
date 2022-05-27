@@ -42,3 +42,4 @@ frontmatter:
   - lastmod
   - :git
   - date
+enableGitInfo: true
