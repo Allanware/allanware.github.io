@@ -6,7 +6,6 @@ tags: ['geb', 'logic', 'bach']
 categories: ["book"]
 summary: "Notes for the book: Gödel, Escher, Bach: an Eternal Golden Braid"
 mathjax: true
-draft: true
 cover:
     image: geb.jpeg
     alt: geb

@@ -5,6 +5,7 @@ comments: false
 ---
 
 - [] Gödel, Escher, Bach: an Eternal Golden Braid (1979)
+    - book [notes]({{< ref "posts/Gödel, Escher, Bach/index.md" >}})
 - [] The Mind’s I: Fantasies and Reflections on Self and Soul (1981)
 - [] Metamagical Themas: Questing for the Essence of Mind and Pattern (1985)
 - [] Fluid Concepts and Creative Analogies (1991)

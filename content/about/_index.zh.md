@@ -1,6 +1,4 @@
 ---
 hidemeta: true
-ShowToc: false
-TocOpen: false
-ShowBreadCrumbs: false
+title: 关于我
 ---

@@ -7,5 +7,6 @@ cover:
     alt: read + write
     relative: true
 summary: Books that change and inspire me
+weight: 3
 ---
 - books by [DH](./dh)
