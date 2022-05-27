@@ -2,8 +2,73 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://allanware.github.io/zh/about/film/</loc>
+    <lastmod>2022-05-27T11:27:28-05:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://allanware.github.io/about/film/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="https://allanware.github.io/zh/about/film/"
+                />
+  </url><url>
+    <loc>https://allanware.github.io/zh/about/music/</loc>
+    <lastmod>2022-05-27T11:27:28-05:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://allanware.github.io/about/music/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="https://allanware.github.io/zh/about/music/"
+                />
+  </url><url>
+    <loc>https://allanware.github.io/zh/about/book/</loc>
+    <lastmod>2022-05-27T11:27:28-05:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://allanware.github.io/about/book/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="https://allanware.github.io/zh/about/book/"
+                />
+  </url><url>
+    <loc>https://allanware.github.io/zh/about/football/</loc>
+    <lastmod>2022-05-27T11:27:28-05:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://allanware.github.io/about/football/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="https://allanware.github.io/zh/about/football/"
+                />
+  </url><url>
+    <loc>https://allanware.github.io/zh/about/weiqi/</loc>
+    <lastmod>2022-05-27T11:27:28-05:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://allanware.github.io/about/weiqi/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="https://allanware.github.io/zh/about/weiqi/"
+                />
+  </url><url>
     <loc>https://allanware.github.io/zh/posts/2022/05/2022%E6%9A%91%E6%9C%9F%E4%B9%A6%E5%8D%95/</loc>
-    <lastmod>2022-05-26T16:03:05-05:00</lastmod>
+    <lastmod>2022-05-27T11:27:28-05:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -16,7 +81,7 @@
                 />
   </url><url>
     <loc>https://allanware.github.io/zh/categories/</loc>
-    <lastmod>2022-05-26T16:03:05-05:00</lastmod>
+    <lastmod>2022-05-27T11:27:28-05:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -29,7 +94,7 @@
                 />
   </url><url>
     <loc>https://allanware.github.io/zh/posts/</loc>
-    <lastmod>2022-05-26T16:03:05-05:00</lastmod>
+    <lastmod>2022-05-27T11:27:28-05:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -42,7 +107,7 @@
                 />
   </url><url>
     <loc>https://allanware.github.io/zh/tags/</loc>
-    <lastmod>2022-05-26T16:03:05-05:00</lastmod>
+    <lastmod>2022-05-27T11:27:28-05:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -55,28 +120,28 @@
                 />
   </url><url>
     <loc>https://allanware.github.io/zh/tags/%E6%9F%B4%E5%8F%AF%E5%A4%AB%E6%96%AF%E5%9F%BA/</loc>
-    <lastmod>2022-05-26T16:03:05-05:00</lastmod>
+    <lastmod>2022-05-27T11:27:28-05:00</lastmod>
   </url><url>
     <loc>https://allanware.github.io/zh/tags/%E5%8F%A4%E5%85%B8%E9%9F%B3%E4%B9%90/</loc>
-    <lastmod>2022-05-26T16:03:05-05:00</lastmod>
+    <lastmod>2022-05-27T11:27:28-05:00</lastmod>
   </url><url>
-    <loc>https://allanware.github.io/zh/tags/%E4%BE%AF%E4%B8%96%E9%81%94/</loc>
-    <lastmod>2022-05-26T16:03:05-05:00</lastmod>
+    <loc>https://allanware.github.io/zh/tags/%E4%BE%AF%E4%B8%96%E8%BE%BE/</loc>
+    <lastmod>2022-05-27T11:27:28-05:00</lastmod>
   </url><url>
     <loc>https://allanware.github.io/zh/tags/%E6%8B%89%E8%B5%AB%E6%9B%BC%E5%B0%BC%E8%AF%BA%E5%A4%AB/</loc>
-    <lastmod>2022-05-26T16:03:05-05:00</lastmod>
+    <lastmod>2022-05-27T11:27:28-05:00</lastmod>
   </url><url>
     <loc>https://allanware.github.io/zh/tags/%E9%80%BB%E8%BE%91/</loc>
-    <lastmod>2022-05-26T16:03:05-05:00</lastmod>
+    <lastmod>2022-05-27T11:27:28-05:00</lastmod>
   </url><url>
     <loc>https://allanware.github.io/zh/categories/%E4%B9%A6/</loc>
-    <lastmod>2022-05-26T16:03:05-05:00</lastmod>
+    <lastmod>2022-05-27T11:27:28-05:00</lastmod>
   </url><url>
     <loc>https://allanware.github.io/zh/tags/%E6%96%87%E5%8C%96%E5%A4%A7%E9%9D%A9%E5%91%BD/</loc>
-    <lastmod>2022-05-26T16:03:05-05:00</lastmod>
+    <lastmod>2022-05-27T11:27:28-05:00</lastmod>
   </url><url>
     <loc>https://allanware.github.io/zh/</loc>
-    <lastmod>2022-05-27T11:01:28-05:00</lastmod>
+    <lastmod>2022-05-27T11:27:28-05:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -113,19 +178,6 @@
     <loc>https://allanware.github.io/zh/categories/%E8%B6%B3%E7%90%83/</loc>
     <lastmod>2022-05-26T16:03:05-05:00</lastmod>
   </url><url>
-    <loc>https://allanware.github.io/zh/about/</loc>
-    <lastmod>2022-05-27T11:01:28-05:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://allanware.github.io/about/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh"
-                href="https://allanware.github.io/zh/about/"
-                />
-  </url><url>
     <loc>https://allanware.github.io/zh/archives/</loc>
     <lastmod>2022-05-18T12:21:18-05:00</lastmod>
     <xhtml:link
@@ -139,17 +191,17 @@
                 href="https://allanware.github.io/zh/archives/"
                 />
   </url><url>
-    <loc>https://allanware.github.io/zh/about/film/</loc>
-    <lastmod>2022-05-27T11:01:28-05:00</lastmod>
+    <loc>https://allanware.github.io/zh/about/</loc>
+    <lastmod>2022-05-27T11:27:28-05:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://allanware.github.io/about/film/"
+                href="https://allanware.github.io/about/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh"
-                href="https://allanware.github.io/zh/about/film/"
+                href="https://allanware.github.io/zh/about/"
                 />
   </url><url>
     <loc>https://allanware.github.io/zh/about/book/dh/</loc>
@@ -165,19 +217,6 @@
                 href="https://allanware.github.io/zh/about/book/dh/"
                 />
   </url><url>
-    <loc>https://allanware.github.io/zh/about/book/</loc>
-    <lastmod>2022-05-27T11:01:28-05:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://allanware.github.io/about/book/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh"
-                href="https://allanware.github.io/zh/about/book/"
-                />
-  </url><url>
     <loc>https://allanware.github.io/zh/search/</loc>
     <lastmod>2022-05-18T13:49:34-05:00</lastmod>
     <xhtml:link
@@ -189,45 +228,6 @@
                 rel="alternate"
                 hreflang="zh"
                 href="https://allanware.github.io/zh/search/"
-                />
-  </url><url>
-    <loc>https://allanware.github.io/zh/about/weiqi/</loc>
-    <lastmod>2022-05-27T11:01:28-05:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://allanware.github.io/about/weiqi/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh"
-                href="https://allanware.github.io/zh/about/weiqi/"
-                />
-  </url><url>
-    <loc>https://allanware.github.io/zh/about/music/</loc>
-    <lastmod>2022-05-27T11:01:28-05:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://allanware.github.io/about/music/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh"
-                href="https://allanware.github.io/zh/about/music/"
-                />
-  </url><url>
-    <loc>https://allanware.github.io/zh/about/football/</loc>
-    <lastmod>2022-05-27T11:01:28-05:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://allanware.github.io/about/football/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh"
-                href="https://allanware.github.io/zh/about/football/"
                 />
   </url>
 </urlset>
