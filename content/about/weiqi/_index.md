@@ -1,6 +1,5 @@
 ---
 title: "Weiqi"
-hidemeta: true
 noList: true
 cover:
     image: go.png

@@ -1,6 +1,5 @@
 ---
 title: "Music"
-hidemeta: true
 ShowToc: false
 noList: true
 cover:

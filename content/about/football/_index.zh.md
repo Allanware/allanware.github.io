@@ -1,6 +1,5 @@
 ---
 title: "足球"
-hidemeta: true
 ShowToc: false
 noList: true
 cover:

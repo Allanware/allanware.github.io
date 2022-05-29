@@ -16,6 +16,9 @@ disableSpecial1stPost: false
 ShowToc: true
 TocOpen: false
  
+# the home page will only list pages from mainSections
+mainSections:
+  - posts
 
 homeInfoParams:
   Content: | 

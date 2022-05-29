@@ -1,6 +1,5 @@
 ---
 title: "Football"
-hidemeta: true
 ShowToc: false
 noList: true
 cover:

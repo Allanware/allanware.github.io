@@ -1,6 +1,5 @@
 ---
 title: "围棋"
-hidemeta: true
 noList: true
 cover:
     image: go.png
