@@ -6,7 +6,16 @@
     <description>Recent content on 赵文轩</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Mon, 23 May 2022 13:13:00 -0500</lastBuildDate><atom:link href="https://allanware.github.io/zh/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 27 May 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://allanware.github.io/zh/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>我的top电影(2022-5月版)</title>
+      <link>https://allanware.github.io/zh/posts/2022/05/%E6%88%91%E7%9A%84top%E7%94%B5%E5%BD%B12022-5%E6%9C%88%E7%89%88/</link>
+      <pubDate>Fri, 27 May 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://allanware.github.io/zh/posts/2022/05/%E6%88%91%E7%9A%84top%E7%94%B5%E5%BD%B12022-5%E6%9C%88%E7%89%88/</guid>
+      <description>我极为主观地遴选的给我印象最深的一些电影</description>
+    </item>
+    
     <item>
       <title>2022暑期书单</title>
       <link>https://allanware.github.io/zh/posts/2022/05/2022%E6%9A%91%E6%9C%9F%E4%B9%A6%E5%8D%95/</link>
@@ -25,15 +34,33 @@
       <description>2005年欧冠决赛下半场发生了什么？这篇文章用R语言揭露了集锦与比赛没有展现的细节。</description>
     </item>
     
+    <item>
+      <title></title>
+      <link>https://allanware.github.io/zh/about/book/biography/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://allanware.github.io/zh/about/book/biography/</guid>
+      <description>作曲家  Tchaikovsky: The Quest for the Inner Man Tchaikovsky: The Man Revealed Tchaikovsky: The Man and His Music Sergei Rachmaninoff: A Lifetime in Music Memoirs of Hector Berlioz : From 1803 to 1865, Comprising His Travels in Germany, Italy, Russia, and England  </description>
+    </item>
     
     <item>
-      <title>侯世达</title>
+      <title></title>
+      <link>https://allanware.github.io/zh/about/book/china/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://allanware.github.io/zh/about/book/china/</guid>
+      <description>文化大革命  Mao&amp;rsquo;s last revolution（毛泽东最后的革命） Origins of the Cultural Revolution（文化大革命的起源）  [] Volumn I [] Volumn II [] Volumn III    五四  The May Fourth Movement: Intellectual Revolution in Modern China  经济  置身事内  </description>
+    </item>
+    
+    <item>
+      <title></title>
       <link>https://allanware.github.io/zh/about/book/dh/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://allanware.github.io/zh/about/book/dh/</guid>
-      <description> [] Gödel, Escher, Bach: an Eternal Golden Braid (1979) [] The Mind’s I: Fantasies and Reflections on Self and Soul (1981) [] Metamagical Themas: Questing for the Essence of Mind and Pattern (1985) [] Fluid Concepts and Creative Analogies (1991) [] Le Ton beau de Marot: In Praise of the Music of Language (1997) [] I Am a Strange Loop (2008) [] Surfaces and Essences: Analogy as the Fuel and Fire of Thinking (2011)  </description>
+      <description> Gödel, Escher, Bach: an Eternal Golden Braid (1979) The Mind’s I: Fantasies and Reflections on Self and Soul (1981) Metamagical Themas: Questing for the Essence of Mind and Pattern (1985) Fluid Concepts and Creative Analogies (1991) Le Ton beau de Marot: In Praise of the Music of Language (1997) I Am a Strange Loop (2008) Surfaces and Essences: Analogy as the Fuel and Fire of Thinking (2011)  </description>
     </item>
+    
     
     
   </channel>

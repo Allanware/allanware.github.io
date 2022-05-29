@@ -7,12 +7,30 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language><atom:link href="https://allanware.github.io/about/book/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Douglas Hofstadter</title>
+      <title></title>
+      <link>https://allanware.github.io/about/book/biography/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://allanware.github.io/about/book/biography/</guid>
+      <description>Composers  Tchaikovsky: The Quest for the Inner Man Tchaikovsky: The Man Revealed Tchaikovsky: The Man and His Music Sergei Rachmaninoff: A Lifetime in Music Memoirs of Hector Berlioz : From 1803 to 1865, Comprising His Travels in Germany, Italy, Russia, and England  </description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://allanware.github.io/about/book/china/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://allanware.github.io/about/book/china/</guid>
+      <description>Cultural Revolution  Mao&amp;rsquo;s last revolution Origins of the Cultural Revolution  [] Volumn I [] Volumn II [] Volumn III    May Fourth  The May Fourth Movement: Intellectual Revolution in Modern China  Economics  置身事内  </description>
+    </item>
+    
+    <item>
+      <title></title>
       <link>https://allanware.github.io/about/book/dh/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://allanware.github.io/about/book/dh/</guid>
-      <description> [] Gödel, Escher, Bach: an Eternal Golden Braid (1979)  book notes   [] The Mind’s I: Fantasies and Reflections on Self and Soul (1981) [] Metamagical Themas: Questing for the Essence of Mind and Pattern (1985) [] Fluid Concepts and Creative Analogies (1991) [] Le Ton beau de Marot: In Praise of the Music of Language (1997) [] I Am a Strange Loop (2008) [] Surfaces and Essences: Analogy as the Fuel and Fire of Thinking (2011)  </description>
+      <description> Gödel, Escher, Bach: an Eternal Golden Braid (1979)  book notes   The Mind’s I: Fantasies and Reflections on Self and Soul (1981) Metamagical Themas: Questing for the Essence of Mind and Pattern (1985) Fluid Concepts and Creative Analogies (1991) Le Ton beau de Marot: In Praise of the Music of Language (1997) I Am a Strange Loop (2008) Surfaces and Essences: Analogy as the Fuel and Fire of Thinking (2011)  </description>
     </item>
     
   </channel>
