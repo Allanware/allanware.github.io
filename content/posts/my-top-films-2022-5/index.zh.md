@@ -7,6 +7,7 @@ cover:
     alt: "堕落天使 -- 王家卫"
     relative: true
 summary: 我极为主观地遴选的给我印象最深的一些电影
+slug: top-film-list
 ---
 
 - Cow (2021)
