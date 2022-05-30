@@ -1,6 +1,6 @@
 ---
 title: "电影"
-noList: true
+hybrid: true
 cover:
     image: mulholland_drive.png
     alt: "穆赫兰道"

@@ -1,6 +1,6 @@
 ---
 title: "围棋"
-noList: true
+hybrid: true
 cover:
     image: go.png
     alt: "罗洗河三劫循环"

@@ -1,7 +1,6 @@
 ---
 title: "音乐"
-ShowToc: false
-noList: true
+hybrid: true
 cover:
     image: bird_singing.png
     alt: "a bird that can read and sing"

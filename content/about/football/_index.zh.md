@@ -1,7 +1,6 @@
 ---
 title: "足球"
-ShowToc: false
-noList: true
+hybrid: true
 cover:
     image: FCB.jpg
     alt: "Força Barça"

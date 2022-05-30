@@ -1,6 +1,6 @@
 ---
 title: "Film"
-noList: true
+hybrid: true
 cover:
     image: mulholland_drive.png
     alt: "Mulholland Drive"

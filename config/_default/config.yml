@@ -42,4 +42,11 @@ frontmatter:
   - lastmod
   - :git
   - date
+
 enableGitInfo: true
+
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+

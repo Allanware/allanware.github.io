@@ -1,7 +1,6 @@
 ---
 title: "Music"
-ShowToc: false
-noList: true
+hybrid: true
 cover:
     image: bird_singing.png
     alt: "a bird that can read and sing"
@@ -44,6 +43,7 @@ weight: 2
 
 ## Concerto
 - Rachmaninoff: Piano Concerto No. 2 in C minor
+    - if you are new to classical music, this would be the perfect place to start.
 - Rachmaninoff: Piano Concerto No. 3 in D minor
     - after listening to No. 2, the first few bars alone of No. 3 could excite me.
 - [Beethoven: Piano Concerto No. 5 in E♭ Major]({{< ref "posts/concert-review-2/index.md#piano-concerto-no-5-the-emperor" >}})
@@ -57,8 +57,9 @@ weight: 2
 - Sibelius: Violin Concerto in D minor, Op. 47
 - Saint-Saëns: Violin Concerto No. 3 in B minor
 - Grieg: Piano Concerto in A minor
-- Brahms: Concerto for Violin and Orchestra in D major
+- Brahms: Concerto for Violin and Orchestra in D Major
 - Brahms: Piano Concerto No. 1 in D minor
+- Bruch: Violin Concerto No. 1 in G minor
 
 ## Chamber Music
 - Brahms: Piano Quintet in F minor, Op. 34
@@ -100,6 +101,7 @@ Program Music includes program symphonies, concert overtures, symphonic/tone poe
     - a symphonic intermezzo from the opera Thaïs
 - Purcell: Abdelazer Suite, II Rondeau
 - Stravinsky: The Rite of Spring
+- Ravel: La Valse
 
 ## Suites & Other Orchestra Work 
 The Suites here are more "absolute" than, for example, the suites extracted from an opera or ballet.
@@ -116,6 +118,8 @@ The Suites here are more "absolute" than, for example, the suites extracted from
 - Gershwin: Rhapsody in Blue
     - piano with a jazz band
 - Fauré: Pavane
+- Saint-Saëns: Introduction et Rondo Capriccioso
+- Beethoven: Romance No. 2 In F Major for Violin and Orchestra
 
 ## Instrument Solo
 - Organ: 

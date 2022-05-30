@@ -1,6 +1,6 @@
 ---
 title: "Weiqi"
-noList: true
+hybrid: true
 cover:
     image: go.png
     alt: "Xihe Luo"

@@ -1,7 +1,6 @@
 ---
 title: "书"
-hidemeta: true
-noList: true
+hybrid: true
 cover:
     image: book.jpeg 
     alt: read + write

@@ -26,7 +26,7 @@
   {{- end }} 
   </div>
   <!-- allow list-single hybrid page have access to a translation button-->
-  {{- if (eq (.Param "noList") true) }} 
+  {{- if (eq (.Param "hybrid") true) }} 
   <div class="post-meta">
     {{- partial "translation_list.html" . -}}
   </div>
@@ -55,7 +55,7 @@
 {{- end }}
 
  <!-- only list pages (not list-single hybrid) display a list of posts-->
-{{- if (ne (.Param "noList") true) }}
+{{- if (ne (.Param "hybrid") true) }}
 {{- $term := .Data.Term }}
 {{- range $index, $page := $paginator.Pages }}
 

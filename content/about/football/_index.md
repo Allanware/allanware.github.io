@@ -1,7 +1,6 @@
 ---
 title: "Football"
-ShowToc: false
-noList: true
+hybrid: true
 cover:
     image: FCB.jpg
     alt: "Força Barça"
