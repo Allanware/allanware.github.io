@@ -17,7 +17,7 @@
       <content:encoded><![CDATA[<h2 id="为什么开始写这个博客">为什么开始写这个博客</h2>
 <h3 id="初衷">初衷</h3>
 <ul>
-<li>侯世达一开始只是想写一本关于哥德尔不完备定理的小册子，结果在写的过程中他联想到了巴赫的音乐，艾舍尔的绘画，甚至禅宗。最终这么一本小册子变成了一本巨著：<a href="https://allanware.github.io/zh/posts/2022/05/%E5%93%A5%E5%BE%B7%E5%B0%94%E8%89%BE%E8%88%8D%E5%B0%94%E5%B7%B4%E8%B5%AB-%E9%9B%86%E5%BC%82%E7%92%A7%E4%B9%8B%E5%A4%A7%E6%88%90/#overview">哥德尔, 艾舍尔, 巴赫</a>。他在巴赫的音乐（如<em>音乐的奉献</em>)和艾舍尔的画作里找到了和证明哥德尔不完备定理里一样的元素：一种奇怪的圈。这里就不详述这种圈是什么了，但这种相似，甚至同构的思维方式联结起了三个不同的领域，让我们不禁思考人的意识与智能是不是有一些基本的普遍的元素。例如，我们可以通过类比，建筑同构来达到某种相通，不仅是在不同领域，也在人与人之间。</li>
+<li>侯世达一开始只是想写一本关于哥德尔不完备定理的小册子，结果在写的过程中他联想到了巴赫的音乐，艾舍尔的绘画，甚至禅宗。最终这么一本小册子变成了一本巨著：<a href="https://allanware.github.io/zh/posts/2022/05/g%C3%B6del-escher-bach/#overview">哥德尔, 艾舍尔, 巴赫</a>。他在巴赫的音乐（如<em>音乐的奉献</em>)和艾舍尔的画作里找到了和证明哥德尔不完备定理里一样的元素：一种奇怪的圈。这里就不详述这种圈是什么了，但这种相似，甚至同构的思维方式联结起了三个不同的领域，让我们不禁思考人的意识与智能是不是有一些基本的普遍的元素。例如，我们可以通过类比，建筑同构来达到某种相通，不仅是在不同领域，也在人与人之间。</li>
 <li>所以，我希望在这里不仅单独探索在<a href="https://allanware.github.io/zh/about/">关于</a>里列举的比于谦还多两个的爱好，我更关心的是它们之间的联系，比如我能不能找到有意思的类比甚至同构。比如：
 <ul>
 <li>电影，音乐，以及足球，都是在一个时间线上的前进的艺术形式（我认为足球也是艺术），在每一个时间点上，又有很多因素影响它们。比如电影里，每一个时间点是一个镜头，这个镜头里包含了所有的 Mise en scène（场面调度）。音乐里，每一个时间点都在演奏乐谱里一个或多个音符的音高。足球里，每一个时间点都包含甚至由21个人的无球跑位（他们的场上位置）和持球队员的选择（停传带射）所决定。但单丝不成线，人们感知这三种艺术不是通过一个一个时间点单独感知的，而是连续地，通过当前这个时间点与过去时间点总和之间的的关系（这个关系可能是连续地承接，也可能是强烈的对比，也可能是“令人满足的”结束）来感受它们。</li>
@@ -64,6 +64,7 @@
 <ul>
 <li>我的中文博客的链接是：https://allanware.github.io/zh/index.xml</li>
 <li>我的英文博客的链接是：https://allanware.github.io/index.xml</li>
+<li>注：我的中英文博客内容会有些区别，因为每次只会用一个语言写一篇文章，有时没时间再翻译成另外一种语言，所以有兴趣的话两个都可以（分别）订阅。</li>
 </ul>
 </li>
 </ol>
@@ -241,16 +242,6 @@
 ]]></content:encoded>
     </item>
     
-    <item>
-      <title>哥德尔、艾舍尔、巴赫 —— 集异璧之大成</title>
-      <link>https://allanware.github.io/zh/posts/2022/05/%E5%93%A5%E5%BE%B7%E5%B0%94%E8%89%BE%E8%88%8D%E5%B0%94%E5%B7%B4%E8%B5%AB-%E9%9B%86%E5%BC%82%E7%92%A7%E4%B9%8B%E5%A4%A7%E6%88%90/</link>
-      <pubDate>Thu, 26 May 2022 00:00:00 +0000</pubDate>
-      
-      <guid>https://allanware.github.io/zh/posts/2022/05/%E5%93%A5%E5%BE%B7%E5%B0%94%E8%89%BE%E8%88%8D%E5%B0%94%E5%B7%B4%E8%B5%AB-%E9%9B%86%E5%BC%82%E7%92%A7%E4%B9%8B%E5%A4%A7%E6%88%90/</guid>
-      <description>不好意思，暂时没有中文翻译，以后有时间会补上的。如想浏览英文版可以点击上方的 En。</description>
-      <content:encoded><![CDATA[<p>不好意思，暂时没有中文翻译，以后有时间会补上的。如想浏览英文版可以点击上方的 <ins>En</ins>。</p>
-]]></content:encoded>
-    </item>
     
     <item>
       <title>2022暑期书单</title>
@@ -286,27 +277,7 @@
 ]]></content:encoded>
     </item>
     
-    <item>
-      <title>The Emperor</title>
-      <link>https://allanware.github.io/zh/posts/2022/04/the-emperor/</link>
-      <pubDate>Thu, 28 Apr 2022 23:33:00 -0700</pubDate>
-      
-      <guid>https://allanware.github.io/zh/posts/2022/04/the-emperor/</guid>
-      <description>不好意思，暂时没有中文翻译，以后有时间会补上的。如想浏览英文版可以点击上方的 En。</description>
-      <content:encoded><![CDATA[<p>不好意思，暂时没有中文翻译，以后有时间会补上的。如想浏览英文版可以点击上方的 <ins>En</ins>。</p>
-]]></content:encoded>
-    </item>
     
-    <item>
-      <title>Isle of the Dead</title>
-      <link>https://allanware.github.io/zh/posts/2022/03/isle-of-the-dead/</link>
-      <pubDate>Mon, 28 Mar 2022 23:33:00 -0700</pubDate>
-      
-      <guid>https://allanware.github.io/zh/posts/2022/03/isle-of-the-dead/</guid>
-      <description>不好意思，暂时没有中文翻译，以后有时间会补上的。如想浏览英文版可以点击上方的 En。</description>
-      <content:encoded><![CDATA[<p>不好意思，暂时没有中文翻译，以后有时间会补上的。如想浏览英文版可以点击上方的 <ins>En</ins>。</p>
-]]></content:encoded>
-    </item>
     
     <item>
       <title>伊斯坦布尔奇迹</title>
@@ -657,16 +628,6 @@
 ]]></content:encoded>
     </item>
     
-    <item>
-      <title>Internet Censorship in China</title>
-      <link>https://allanware.github.io/zh/posts/2021/05/internet-censorship-in-china/</link>
-      <pubDate>Tue, 04 May 2021 23:33:00 -0700</pubDate>
-      
-      <guid>https://allanware.github.io/zh/posts/2021/05/internet-censorship-in-china/</guid>
-      <description>不好意思，暂时没有中文翻译，以后有时间会补上的。如想浏览英文版可以点击上方的 En。</description>
-      <content:encoded><![CDATA[<p>不好意思，暂时没有中文翻译，以后有时间会补上的。如想浏览英文版可以点击上方的 <ins>En</ins>。</p>
-]]></content:encoded>
-    </item>
     
   </channel>
 </rss>
