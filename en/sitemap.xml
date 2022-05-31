@@ -3,7 +3,7 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://allanware.github.io/posts/2022/05/a-meta-blog-what-this-blog-is-about/</loc>
-    <lastmod>2022-05-30T18:53:06-05:00</lastmod>
+    <lastmod>2022-05-31T11:41:08-05:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh"
@@ -29,7 +29,7 @@
                 />
   </url><url>
     <loc>https://allanware.github.io/about/music/</loc>
-    <lastmod>2022-05-30T23:44:33-05:00</lastmod>
+    <lastmod>2022-05-31T11:41:08-05:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh"
@@ -81,7 +81,7 @@
                 />
   </url><url>
     <loc>https://allanware.github.io/posts/</loc>
-    <lastmod>2022-05-30T18:53:06-05:00</lastmod>
+    <lastmod>2022-05-31T11:41:08-05:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh"
@@ -94,7 +94,7 @@
                 />
   </url><url>
     <loc>https://allanware.github.io/</loc>
-    <lastmod>2022-05-30T23:44:33-05:00</lastmod>
+    <lastmod>2022-05-31T11:41:08-05:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh"
@@ -121,29 +121,9 @@
   </url><url>
     <loc>https://allanware.github.io/tags/bach/</loc>
     <lastmod>2022-05-26T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh"
-                href="https://allanware.github.io/zh/tags/bach/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://allanware.github.io/tags/bach/"
-                />
   </url><url>
     <loc>https://allanware.github.io/categories/book/</loc>
     <lastmod>2022-05-29T14:11:21-05:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh"
-                href="https://allanware.github.io/zh/categories/book/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://allanware.github.io/categories/book/"
-                />
   </url><url>
     <loc>https://allanware.github.io/categories/</loc>
     <lastmod>2022-05-29T14:11:21-05:00</lastmod>
@@ -160,16 +140,6 @@
   </url><url>
     <loc>https://allanware.github.io/tags/geb/</loc>
     <lastmod>2022-05-26T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh"
-                href="https://allanware.github.io/zh/tags/geb/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://allanware.github.io/tags/geb/"
-                />
   </url><url>
     <loc>https://allanware.github.io/posts/2022/05/g%C3%B6del-escher-bach/</loc>
     <lastmod>2022-05-26T00:00:00+00:00</lastmod>
@@ -186,19 +156,9 @@
   </url><url>
     <loc>https://allanware.github.io/tags/logic/</loc>
     <lastmod>2022-05-29T14:11:21-05:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh"
-                href="https://allanware.github.io/zh/tags/logic/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://allanware.github.io/tags/logic/"
-                />
   </url><url>
     <loc>https://allanware.github.io/tags/</loc>
-    <lastmod>2022-05-29T14:11:21-05:00</lastmod>
+    <lastmod>2022-05-31T11:41:08-05:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh"
@@ -258,9 +218,29 @@
   </url><url>
     <loc>https://allanware.github.io/posts/2022/04/the-emperor/</loc>
     <lastmod>2022-05-26T16:03:05-05:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="https://allanware.github.io/zh/posts/2022/04/the-emperor/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://allanware.github.io/posts/2022/04/the-emperor/"
+                />
   </url><url>
     <loc>https://allanware.github.io/posts/2022/03/isle-of-the-dead/</loc>
     <lastmod>2022-05-20T22:36:18-05:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="https://allanware.github.io/zh/posts/2022/03/isle-of-the-dead/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://allanware.github.io/posts/2022/03/isle-of-the-dead/"
+                />
   </url><url>
     <loc>https://allanware.github.io/tags/kod%C3%A1ly/</loc>
     <lastmod>2022-05-20T22:36:18-05:00</lastmod>
@@ -269,16 +249,26 @@
     <lastmod>2022-05-20T22:36:18-05:00</lastmod>
   </url><url>
     <loc>https://allanware.github.io/tags/censorship/</loc>
-    <lastmod>2022-05-18T20:33:22-05:00</lastmod>
+    <lastmod>2022-05-31T11:41:08-05:00</lastmod>
   </url><url>
     <loc>https://allanware.github.io/tags/china/</loc>
-    <lastmod>2022-05-18T20:33:22-05:00</lastmod>
+    <lastmod>2022-05-31T11:41:08-05:00</lastmod>
   </url><url>
     <loc>https://allanware.github.io/tags/internet/</loc>
-    <lastmod>2022-05-18T20:33:22-05:00</lastmod>
+    <lastmod>2022-05-31T11:41:08-05:00</lastmod>
   </url><url>
     <loc>https://allanware.github.io/posts/2021/05/internet-censorship-in-china/</loc>
-    <lastmod>2022-05-18T20:33:22-05:00</lastmod>
+    <lastmod>2022-05-31T11:41:08-05:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="https://allanware.github.io/zh/posts/2021/05/internet-censorship-in-china/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://allanware.github.io/posts/2021/05/internet-censorship-in-china/"
+                />
   </url><url>
     <loc>https://allanware.github.io/tags/data-visualization/</loc>
     <lastmod>2022-05-26T16:03:05-05:00</lastmod>
