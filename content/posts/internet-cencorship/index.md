@@ -3,7 +3,7 @@ title: Internet Censorship in China
 author: Wenxuan Zhao
 date: 2021-05-04 23:33:00 -0700
 tags: ['censorship', 'china', 'internet']
-summary: I will discuss internet censoring techniques, what types of information are censored specifically in China, and ethical concerns regarding internet censorship in China
+summary: I will discuss internet censoring techniques, what types of information are censored specifically in China, and ethical concerns regarding internet censorship in China.
 ---
 
 ## Abstract 

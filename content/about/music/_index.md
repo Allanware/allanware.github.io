@@ -13,8 +13,23 @@ ShowRssButtonInSectionTermList: false
 # Playlists 
 - My Favorite Pieces in [Classical Music](https://music.apple.com/us/playlist/freiburger-barockorchester-gottfried-von-der-goltz/pl.u-JPAZZK2IJEKZ6X)
     - I took a orchestral music apprecication course, and [this playlist](https://music.apple.com/us/playlist/mus-106-symphonic-music/pl.u-V9D77WNsPEbp8q)(a different one from above) contains the pieces we covered in class (it has better structure in terms of music history and musical periods).
+    - Each piece in the playlists is only a part of the whole work. For example, I usually just choose one movement out of the four or five movements of the whole symphony. I highly recommend that listeners listen the whole thing to have a more wholistic view. To do that, you could click on the three dots on the right side of each piece, and click on **view in apple music**, which will direct you to the album this piece belongs to. 
 - [Film Music](https://music.apple.com/us/playlist/joe-hisaishi-princess-mononoke-original-soundtrack/pl.u-11zBBdouj2oE3x)
 - [Songs](https://music.apple.com/us/playlist/andrea-bocelli-amore/pl.u-JPAZZg3tJEKZ6X)
+
+## If You Could Only Listen To Twelve Pieces
+- Rachmaninoff: Piano Concerto No. 2 in C minor
+- Tchaikovsky: Symphony No. 6 in B minor 
+- Brahms: Symphony No. 1 in C minor
+- Beethoven: Piano Concerto No. 5 in E♭ Major
+- Tchaikovsky: Romeo and Juliet, Fantasy Overture
+- Bach: Suite No. 3 in D Major, BWV 1068
+- Shostakovich: Symphony No. 5 in D minor
+- Dvořák: Symphony No. 9 in E minor
+- Beethoven: Symphony No. 5 in C minor
+- Beethoven: Symphony No. 7 in A Major
+- Mozart: Symphony No. 40 in G minor
+- Rachmaninoff: Songs, Op. 34: Vocalise, No. 14
 
 # Favorites 
 ## Symphony
@@ -41,6 +56,7 @@ ShowRssButtonInSectionTermList: false
 - [Cherubini: Symphony in D Major]({{< ref "posts/concert-review-2/index.md#symphony-in-d-major" >}})
 - Rachmaninoff: Symphony No. 2 in E minor
 - Bartók: Concerto for Orchestra
+- Smetana: The Moldau from Má Vlast
 
 ## Concerto
 - Rachmaninoff: Piano Concerto No. 2 in C minor
@@ -149,6 +165,9 @@ The Suites here are more "absolute" than, for example, the suites extracted from
 - Bach: Mass in B minor, BWV 232
 
 ## Pop Music
-- 我们的爱 by F.I.R
-- 喜欢 by Deserts Chang
+- F.I.R: 我们的爱 
+- Deserts Chang: 喜欢 
 - Vast & Hazy, my favorite Taiwanese band. 
+- Andrea Bocelli & Giorgia: Vivo per lei
+- Sarah Brightman: There for Me
+

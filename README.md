@@ -1,20 +1,6 @@
 ## Updating theme
 - git submodule update --remote --merge
 
-## default front matter
-\---
-title: "{{ replace .Name "-" " " | title }}"
-date: 
-author: Wenxuan Zhao
-tags: ['']
-summary: 
-mathjax: true
-cover:
-    image: 
-    alt: 
-    relative: true
-\---
-
 ## tips 
 - youtube shortcode: `{{< youtube videoid >}}`
 - bilibili shortcode: `{{< bilibili bv-id >}}`

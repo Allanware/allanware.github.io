@@ -23,18 +23,19 @@ weight: 1
 
 ### 能给他人带来什么
 - 如果[关于]({{< ref "about" >}})里有你感兴趣的东西，或者看完[初衷](#初衷)后你也对事物的联系感兴趣，例如为什么有巴萨的比赛看起来像听交响乐这种[说法](https://www.fcbarcelonanoticias.com/en/fc-barcelona/suarez-and-neymar-lead-the-symphony-of-the-barcelona-6-0_35220_102.html)（或者你可以套用你喜欢的球队，皇马也行），为什么会有一首曲子会被一本书、一部电影被一首曲子启发这种事，那以后这里会有更多这方面的东西。
-- 以后我有时间也会分享我的个人经历，希望会对你有来说有点意思，要么是有价值的信息，要么是作为旁观者能拥有一种美学的崇高，即可以不用亲身经历但也可以感受到被生活所“虐”的那种恐惧被宣泄的满足感。
+- 以后我有时间也会分享我的个人经历，希望会对你来说有点意思，要么是有价值的信息，要么是作为旁观者能拥有一种美学的崇高，即可以不用亲身经历但也可以感受到被生活所“虐”的那种恐惧被宣泄的满足感。
 
 ## 订阅
-既然都看到这里了，那就考虑订阅一下吧。我现在在用**RSS feed**的模式来想订阅我的读者推送新的博文。
+既然都看到这里了，那就考虑订阅一下吧。
 - 那么如何订阅呢：
 
-### 方法一
+### 方法一 [RSS feed](https://rss.com/blog/how-do-rss-feeds-work/)
 1. 下载一个 RSS feed reader。
-    - 我个人在手机上下载了一个叫[***inoreader***](https://www.inoreader.com/)的 app。
+    - 我个人在手机上下载了一个叫 [***inoreader***](https://www.inoreader.com/) 的 app。
+    - 我爸在国内苹果区商店下载并且用 ***Ego Reader*** 也成功订阅了。
 2. 注册一个免费账号并登录。
-    - inoreader的免费账号支持订阅不超过150个**RSS feed**。
-3. 添加我的 feed 链接至你的 RSS feed reader。复制以下一个链接
+    - inoreader 的免费账号支持订阅不超过150个 **RSS feed**。
+3. 添加我的 feed 链接至你的 RSS feed reader：复制以下一个链接
     - 我的中文博客的链接是：https://allanware.github.io/zh/index.xml
     - 我的英文博客的链接是：https://allanware.github.io/index.xml
 
@@ -46,7 +47,7 @@ weight: 1
     - 中文博客的链接是：https://allanware.github.io/zh/
     - 英文博客的链接是：https://allanware.github.io/
 2. 添加书签
-    - 在 ios/ipad os的 Safari 浏览器里可以把我的网站添加到主屏幕，使得网站就像一个普通的 app 一样。在 Safari 底部点击分享按钮(五个按钮中中间那个，第一个按钮是后退)，会出现下图：
+    - 例如：在 ios/ipad os的 Safari 底部点击分享按钮(五个按钮中中间那个，第一个按钮是后退)，会出现下图：
     <img src="./add_bookmark.jpg" style="zoom:25%;">
     选项一可以把博客添加到读书列表中，选项二可以添加到书签页中，选项三可以把博客添加到主屏幕中，到时候访问博客就和在主屏幕里点击微信图标访问微信一样。
 
