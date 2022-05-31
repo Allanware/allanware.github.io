@@ -38,6 +38,7 @@ weight: 1
 3. 添加我的 feed 链接至你的 RSS feed reader：复制以下一个链接
     - 我的中文博客的链接是：https://allanware.github.io/zh/index.xml
     - 我的英文博客的链接是：https://allanware.github.io/index.xml
+    - 注：我的中英文博客内容会有些区别，因为每次只会用一个语言写一篇文章，有时没时间再翻译成另外一种语言，所以有兴趣的话两个都可以（分别）订阅。
 
 然后点击加号，然后粘贴链接。<img src="./add_feed.jpg" style="zoom:25%;"> 成功后应该能看到 *Wenxuan Zhao*（或者*赵文轩*如果添加的是中文版）出现在 Feeds 底下。
 4. 添加成功后，每当我一更新博客，它们就会自动出现在 app 里。这样省去了经常在浏览器输入我的网站的麻烦。

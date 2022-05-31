@@ -170,4 +170,4 @@ The Suites here are more "absolute" than, for example, the suites extracted from
 - Vast & Hazy, 我最喜欢的一个台湾乐队. 
 - Andrea Bocelli & Giorgia: Vivo per lei
 - Sarah Brightman: There for Me
-
+- Andrea Bocelli & Cecilia Bartoli: I Believe
