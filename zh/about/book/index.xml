@@ -13,6 +13,15 @@
       
       <guid>https://allanware.github.io/zh/about/book/biography/</guid>
       <description>作曲家  Tchaikovsky: The Quest for the Inner Man Tchaikovsky: The Man Revealed Tchaikovsky: The Man and His Music Sergei Rachmaninoff: A Lifetime in Music Memoirs of Hector Berlioz : From 1803 to 1865, Comprising His Travels in Germany, Italy, Russia, and England  </description>
+      <content:encoded><![CDATA[<h2 id="作曲家">作曲家</h2>
+<ul>
+<li>Tchaikovsky: The Quest for the Inner Man</li>
+<li>Tchaikovsky: The Man Revealed</li>
+<li>Tchaikovsky: The Man and His Music</li>
+<li>Sergei Rachmaninoff: A Lifetime in Music</li>
+<li>Memoirs of Hector Berlioz : From 1803 to 1865, Comprising His Travels in Germany, Italy, Russia, and England</li>
+</ul>
+]]></content:encoded>
     </item>
     
     <item>
@@ -22,6 +31,26 @@
       
       <guid>https://allanware.github.io/zh/about/book/china/</guid>
       <description>文化大革命  Mao&amp;rsquo;s last revolution（毛泽东最后的革命） Origins of the Cultural Revolution（文化大革命的起源）  [] Volumn I [] Volumn II [] Volumn III    五四  The May Fourth Movement: Intellectual Revolution in Modern China  经济  置身事内  </description>
+      <content:encoded><![CDATA[<h2 id="文化大革命">文化大革命</h2>
+<ul>
+<li>Mao&rsquo;s last revolution（毛泽东最后的革命）</li>
+<li>Origins of the Cultural Revolution（文化大革命的起源）
+<ul>
+<li>[] Volumn I</li>
+<li>[] Volumn II</li>
+<li>[] Volumn III</li>
+</ul>
+</li>
+</ul>
+<h2 id="五四">五四</h2>
+<ul>
+<li>The May Fourth Movement: Intellectual Revolution in Modern China</li>
+</ul>
+<h2 id="经济">经济</h2>
+<ul>
+<li>置身事内</li>
+</ul>
+]]></content:encoded>
     </item>
     
     <item>
@@ -31,6 +60,16 @@
       
       <guid>https://allanware.github.io/zh/about/book/dh/</guid>
       <description> Gödel, Escher, Bach: an Eternal Golden Braid (1979) The Mind’s I: Fantasies and Reflections on Self and Soul (1981) Metamagical Themas: Questing for the Essence of Mind and Pattern (1985) Fluid Concepts and Creative Analogies (1991) Le Ton beau de Marot: In Praise of the Music of Language (1997) I Am a Strange Loop (2008) Surfaces and Essences: Analogy as the Fuel and Fire of Thinking (2011)  </description>
+      <content:encoded><![CDATA[<ul>
+<li>Gödel, Escher, Bach: an Eternal Golden Braid (1979)</li>
+<li>The Mind’s I: Fantasies and Reflections on Self and Soul (1981)</li>
+<li>Metamagical Themas: Questing for the Essence of Mind and Pattern (1985)</li>
+<li>Fluid Concepts and Creative Analogies (1991)</li>
+<li>Le Ton beau de Marot: In Praise of the Music of Language (1997)</li>
+<li>I Am a Strange Loop (2008)</li>
+<li>Surfaces and Essences: Analogy as the Fuel and Fire of Thinking (2011)</li>
+</ul>
+]]></content:encoded>
     </item>
     
   </channel>
