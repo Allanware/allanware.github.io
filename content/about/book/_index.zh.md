@@ -7,6 +7,7 @@ cover:
     relative: true
 summary: 
 weight: 3
+ShowRssButtonInSectionTermList: false
 ---
 - [侯世达](dh)
 - [传记与自传](biography)

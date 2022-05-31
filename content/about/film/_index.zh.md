@@ -7,6 +7,7 @@ cover:
     relative: true
 summary: 有些时候我很想藏进电影的影中，但有那么几部总能把我照出来，好让我体验他人人生的同时更加敏锐地感受自己的生活。
 weight: 1
+ShowRssButtonInSectionTermList: false
 ---
 
 ## 我的最top

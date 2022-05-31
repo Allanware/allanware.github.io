@@ -7,6 +7,7 @@ cover:
     relative: true
 summary: Music pieces I absolutely enjoy
 weight: 2
+ShowRssButtonInSectionTermList: false
 ---
 
 # Playlists 

@@ -7,4 +7,5 @@ cover:
     relative: true
 summary: 音乐多么高兴，多么愉快呀！叫人觉得仿佛再稍稍等一会，我们就会懂得我们为什么活着，我们为什么痛苦似的……
 weight: 2
+ShowRssButtonInSectionTermList: false
 ---

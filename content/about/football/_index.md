@@ -7,4 +7,5 @@ cover:
     relative: true
 summary: Força Barça & Football Analysis
 weight: 4
+ShowRssButtonInSectionTermList: false
 ---
