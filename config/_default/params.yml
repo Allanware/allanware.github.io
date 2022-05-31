@@ -3,7 +3,7 @@ title: Wenxuan Zhao
 description: blog, life, Computer Science, Football, soccer, FC Barcelona, China, U.S., Go, Baduk, music, movie, film, book, classical music, concert
 author: Wenxuan Zhao
 
-rssFullContent: true
+ShowFullTextinRSS: true
 
 ShowReadingTime: true
 ShowShareButtons: false
@@ -19,6 +19,8 @@ TocOpen: false
 # the home page will only list pages from mainSections
 mainSections:
   - posts
+
+ShowRssButtonInSectionTermList: true
 
 homeInfoParams:
   Content: | 
@@ -36,6 +38,8 @@ socialIcons:
     url: https://www.linkedin.com/in/allan-wenxuan-zhao
   - name: email
     url: mailto:xiaodoubizwx@gmail.com
+  - name: RSS
+    url: "index.xml"
   # - name: youtube 
   #   url:
   # - name: bilibili 
