@@ -33,16 +33,21 @@ weight: 1
 1. 下载一个 RSS feed reader。
     - 我个人在手机上下载了一个叫 [***inoreader***](https://www.inoreader.com/) 的 app。
     - 我爸在国内苹果区商店下载并且用 ***Ego Reader*** 也成功订阅了。
+    
 2. 注册一个免费账号并登录。
     - inoreader 的免费账号支持订阅不超过150个 **RSS feed**。
+    
 3. 添加我的 feed 链接至你的 RSS feed reader：复制以下一个链接
     - 我的中文博客的链接是：https://allanware.github.io/zh/index.xml
-    - 我的英文博客的链接是：https://allanware.github.io/index.xml
-    - 注：我的中英文博客内容会有些区别，因为每次只会用一个语言写一篇文章，有时没时间再翻译成另外一种语言，所以有兴趣的话两个都可以（分别）订阅。
-
-然后点击加号，然后粘贴链接。<img src="./add_feed.jpg" style="zoom:25%;"> 成功后应该能看到 *Wenxuan Zhao*（或者*赵文轩*如果添加的是中文版）出现在 Feeds 底下。
-4. 添加成功后，每当我一更新博客，它们就会自动出现在 app 里。这样省去了经常在浏览器输入我的网站的麻烦。
     
+    - 我的英文博客的链接是：https://allanware.github.io/index.xml
+    
+    - 注：我的中英文博客内容会有些区别，因为每次只会用一个语言写一篇文章，有时没时间再翻译成另外一种语言，所以有兴趣的话两个都可以（分别）订阅。然后点击加号，然后粘贴链接。<img src="./add_feed.jpg" style="zoom:25%;"> 
+    
+      成功后应该能看到 *Wenxuan Zhao*（或者*赵文轩*如果添加的是中文版）出现在 Feeds 底下。
+
+4. 添加成功后，每当我一更新博客，它们就会自动出现在 app 里。这样省去了经常在浏览器输入我的网站的麻烦。
+   
 ### 方法二
 1. 在手机/平板/电脑浏览器里输入我的主页网址
     - 中文博客的链接是：https://allanware.github.io/zh/
@@ -51,5 +56,4 @@ weight: 1
     - 例如：在 ios/ipad os的 Safari 底部点击分享按钮(五个按钮中中间那个，第一个按钮是后退)，会出现下图：
     <img src="./add_bookmark.jpg" style="zoom:25%;">
     选项一可以把博客添加到读书列表中，选项二可以添加到书签页中，选项三可以把博客添加到主屏幕中，到时候访问博客就和在主屏幕里点击微信图标访问微信一样。
-
 

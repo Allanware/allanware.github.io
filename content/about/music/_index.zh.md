@@ -17,19 +17,22 @@ ShowRssButtonInSectionTermList: false
 - [电影配乐](https://music.apple.com/us/playlist/joe-hisaishi-princess-mononoke-original-soundtrack/pl.u-11zBBdouj2oE3x)
 - [歌](https://music.apple.com/us/playlist/andrea-bocelli-amore/pl.u-JPAZZg3tJEKZ6X)
 
-## 如果你只能听十二首作品
-- Rachmaninoff: Piano Concerto No. 2 in C minor
-- Tchaikovsky: Symphony No. 6 in B minor 
+## 如果你只能听十五首作品
+- [Rachmaninoff: Piano Concerto No. 2 in C minor](https://music.apple.com/us/album/rachmaninov-piano-concerto-no-2-rhapsody-on-a-theme/881633464)
+- [Tchaikovsky: Symphony No. 6 in B minor](https://music.apple.com/us/album/tchaikovsky-symphony-no-6-pathetique/1452579811)
 - Brahms: Symphony No. 1 in C minor
 - Beethoven: Piano Concerto No. 5 in E♭ Major
 - Tchaikovsky: Romeo and Juliet, Fantasy Overture
-- Bach: Suite No. 3 in D Major, BWV 1068
+- Bach: [Suite No. 3 in D Major, BWV 1068](https://music.apple.com/us/album/bach-orchestral-suites/468061801)
 - Shostakovich: Symphony No. 5 in D minor
 - Dvořák: Symphony No. 9 in E minor
 - Beethoven: Symphony No. 5 in C minor
 - Beethoven: Symphony No. 7 in A Major
 - Mozart: Symphony No. 40 in G minor
 - Rachmaninoff: Songs, Op. 34: Vocalise, No. 14
+- Smetana: The Moldau from Má Vlast
+- Tchaikovsky: Piano Concerto No. 1 in B♭ minor
+- Liszt: Hungarian Rhapsody No. 2 in C-sharp minor
 
 # 我的最爱 
 ## 交响乐
@@ -56,7 +59,6 @@ ShowRssButtonInSectionTermList: false
 - [Cherubini: Symphony in D Major]({{< ref "posts/concert-review-2/index.md" >}})
 - Rachmaninoff: Symphony No. 2 in E minor
 - Bartók: Concerto for Orchestra
-- Smetana: The Moldau from Má Vlast
 
 ## 协奏曲
 - Rachmaninoff: Piano Concerto No. 2 in C minor
