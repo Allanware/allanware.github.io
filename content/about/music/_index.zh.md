@@ -17,7 +17,7 @@ ShowRssButtonInSectionTermList: false
 - [电影配乐](https://music.apple.com/us/playlist/joe-hisaishi-princess-mononoke-original-soundtrack/pl.u-11zBBdouj2oE3x)
 - [歌](https://music.apple.com/us/playlist/andrea-bocelli-amore/pl.u-JPAZZg3tJEKZ6X)
 
-## 如果你只能听十五首作品
+## 如果你只能听十六首作品
 - [Rachmaninoff: Piano Concerto No. 2 in C minor](https://music.apple.com/us/album/rachmaninov-piano-concerto-no-2-rhapsody-on-a-theme/881633464)
 - [Tchaikovsky: Symphony No. 6 in B minor](https://music.apple.com/us/album/tchaikovsky-symphony-no-6-pathetique/1452579811)
 - Brahms: Symphony No. 1 in C minor
@@ -28,6 +28,7 @@ ShowRssButtonInSectionTermList: false
 - Dvořák: Symphony No. 9 in E minor
 - Beethoven: Symphony No. 5 in C minor
 - Beethoven: Symphony No. 7 in A Major
+- Beethoven: Symphony No. 9 in D minor
 - Mozart: Symphony No. 40 in G minor
 - Rachmaninoff: Songs, Op. 34: Vocalise, No. 14
 - Smetana: The Moldau from Má Vlast
@@ -121,6 +122,7 @@ Program Music includes program symphonies, concert overtures, symphonic/tone poe
 - Purcell: Abdelazer Suite, II Rondeau
 - Stravinsky: The Rite of Spring
 - Ravel: La Valse
+- Ravel: Daphnis Et Chloé
 
 ## 组曲和其他管弦乐
 The Suites here are more "absolute" than, for example, the suites extracted from an opera or ballet.

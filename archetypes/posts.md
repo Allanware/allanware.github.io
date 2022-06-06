@@ -4,6 +4,7 @@ date: {{ .Date }}
 author: Wenxuan Zhao
 tags: ['']
 summary: 
+draft: true
 cover:
     image: 
     alt: 

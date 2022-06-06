@@ -24,6 +24,3 @@ summary: 2022暑期计划读的书
 
 ## 足球
 - [] Inverted Pyramid
-
-## 电影
-- [] Film Art: an Introduction

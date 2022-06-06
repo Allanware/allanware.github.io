@@ -24,6 +24,3 @@ summary: books to read during summer 2022
 
 ## Football
 - [] Inverted Pyramid
-
-## Film
-- [] Film Art: an Introduction
