@@ -8,6 +8,10 @@ main:
     name: About
     url: /about/
   - weight: 3
+    identifier: life
+    name: Life
+    url: /life/
+  - weight: 4
     identifier: tags
     name: Tags
     url: /tags/

@@ -28,6 +28,7 @@ outputs:
 
 permalinks:
   posts: /posts/:year/:month/:slug/
+  life: /life/:year/:month/:slug/
   pages: /:slug/
 
 taxonomies:
