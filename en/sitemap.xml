@@ -80,9 +80,6 @@
                 href="https://allanware.github.io/about/weiqi/"
                 />
   </url><url>
-    <loc>https://allanware.github.io/tags/classical-music/</loc>
-    <lastmod>2022-06-06T08:45:49-05:00</lastmod>
-  </url><url>
     <loc>https://allanware.github.io/posts/</loc>
     <lastmod>2022-06-06T08:45:49-05:00</lastmod>
     <xhtml:link
@@ -94,22 +91,6 @@
                 rel="alternate"
                 hreflang="en"
                 href="https://allanware.github.io/posts/"
-                />
-  </url><url>
-    <loc>https://allanware.github.io/tags/ravel/</loc>
-    <lastmod>2022-06-06T08:45:49-05:00</lastmod>
-  </url><url>
-    <loc>https://allanware.github.io/tags/</loc>
-    <lastmod>2022-06-06T08:45:49-05:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh"
-                href="https://allanware.github.io/zh/tags/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://allanware.github.io/tags/"
                 />
   </url><url>
     <loc>https://allanware.github.io/</loc>
@@ -124,9 +105,6 @@
                 hreflang="en"
                 href="https://allanware.github.io/"
                 />
-  </url><url>
-    <loc>https://allanware.github.io/posts/2022/06/when-you-wake-up-from-a-bad-dream/</loc>
-    <lastmod>2022-06-06T08:45:49-05:00</lastmod>
   </url><url>
     <loc>https://allanware.github.io/posts/2022/05/my-curation-of-films-as-of-05/2022/</loc>
     <lastmod>2022-05-29T14:11:21-05:00</lastmod>
@@ -179,6 +157,19 @@
     <loc>https://allanware.github.io/tags/logic/</loc>
     <lastmod>2022-06-06T08:45:49-05:00</lastmod>
   </url><url>
+    <loc>https://allanware.github.io/tags/</loc>
+    <lastmod>2022-06-06T08:45:49-05:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="https://allanware.github.io/zh/tags/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://allanware.github.io/tags/"
+                />
+  </url><url>
     <loc>https://allanware.github.io/posts/2022/05/books-to-read-in-summer-2022/</loc>
     <lastmod>2022-06-06T08:45:49-05:00</lastmod>
     <xhtml:link
@@ -208,6 +199,9 @@
     <lastmod>2022-05-26T16:03:05-05:00</lastmod>
   </url><url>
     <loc>https://allanware.github.io/tags/cherubini/</loc>
+    <lastmod>2022-05-26T16:03:05-05:00</lastmod>
+  </url><url>
+    <loc>https://allanware.github.io/tags/classical-music/</loc>
     <lastmod>2022-05-26T16:03:05-05:00</lastmod>
   </url><url>
     <loc>https://allanware.github.io/tags/concert/</loc>
