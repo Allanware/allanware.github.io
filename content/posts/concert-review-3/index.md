@@ -3,6 +3,7 @@ title: "When you wake up from a bad dream"
 date: 2022-06-02T18:32:37-05:00
 author: Wenxuan Zhao
 tags: ['classical music', 'ravel']
+draft: true
 summary: 
 cover:
     image: 
