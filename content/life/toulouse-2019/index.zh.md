@@ -12,10 +12,13 @@ tags: ['']
 ![](id.jpg)
 _当时是去参加在图卢兹举办的 useR!_
 
+[talk的视频](https://www.youtube.com/watch?v=r6nd9cfm2jA&list=PL0pTTgKNw7_ZIf8txy9NIQsugA7u97iW6&ab_channel=RConsortium)
+- 当时门牙还缺了一颗，底下的观众还是很专业的哈哈哈（虽说还是捕捉到了一个底下观众当我开始张嘴时掩饰不住的笑意），包括 Session Chair认真听完还鼓励我说我的 presentation 是整个 session 他听过的最好的。总之，感谢 Norm 对我的信任。
+
 ![](steak.jpg)
 
 ![](stick.jpg)
-_家乐福里有几十种不同的法棍，还都特别便宜，我买了根后实在咬不动（而且当时门牙也因为某些众所周知的原因休假了）_
+_家乐福里有几十种不同的法棍，还都特别便宜，我买了根后实在咬不动（而且当时门牙也因为某些原因留在美国休假，不愿意跟过来）_
 
 ![](bridge.jpg)
 

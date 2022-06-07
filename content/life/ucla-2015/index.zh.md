@@ -7,6 +7,6 @@ showReadingTime: false
 hideSummary: true
 tags: ['']
 ---
-
+这段不用急着记下来，我暂时还都记得。
 ![](ucla-id.jpg)
 ![](piero.jpg)
