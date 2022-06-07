@@ -13,7 +13,7 @@ tags: ['度假', '法国', '希腊神话', 'R语言', '乐器']
 _当时是去参加在图卢兹举办的 useR!_
 
 [talk的视频](https://www.youtube.com/watch?v=r6nd9cfm2jA&list=PL0pTTgKNw7_ZIf8txy9NIQsugA7u97iW6&ab_channel=RConsortium)
-- 当时门牙还缺了一颗，底下的观众还是很专业的哈哈哈（虽说还是捕捉到了一个底下观众当我开始张嘴时掩饰不住的笑意），包括 Session Chair认真听完还鼓励我说我的 presentation 是整个 session 他听过的最好的。总之，感谢 Norm 对我的信任。
+- 当时门牙还缺了一颗，底下的观众还是很专业的哈哈哈（虽说还是捕捉到了一个底下观众当我开始张嘴时掩饰不住的笑意），包括 Session Chair 认真听完还鼓励我说我的 talk 是整个 session 他认为最好的。总之，感谢 Norm 对我的信任。
 
 ![](steak.jpg)
 
