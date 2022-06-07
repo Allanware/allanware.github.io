@@ -5,7 +5,7 @@ author: 赵文轩
 hideMeta: true
 showReadingTime: false
 hideSummary: true
-tags: ['']
+tags: ['生活']
 ---
 ![](gas.png)
 _惊人_

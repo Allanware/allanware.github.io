@@ -5,7 +5,7 @@ author: 赵文轩
 hideMeta: true
 hideSummary: true
 showReadingTime: false
-tags: ['']
+tags: ['性格']
 ---
 ![](personality.jpeg)
 > Mediator personalities are true idealists, always looking for the hint of good in even the worst of people and events, searching for ways to make things better. While they may be perceived as calm, reserved, or even shy, Mediators have an inner flame and passion that can truly shine. Comprising just 4% of the population, the risk of feeling misunderstood is unfortunately high for the Mediator personality type – but when they find like-minded people to spend their time with, the harmony they feel will be a fountain of joy and inspiration.

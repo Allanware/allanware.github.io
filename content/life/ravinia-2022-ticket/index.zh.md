@@ -5,7 +5,7 @@ author: 赵文轩
 hideMeta: true
 showReadingTime: false
 hideSummary: true
-tags: ['']
+tags: ['古典音乐']
 ---
 已经买了下面场次的票： 
 - Emerson String Quartet (Tue 6/28/2022 7:30 PM)

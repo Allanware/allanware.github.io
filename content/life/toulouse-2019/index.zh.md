@@ -5,7 +5,7 @@ author: 赵文轩
 hideMeta: true
 showReadingTime: false
 hideSummary: true
-tags: ['']
+tags: ['度假', '法国', '希腊神话', 'R语言']
 ---
 第一次落脚欧洲，就到了法国第五大城市（本地人宣称第四大）的城市图卢兹。我环绕着这个城市走了几圈（因为Google Map显示不出当地公交和城铁线路），逐渐确信，城市不一定越大越好，这种走路横穿只需要两个小时的大小最合适。
 

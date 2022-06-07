@@ -5,7 +5,7 @@ author: 赵文轩
 hideMeta: true
 hideSummary: true
 showReadingTime: false
-tags: ['']
+tags: ['鸟', '麦迪逊']
 ---
 ![bird_at_rail](bird_rail.jpg) 
 > Does it sit erect with its tail straight down like a prim little prig, or does it hold its tail up, like it thinks it is better than everybody? Does it dart around on the ground endlessly like an excitable idiot, or does it waste everyone’s time perching and singing all day? The behavior of a bird can tell you a lot about what kind of asshole you’re dealing with —— Kracht, Matt. *The Field Guide to Dumb Birds of North America* (p. 19). 

@@ -5,6 +5,6 @@ author: 赵文轩
 hideMeta: true
 hideSummary: true
 showReadingTime: false
-tags: ['']
+tags: ['钢琴', '音乐']
 ---
 ![](piano.jpg)

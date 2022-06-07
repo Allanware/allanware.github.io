@@ -5,7 +5,7 @@ author: 赵文轩
 hideMeta: true
 showReadingTime: false
 hideSummary: true
-tags: ['']
+tags: ['塔霍湖', '度假', '野营']
 ---
 感谢某位不知愿不愿意透露姓名的室友的招待，我在麦迪逊与戴维斯近乎足不出户一年后能够在 Lake Tahoe 修养三个月。在我从机场到Tahoe的出租车里司机就预言这一次的旅途将改变我的一生，我觉得他是对的。
 ![](lake.jpg)

@@ -5,7 +5,7 @@ author: 赵文轩
 hideMeta: true
 showReadingTime: false
 hideSummary: true
-tags: ['']
+tags: ['纽约', '王家卫', '画', '吃的', '度假']
 ---
 纽约是迄今为止全世界唯一一个能满足一个人所有想象力的城市。
 ![](light.jpg)
