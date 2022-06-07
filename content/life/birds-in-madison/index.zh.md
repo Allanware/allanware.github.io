@@ -15,5 +15,8 @@ _Field Day 1, lesson 1：不要在这里转悠_
 
 ![](couple.jpg)
 
+![](turkey.jpg)
+_今天火鸡帮不上房顶了，活动改为占道与围攻我_
+
 ![](body.jpg)
-_安静地离去_
+_在 Memorial Library 前安静地离去_

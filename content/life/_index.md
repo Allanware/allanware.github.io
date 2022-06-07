@@ -1,4 +1,4 @@
 ---
-title: Latest
+title: life
 ShowRssButtonInSectionTermList: false
 ---
