@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>电影 on 赵文轩</title>
-    <link>https://allanware.github.io/zh/tags/%E7%94%B5%E5%BD%B1/</link>
-    <description>Recent content in 电影 on 赵文轩</description>
+    <title>博客 on 赵文轩</title>
+    <link>https://allanware.github.io/zh/tags/%E5%8D%9A%E5%AE%A2/</link>
+    <description>Recent content in 博客 on 赵文轩</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Mon, 30 May 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://allanware.github.io/zh/tags/%E7%94%B5%E5%BD%B1/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 30 May 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://allanware.github.io/zh/tags/%E5%8D%9A%E5%AE%A2/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>写在之前，我的初衷【置顶】</title>
       <link>https://allanware.github.io/zh/posts/2022/05/%E5%86%99%E5%9C%A8%E4%B9%8B%E5%89%8D%E6%88%91%E7%9A%84%E5%88%9D%E8%A1%B7%E7%BD%AE%E9%A1%B6/</link>
@@ -102,36 +102,6 @@
 独立博客就类似于这么一个载体，而且我认为未来随着技术发展可能又会回归于上世纪90年代到本世纪初的这么一种形式，相比于现在我们都用这么一个记载着几十亿人生活的集中式的数据库。比如，可以一个电话部署自己的服务器，以及一键部署自己的博客（现在也都有类似的服务，只不过要不对新手不太友好，要不是太模版化用户控制不够，还有就是还是太中心化），而不是像二三十年前只有精英才有能力部署自己的网站。</li>
 </ol>
 </li>
-</ul>
-]]></content:encoded>
-    </item>
-    
-    <item>
-      <title>2022暑期书单</title>
-      <link>https://allanware.github.io/zh/posts/2022/05/2022%E6%9A%91%E6%9C%9F%E4%B9%A6%E5%8D%95/</link>
-      <pubDate>Mon, 23 May 2022 13:13:00 -0500</pubDate>
-      
-      <guid>https://allanware.github.io/zh/posts/2022/05/2022%E6%9A%91%E6%9C%9F%E4%B9%A6%E5%8D%95/</guid>
-      <description>2022暑期计划读的书</description>
-      <content:encoded><![CDATA[<h2 id="无法归类的">无法归类的</h2>
-<ul>
-<li>[] GEB (1979)
-<ul>
-<li>An Introduction to Formal Logic</li>
-<li>Gödel Without (Too Many) Tears</li>
-<li>An Introduction to Gödel&rsquo;s Theorems</li>
-</ul>
-</li>
-</ul>
-<h2 id="音乐">音乐</h2>
-<ul>
-<li>[] The Aesthetics of Music</li>
-<li>[] The Complete Idiot&rsquo;s Guide to Music Theory, 3E</li>
-<li>[] The Complete Idiot’s Guide to Music Composition</li>
-</ul>
-<h2 id="足球">足球</h2>
-<ul>
-<li>[] Inverted Pyramid</li>
 </ul>
 ]]></content:encoded>
     </item>

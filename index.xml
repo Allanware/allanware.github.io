@@ -59,27 +59,6 @@
     </item>
     
     <item>
-      <title>Gödel, Escher, Bach</title>
-      <link>https://allanware.github.io/posts/2022/05/g%C3%B6del-escher-bach/</link>
-      <pubDate>Thu, 26 May 2022 00:00:00 +0000</pubDate>
-      
-      <guid>https://allanware.github.io/posts/2022/05/g%C3%B6del-escher-bach/</guid>
-      <description>Notes for the book: Gödel, Escher, Bach: an Eternal Golden Braid</description>
-      <content:encoded><![CDATA[<h2 id="overview">Overview</h2>
-<h2 id="introduction">Introduction</h2>
-<h2 id="chapter-i-the-mu-puzzle">Chapter I: The MU-puzzle</h2>
-<h3 id="three-part-invention">Three-Part Invention</h3>
-<h2 id="chapter-ii-meaning-and-form-in-mathematics">Chapter II: Meaning and Form in Mathematics</h2>
-<h3 id="two-part-invention">Two-Part Invention</h3>
-<h2 id="resources-on-geb">Resources on GEB</h2>
-<ul>
-<li>the <a href="https://godel-escher-bach.fandom.com/wiki/G%C3%B6del,_Escher,_Bach_Wiki">fandom wiki</a></li>
-<li>a <a href="https://ocw.mak.ac.ug/high-school/humanities-and-social-sciences/godel-escher-bach/index.htm">course on GEB</a> developed by MIT undergrads for talented high-schoolers.</li>
-</ul>
-]]></content:encoded>
-    </item>
-    
-    <item>
       <title>Books to Read in Summer 2022</title>
       <link>https://allanware.github.io/posts/2022/05/books-to-read-in-summer-2022/</link>
       <pubDate>Mon, 23 May 2022 13:13:00 -0500</pubDate>
@@ -837,13 +816,9 @@ whole team.</li>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://allanware.github.io/about/book/dh/</guid>
-      <description> Gödel, Escher, Bach: an Eternal Golden Braid (1979) book notes The Mind’s I: Fantasies and Reflections on Self and Soul (1981) Metamagical Themas: Questing for the Essence of Mind and Pattern (1985) Fluid Concepts and Creative Analogies (1991) Le Ton beau de Marot: In Praise of the Music of Language (1997) I Am a Strange Loop (2008) Surfaces and Essences: Analogy as the Fuel and Fire of Thinking (2011) </description>
+      <description> Gödel, Escher, Bach: an Eternal Golden Braid (1979) The Mind’s I: Fantasies and Reflections on Self and Soul (1981) Metamagical Themas: Questing for the Essence of Mind and Pattern (1985) Fluid Concepts and Creative Analogies (1991) Le Ton beau de Marot: In Praise of the Music of Language (1997) I Am a Strange Loop (2008) Surfaces and Essences: Analogy as the Fuel and Fire of Thinking (2011) </description>
       <content:encoded><![CDATA[<ul>
-<li>Gödel, Escher, Bach: an Eternal Golden Braid (1979)
-<ul>
-<li>book <a href="https://allanware.github.io/posts/2022/05/g%C3%B6del-escher-bach/">notes</a></li>
-</ul>
-</li>
+<li>Gödel, Escher, Bach: an Eternal Golden Braid (1979)</li>
 <li>The Mind’s I: Fantasies and Reflections on Self and Soul (1981)</li>
 <li>Metamagical Themas: Questing for the Essence of Mind and Pattern (1985)</li>
 <li>Fluid Concepts and Creative Analogies (1991)</li>
