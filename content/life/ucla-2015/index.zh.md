@@ -9,6 +9,7 @@ tags: ['足球']
 ---
 
 ![](ucla-id.jpg)
+_个人感觉这7年来长相没啥变化🐶（非常愿意 confirm 的一个 asian stereotype_
 
 ![](piero.jpg)
 _小梅西和皮耶罗_

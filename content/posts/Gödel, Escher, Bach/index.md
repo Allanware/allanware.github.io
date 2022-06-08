@@ -6,6 +6,7 @@ tags: ['geb', 'logic', 'bach']
 categories: ["book"]
 summary: "Notes for the book: Gödel, Escher, Bach: an Eternal Golden Braid"
 mathjax: true
+draft: true
 cover:
     image: geb.jpeg
     alt: geb
@@ -25,3 +26,5 @@ cover:
 ## Resources on GEB
 - the [fandom wiki](https://godel-escher-bach.fandom.com/wiki/G%C3%B6del,_Escher,_Bach_Wiki)
 - a [course on GEB](https://ocw.mak.ac.ug/high-school/humanities-and-social-sciences/godel-escher-bach/index.htm) developed by MIT undergrads for talented high-schoolers. 
+
+({{< ref "posts/Gödel, Escher, Bach/index.md#overview" >}})
