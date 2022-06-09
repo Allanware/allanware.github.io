@@ -9,3 +9,5 @@ summary: 人生如棋，如何取舍厚势与实地，如何不急又不缓。
 weight: 5
 ShowRssButtonInSectionTermList: false
 ---
+
+[棋具]({{< ref "life/go-board-2020/index.zh.md" >}})

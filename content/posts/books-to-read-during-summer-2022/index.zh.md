@@ -3,7 +3,6 @@ title: 2022暑期书单
 author: 赵文轩
 date: 2022-05-23 13:13:00 -0500
 tags: ['侯世达', '逻辑', '音乐', '足球','电影']
-categories: ['书']
 summary: 2022暑期计划读的书
 # cover:
 #     image: drawing-hands.jpg

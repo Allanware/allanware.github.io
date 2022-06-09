@@ -3,7 +3,6 @@ title: Gödel, Escher, Bach
 author: Wenxuan Zhao
 date: "2022-05-26"
 tags: ['geb', 'logic', 'bach']
-categories: ["book"]
 summary: "Notes for the book: Gödel, Escher, Bach: an Eternal Golden Braid"
 mathjax: true
 draft: true

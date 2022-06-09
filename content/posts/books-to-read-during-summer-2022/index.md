@@ -3,7 +3,6 @@ title: Books to Read in Summer 2022
 author: Wenxuan Zhao
 date: 2022-05-23 13:13:00 -0500
 tags: ['douglas hofstadter', 'logic', 'music', 'football', 'film']
-categories: ['book']
 summary: books to read during summer 2022
 # cover:
 #     image: drawing-hands.jpg

@@ -12,3 +12,6 @@ ShowRssButtonInSectionTermList: false
 
 ## 我的最top
 - [2022-5]({{< ref "posts/my-top-films-2022-5/index.zh.md" >}})
+
+## 电影节
+- [威斯康星电影节 —— 2022]({{< ref "life/wff-2022/index.zh.md" >}})
