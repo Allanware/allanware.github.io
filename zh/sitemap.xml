@@ -29,7 +29,7 @@
                 />
   </url><url>
     <loc>https://allanware.github.io/zh/about/music/</loc>
-    <lastmod>2022-06-06T08:45:49-05:00</lastmod>
+    <lastmod>2022-06-13T11:32:52-05:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -81,7 +81,7 @@
                 />
   </url><url>
     <loc>https://allanware.github.io/zh/tags/</loc>
-    <lastmod>2022-06-10T13:21:54-05:00</lastmod>
+    <lastmod>2022-06-13T11:32:52-05:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -103,7 +103,7 @@
     <lastmod>2022-06-10T13:21:54-05:00</lastmod>
   </url><url>
     <loc>https://allanware.github.io/zh/</loc>
-    <lastmod>2022-06-11T02:22:18-05:00</lastmod>
+    <lastmod>2022-06-13T11:32:52-05:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -119,13 +119,13 @@
     <lastmod>2022-06-10T13:21:54-05:00</lastmod>
   </url><url>
     <loc>https://allanware.github.io/zh/tags/%E5%8F%A4%E5%85%B8%E4%B9%90/</loc>
-    <lastmod>2022-06-10T13:21:54-05:00</lastmod>
+    <lastmod>2022-06-13T11:32:52-05:00</lastmod>
   </url><url>
     <loc>https://allanware.github.io/zh/life/2022/06/09/%E8%80%81%E6%9F%B4%E6%82%B2%E6%80%86%E7%9A%84%E4%B8%8D%E5%90%8C%E7%89%88%E6%9C%AC/</loc>
     <lastmod>2022-06-10T13:21:54-05:00</lastmod>
   </url><url>
     <loc>https://allanware.github.io/zh/life/2022/06/08/%E6%88%91%E7%9A%84%E7%90%83%E8%A1%A3-2022/</loc>
-    <lastmod>2022-06-09T16:10:57-05:00</lastmod>
+    <lastmod>2022-06-13T11:32:52-05:00</lastmod>
   </url><url>
     <loc>https://allanware.github.io/zh/life/2022/06/06/%E7%A9%BF%E8%B6%8A%E6%97%B6%E7%A9%BA%E7%9A%84%E4%B8%80%E5%B9%85%E7%94%BB/</loc>
     <lastmod>2022-06-06T23:47:35-05:00</lastmod>
@@ -377,7 +377,7 @@
                 />
   </url><url>
     <loc>https://allanware.github.io/zh/about/book/china/</loc>
-    <lastmod>2022-05-31T13:44:24-05:00</lastmod>
+    <lastmod>2022-06-13T11:32:52-05:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -427,6 +427,19 @@
                 href="https://allanware.github.io/zh/categories/"
                 />
   </url><url>
+    <loc>https://allanware.github.io/zh/about/music/classical/</loc>
+    <lastmod>2022-06-13T11:32:52-05:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://allanware.github.io/about/music/classical/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="https://allanware.github.io/zh/about/music/classical/"
+                />
+  </url><url>
     <loc>https://allanware.github.io/zh/about/</loc>
     <lastmod>2022-05-30T23:44:33-05:00</lastmod>
     <xhtml:link
@@ -438,6 +451,22 @@
                 rel="alternate"
                 hreflang="zh"
                 href="https://allanware.github.io/zh/about/"
+                />
+  </url><url>
+    <loc>https://allanware.github.io/zh/tags/%E6%B5%81%E8%A1%8C%E4%B9%90/</loc>
+    <lastmod>2022-06-13T11:32:52-05:00</lastmod>
+  </url><url>
+    <loc>https://allanware.github.io/zh/about/music/pop/</loc>
+    <lastmod>2022-06-13T11:32:52-05:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://allanware.github.io/about/music/pop/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="https://allanware.github.io/zh/about/music/pop/"
                 />
   </url><url>
     <loc>https://allanware.github.io/zh/search/</loc>

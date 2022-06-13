@@ -29,7 +29,7 @@
                 />
   </url><url>
     <loc>https://allanware.github.io/about/music/</loc>
-    <lastmod>2022-06-06T08:45:49-05:00</lastmod>
+    <lastmod>2022-06-13T11:32:52-05:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh"
@@ -94,7 +94,7 @@
                 />
   </url><url>
     <loc>https://allanware.github.io/</loc>
-    <lastmod>2022-06-09T16:10:57-05:00</lastmod>
+    <lastmod>2022-06-13T11:32:52-05:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh"
@@ -161,7 +161,7 @@
     <lastmod>2022-06-09T16:10:57-05:00</lastmod>
   </url><url>
     <loc>https://allanware.github.io/tags/</loc>
-    <lastmod>2022-06-09T16:10:57-05:00</lastmod>
+    <lastmod>2022-06-13T11:32:52-05:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh"
@@ -180,7 +180,7 @@
     <lastmod>2022-06-09T16:10:57-05:00</lastmod>
   </url><url>
     <loc>https://allanware.github.io/tags/classical-music/</loc>
-    <lastmod>2022-06-09T16:10:57-05:00</lastmod>
+    <lastmod>2022-06-13T11:32:52-05:00</lastmod>
   </url><url>
     <loc>https://allanware.github.io/tags/concert/</loc>
     <lastmod>2022-06-09T16:10:57-05:00</lastmod>
@@ -341,6 +341,19 @@
                 href="https://allanware.github.io/categories/"
                 />
   </url><url>
+    <loc>https://allanware.github.io/about/music/classical/</loc>
+    <lastmod>2022-06-13T11:32:52-05:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="https://allanware.github.io/zh/about/music/classical/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://allanware.github.io/about/music/classical/"
+                />
+  </url><url>
     <loc>https://allanware.github.io/life/</loc>
     <lastmod>2022-06-06T22:31:01-05:00</lastmod>
     <xhtml:link
@@ -353,6 +366,22 @@
                 hreflang="en"
                 href="https://allanware.github.io/life/"
                 />
+  </url><url>
+    <loc>https://allanware.github.io/about/music/pop/</loc>
+    <lastmod>2022-06-13T11:32:52-05:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="https://allanware.github.io/zh/about/music/pop/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://allanware.github.io/about/music/pop/"
+                />
+  </url><url>
+    <loc>https://allanware.github.io/tags/pop-music/</loc>
+    <lastmod>2022-06-13T11:32:52-05:00</lastmod>
   </url><url>
     <loc>https://allanware.github.io/search/</loc>
     <lastmod>2022-05-18T13:49:34-05:00</lastmod>
