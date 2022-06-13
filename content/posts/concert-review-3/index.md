@@ -35,5 +35,5 @@ Daphnis et Chloe Suite No. 1: a suite that starts from the entry of 3 nymphs (in
 
 Daphnis et Chloe Suite No. 2: includes the whole part III. It starts from Daybreak, when Pan rescues Chloe and brings her back to Daphnis when he starts to recover from the bad dream: flute, clarinet, celesta, and harp portray 海边初晓（因为故事发生的地点在细浪一个岛上）的波光粼粼。piccolo and strings that imitates bird songs that signify the coming of a new day and anything bad will end. After that 一段非常美好的段落 （因为牧羊人小伙伴们发现chloe回来了），然后他们四处寻找dalphnis，接着一个 Tristan Chord （激动，因为找到了昏迷在地的达芙妮）, then a sad waltz that sounds agitated, then we finally again hear the complete version of the theme of the Daphnis and Chloe.
 
-On June 3rd, CSO will play the whole thing, the [*Daphnis and Chloe, Choreographic Symphony in Three Parts*](https://en.wikipedia.org/wiki/Daphnis_et_Chlo%C3%A9)
+
 
