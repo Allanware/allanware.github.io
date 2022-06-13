@@ -9,6 +9,7 @@ ShowReadingTime: true
 ShowShareButtons: false
 ShowCodeCopyButtons: true
 ShowPostNavLinks: true
+ShowReadingTime: false
 ShowBreadCrumbs: true
 comments: true
 defaultTheme: auto
