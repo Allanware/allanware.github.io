@@ -1,4 +1,5 @@
 ---
-title: 碎片
 ShowRssButtonInSectionTermList: false
+layout: archives
+issection: true
 ---
