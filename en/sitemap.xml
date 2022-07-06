@@ -94,7 +94,7 @@
                 />
   </url><url>
     <loc>https://allanware.github.io/</loc>
-    <lastmod>2022-06-13T11:32:52-05:00</lastmod>
+    <lastmod>2022-07-06T11:18:51-05:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh"
@@ -316,6 +316,19 @@
                 href="https://allanware.github.io/archives/"
                 />
   </url><url>
+    <loc>https://allanware.github.io/life/</loc>
+    <lastmod>2022-07-06T11:18:51-05:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="https://allanware.github.io/zh/life/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://allanware.github.io/life/"
+                />
+  </url><url>
     <loc>https://allanware.github.io/about/</loc>
     <lastmod>2022-05-30T23:44:33-05:00</lastmod>
     <xhtml:link
@@ -352,19 +365,6 @@
                 rel="alternate"
                 hreflang="en"
                 href="https://allanware.github.io/about/music/classical/"
-                />
-  </url><url>
-    <loc>https://allanware.github.io/life/</loc>
-    <lastmod>2022-06-06T22:31:01-05:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh"
-                href="https://allanware.github.io/zh/life/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://allanware.github.io/life/"
                 />
   </url><url>
     <loc>https://allanware.github.io/about/music/pop/</loc>

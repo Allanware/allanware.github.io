@@ -100,7 +100,7 @@
     <lastmod>2022-07-05T14:12:49-05:00</lastmod>
   </url><url>
     <loc>https://allanware.github.io/zh/</loc>
-    <lastmod>2022-07-05T14:12:49-05:00</lastmod>
+    <lastmod>2022-07-06T11:18:51-05:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -439,6 +439,19 @@
                 href="https://allanware.github.io/zh/archives/"
                 />
   </url><url>
+    <loc>https://allanware.github.io/zh/life/</loc>
+    <lastmod>2022-07-06T11:18:51-05:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://allanware.github.io/life/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="https://allanware.github.io/zh/life/"
+                />
+  </url><url>
     <loc>https://allanware.github.io/zh/categories/</loc>
     <xhtml:link
                 rel="alternate"
@@ -504,19 +517,6 @@
                 rel="alternate"
                 hreflang="zh"
                 href="https://allanware.github.io/zh/search/"
-                />
-  </url><url>
-    <loc>https://allanware.github.io/zh/life/</loc>
-    <lastmod>2022-06-06T22:31:01-05:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://allanware.github.io/life/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh"
-                href="https://allanware.github.io/zh/life/"
                 />
   </url>
 </urlset>
