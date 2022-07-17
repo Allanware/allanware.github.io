@@ -10,6 +10,7 @@ tags: ['Classical Music']
 - Brahms: Symphony No. 1 in C minor
 - Beethoven: Piano Concerto No. 5 in E♭ Major
 - Tchaikovsky: Romeo and Juliet, Fantasy Overture
+- Rimsky-Korsakov: Scheherazade
 - Bach: [Suite No. 3 in D Major, BWV 1068](https://music.apple.com/us/album/bach-orchestral-suites/468061801)
 - Shostakovich: Symphony No. 5 in D minor
 - Dvořák: Symphony No. 9 in E minor
@@ -110,6 +111,7 @@ Program Music includes program symphonies, concert overtures, symphonic/tone poe
 - Stravinsky: The Rite of Spring
 - Ravel: La Valse
 - Ravel: Daphnis Et Chloé
+- Rimsky-Korsakov: Scheherazade
 
 ## Suites & Other Orchestra Work 
 The Suites here are more "absolute" than, for example, the suites extracted from an opera or ballet.
