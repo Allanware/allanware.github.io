@@ -10,6 +10,9 @@ weight: 1
 ShowRssButtonInSectionTermList: false
 ---
 
+# 我的影单
+- [想看的+看过的觉得好的](https://docs.google.com/spreadsheets/d/1jecIg_Hea86qZ5zfkCSspv3I22xylVf-Dow2sPju14w/edit?usp=sharing)
+
 ## 我的最top
 - [2022-5]({{< ref "posts/my-top-films-2022-5/index.zh.md" >}})
 
