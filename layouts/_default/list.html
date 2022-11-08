@@ -54,10 +54,12 @@
 {{- partial "home_info.html" . }}
 {{- end }}
 
- <!-- only list pages (not list-single hybrid) display a list of posts-->
+ <!-- only (non-hybrid) list layout (not list-single hybrid) can display a list of posts-->
 {{- if (ne (.Param "hybrid") true) }}
 {{- $term := .Data.Term }}
-{{- range $index, $page := $paginator.Pages }}
+
+<!-- not list pages that specify unlist=true in the header -->
+{{- range $index, $page := where ($paginator.Pages) ".Params.unlisted" "!=" "true" }}
 
 {{- $class := "post-entry" }}
 

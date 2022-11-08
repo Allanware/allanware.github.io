@@ -2,10 +2,10 @@
 title: Isle of the Dead
 date: 2022-03-28 23:33:00 -0700
 author: 赵文轩
-draft: true
 tags: ['']
 summary: 
 ExcludeFromRss: true
+unlisted: true
 # cover:
 #     image: isle_of_the_dead_bw.jpeg
 #     alt: Isle of the dead 
