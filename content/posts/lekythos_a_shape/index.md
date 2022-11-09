@@ -6,8 +6,8 @@ tags: ['Greek', 'Pottery']
 summary: This paper investigates the way ancient Greek associated the word (λήκυθος and its variants, the English equivalent is the word Lekythos) with the various shapes and functions of certain containers. 
 
 cover:
-    image: 
-    alt: 
+    image: cover.png
+    alt: The Birth of Dionysos (in MFA)
     relative: true
 ---
 
