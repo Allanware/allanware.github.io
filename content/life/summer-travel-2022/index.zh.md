@@ -88,4 +88,34 @@ __热身的贝尔__
 ## Zion 国家公园 (8/4 - 8/5)
 凌晨到 Vegas 后就睡了一觉，第二天去机场附近取了租的车就上路了去 Zion 国家公园了。走之前，吃了个 in-n-out。
 ![](zion/in-n-out.jpeg)
+![](zion/f150.jpeg)
+__在ys的建议下，我们租了个皮卡。取到车后，我们觉得我们已经可以与范迪塞尔和强森一样可以被称为猛男了__
+![](zion/thunder.jpeg)
+__在这一路上加上后面的旅途，我们经常经过雷暴天气区域，结果一个闪电都没抓到，经常是拿出来录了几分钟啥都录不到，结果手举累了刚收起来就来一个__
 
+基本上第一天在赶路，下午赶到酒店后去开车从 Mount Carmel Highway 上到 upper East Canyon，然后去 Canyon Overlook Trail 走了一圈，晚上回到 Springdale，准备明天一大早的 Angel's Landing。
+![](zion/goat.jpeg)
+
+### Angel's Landing
+我们很幸运抽到了早上八点前到的签，因为后面的时间人都会很多，很难想象这么多人怎么爬 Angel's Landing，至少会很慢，因为基本只有一条路上下，到后面得经常互相让，所以建议还是早点去。
+![](zion/mark.jpeg)
+____
+因为我们以硬汉自居，所以每当我们怕的时候，唯一的合理推测就是：就算范迪塞尔来了，往下看腿也得抖一抖。
+![](zion/angel's_landing.jpeg)
+![](zion/angel's_landing2.jpeg)
+![](zion/angel's_landing3.jpeg)
+![](zion/top.jpeg)
+
+### The Narrows
+因为我们这是在 Zion 最后一天，在从 Angel's Landing 下来后（大概下午一点多）直接就坐公交去了 The Narrows。一路上看到几乎每个人都穿着特制的鞋和长棍就知道不太妙了。
+![](zion/water.jpeg)
+__就算范迪塞尔来了也得没腰，说一句水真tm深__
+
+越走到后面，越发现昨天下午下雨封山是有道理的，本身昨天下午想来这里的，结果 rangers 说因为下雨有泥石流风险所以关了。
+![](zion/narrow.jpeg)
+![](zion/narrow2.jpeg)
+![](zion/van_diesel.jpeg)
+__水特别浑，巨石强森在这里也得踩空然后差点摔一跤__
+
+在水里淌了五六个小时后就太累回酒店了。决定吃顿好的补补，结果一块3分熟的牛排和一杯假酒搞的我接下来两天只能喝水。 
+![](zion/steak.jpeg)
