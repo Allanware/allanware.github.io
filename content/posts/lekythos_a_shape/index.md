@@ -3,7 +3,7 @@ title: "Shapes and Functions of the Lekythos"
 date: 2022-11-08T14:29:25-06:00
 author: Wenxuan Zhao
 tags: ['Greek', 'Pottery']
-summary: This paper investigates the way ancient Greek associated the word (λήκυθος and its variants, the English equivalent is the word Lekythos) with the various shapes and functions of certain containers. 
+summary: This paper investigates the ways ancient Greek associated the word (λήκυθος and its variants, the English equivalent is the word Lekythos) with the various shapes and functions of certain containers. 
 
 cover:
     image: cover.png
