@@ -18,9 +18,9 @@ cover:
 - aesthetics when it was coined by Alexander Baumgarten: the study of how to mind beholds beautiful objects 
     - aesthetic response/experience: feelings of beauty; certain physical properties of an object may evoke it, but the experience itself is purely subjective. 
 - Now: all kinds of *hedonic* response (a preference judgment) to a sensory experience
-    - all kinds of emotion: beauty, anger, horror [emotion]
-    - pique sensory processes [perception]
-    - new idea, past experience [conception]
+    - all kinds of emotion: beauty, anger, horror (emotion)
+    - pique sensory processes (perception)
+    - new idea, past experience (conception)
 - Who: beholder's experience, not artist's. Highlight the ways in which art is perceived, interpreted (conceptual), and felt (emotional). 
 - object of interest: art (some art may be anti-aesthetic), natural phenomena, objects not intended to be art 
 
@@ -30,13 +30,13 @@ cover:
 Plato: art is at best a twice removal from the ideal world 
 Aristotle: art could rarify essential univerals 
 In paintings, artists create the illusion of objects in 3-D space on a 2-D surface , a feat that requires the knowledge of reverse-engineering the human vision.
-    - linear perspective and chiaroscuro
+- linear perspective and chiaroscuro
 
 ### Expressionist: express and induce emotions 
 - Francis Hutcheson: feelings of beauty and pleasure, independent of the object's purpose or function; subjective feelings but there are absolute standards. 
 - David Hume: beauty is purely subjective (taste), because it is not in objects themselves. But there is universal standards on taste. 
 - Kant: We interpret the world by linking sensory experience to pre-existing concepts or ideas (cognitive approach).
-    - judgments of taste -> decide what gives us pleasureable feelings
+    - judgments of taste => decide what gives us pleasureable feelings
     - features of objects that are pleasureable: agreeable, good, and beautiful. Aesthetic judgements are judgments/evaluations of beautiful things 
     - beauty: innate idea, a universal concept => Aesthetic judgments are both subjective (experience) and universal (innate, universal concept of beauty)
     - sublime: not a proeprty of an object, it is a feeling to be elicited.
@@ -66,9 +66,9 @@ Each of these approaches highlights different aspects of the beholder’s mental
 
 ### Emotion
 Daniel Berlyne: 
-    - optimally pleasing artworks are those that create some arousal or psychological tension but not so much that they become disturbing.
-    - arousal is determined by specific features of artworks, such as novelty, complexity, surprisingness, uncertainty, and incongruity: they must work together to produce emotion, the greater the nuumber of those features, the greater the arousal. 
-        - the features are not properties of the object, but related to the beholder’s past experience and knowledge.
+- optimally pleasing artworks are those that create some arousal or psychological tension but not so much that they become disturbing.
+- arousal is determined by specific features of artworks, such as novelty, complexity, surprisingness, uncertainty, and incongruity: they must work together to produce emotion, the greater the nuumber of those features, the greater the arousal. 
+    - the features are not properties of the object, but related to the beholder’s past experience and knowledge.
 
 ## Empirical Approaches: Cognitive Science 
 - draws heavily on computer-based models of how the mind works.
@@ -82,7 +82,7 @@ Daniel Berlyne:
 
 ## Empirical Approaches: Neuroscience
 Neuroscientists have studied the workings of the brain from many levels of analysis—from analyses of individual brain cells (i.e., neurons) to the study of neural activity in the human brain. Both structural (anatomical) and functional (brain activity) analyses have been used to investigate the neural correlates of human cognitive function.
-    - Prefrontal cortex (PFC): It receives inputs from other brain regions and sends projections back to these regions. In this way, the PFC coordinates and controls neural processing: top down processing
+- Example: Prefrontal cortex (PFC): It receives inputs from other brain regions and sends projections back to these regions. In this way, the PFC coordinates and controls neural processing: top down processing
 - Korbinian Brodmann, 1909: defined 52 distinct areas in cerebral cortex on the basis of physical features, such as size, shape, and density (Brodmann areas).
 - Neuropsychological: the study of the relationship between behavior, emotion, and cognition on the one hand, and brain function on the other
     - observing the way damage to different parts of the brain disrupts cognitive function
@@ -94,10 +94,11 @@ Neuroscientists have studied the workings of the brain from many levels of analy
 
 ## Issues for Aesthetic Science
 Philosophical approaches offer guidelines for scientific investigations of aesthetics.
-    - mimetic, formalist: perceptual 
-    - expressionist: emotion 
-    - few empirical studies have addressed conceptual approaches to art, studying the role of knowledge in our art experience 
+- mimetic, formalist: perceptual 
+- expressionist: emotion 
+- few empirical studies have addressed conceptual approaches to art, studying the role of knowledge in our art experience 
 
 beholder: sensation, knowledge, and emotion (SKE)
+
 artist: intention (I)
 => I-SKE framework

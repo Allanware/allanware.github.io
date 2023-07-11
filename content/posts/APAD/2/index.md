@@ -3,9 +3,8 @@ title: "The Philosophy of Art and Aesthetics, Psychology, and Neuroscience"
 date: 2023-07-07T10:08:48+08:00
 author: Wenxuan Zhao
 tags: ['APAD']
-summary: "The Philosophy of Art and Aesthetics, Psychology, and Neuroscience: studies in literature, music, and visual arts by Noël Carroll, Margaret Moore, and William P. Seeley
+summary: "A Paper a Day: The Philosophy of Art and Aesthetics, Psychology, and Neuroscience: studies in literature, music, and visual arts by Noël Carroll, Margaret Moore, and William P. Seeley
 "
-draft: true
 cover:
     image: 
     alt: 
@@ -13,11 +12,12 @@ cover:
 ---
 
 Alexander Baumgarten, 1735: Baumgarten used the phrase episteme aisthetike to mean the science of what is sensed and imagined, in contrast to the science of what is known through rational thought. In his incomplete Aesthetica, Baumgarten further defined the terms as follows: “Aesthetics (the theory of the liberal arts, the logic of the lower capacities of cognition [gnoseologia inferior], the art of thinking beautifully, the art of the analogon rationis) is the science of **sensible cognition**.” Since then, philosophers started exploring topics of:
-    - judgments of beauty: faculties of the judging subject and the qualities judged in the object
-    - taste and preference
-    - role of imagination 
-    - aesthetic and morality
-    - experience of artwork
+- judgments of beauty: faculties of the judging subject and the qualities judged in the object
+- taste and preference
+- role of imagination 
+- aesthetic and morality
+- experience of artwork
+
 only with the advent of **cognitive science** in the late 20th century that Baumgarten’s vision of aesthetics as a *science* of sensory cognition, including the study of our engagement with artworks, has become truly possible. 
 
 ## The Viability of Aesthetic as a Science
@@ -28,6 +28,7 @@ only with the advent of **cognitive science** in the late 20th century that Baum
         - when we answer aesthetic questions with data concerning the behavioral responses of participants to particular artworks we are committing a category mistake—we confuse a logical problem for a scientific one: what matters in the case of our responses to music is whether the formal composition of the work—in this case, the syntactic features of compositions that constitute a musical language is adequate for the attribution of the aesthetic feature in question. And this, Dickie argues, is a matter of convention rather than psychological causation—a matter of the rules of the particular language game appropriate to the production and appreciation of the category of music used as the stimulus. Questions about the nature of art and the character of aesthetic experience are prior logical questions about the use of a language. 
     - Refute to Dickie’s arguments: recent imaging studies involving adjective matching and preference orderings support Dickie’s observations but challenge his assessment of the relevance of psychology to aesthetics: correlations among Calvo-Merino’ imaging results revealed common cortical networks subserving participants’ aesthetic judgments. Discussions of the functions of these cortical networks suggest that aesthetic judgments within a medium are realized by a unique set of psychological processes.
         - one can argue against Dickie that our use of aesthetic concepts in ordinary language draws on, reflects, or perhaps even itself constitutes an underlying tacit theory about the nature of art and the character of aesthetic experience; our systematic use of aesthetic terms in ordinary language should yield testable predictions about the nature of art and the character of aesthetic experience. Therefore, even if, as Dickie suggests, the philosopher of art is concerned with language games, a language game can be studied empirically.
+
 In below, the essay explores significant interactions between philosophy and psychology with special regard to the arts of literature, music, and visual art.
 
 ## Literature
@@ -42,6 +43,7 @@ In below, the essay explores significant interactions between philosophy and psy
             - Zajonc and his colleagues have established that people form preferences for stimuli to which they had been previously exposed, but that were presented to them at rates too fast to allow conscious recognition
         - neuroscience
             - Joseph LeDoux: "Thinking, fast and slow": "fast" activates the amygdala directly, but then that system is checked by processes operating in the frontal cortex ("slow"). 
+
 On the judgmentalist picture, the emotional state begins with a conscious *judgment*—an evaluation or appraisal of the stimuli: this causes a *feeling* state in me that puts me on the lookout for more relevant information and primes my *behavioral* response.
 
 For Robinson, perception -> physiological -> behavioral -> cognition kicks in at this point in the process, monitoring the earlier stages of the process and either endorsing them or modifying them. Robinson believes that changes in the facial musculature and the corresponding alterations of the autonomic nervous system provide some grounds for discriminating between the so-called basic emotions (e.g., anger, disgust, fear, joy, sadness, and surprise). However, she also maintains, as do the judgmentalists, that it is primarily the cognitive processing that attends the emotion that fixes the identity of the affective state.
@@ -49,7 +51,7 @@ For Robinson, perception -> physiological -> behavioral -> cognition kicks in at
 However, some emotions look like they require a lot of cognition in the form of some antecedent deliberation. Absorbing literature emotionally seems more like the sort of affect that is born of reflection than like a non-cognitive reflex such as the startle response.
 
 Reading a fiction prompts our memory system to recall event types like the ones in the story that provoke immediate, non-cognitive, affective appraisals, and thereby activate physiological changes and behavioral tendencies; this then is cognitively monitored, leading to an adjustment of our appraisal of the situation, refining our understanding of it.
-    - cognitively monitoring our emotional responses to literature can provide the foundation of our interpretive response
+- cognitively monitoring our emotional responses to literature can provide the foundation of our interpretive response
 
 => Therefore, psychology is anything but irrelevant to the philosophy of art: it both contributes to our understanding of and enhances our capacity for narrative appreciation.
 
@@ -105,22 +107,23 @@ Reading a fiction prompts our memory system to recall event types like the ones 
 Cogintive Science: is the study of the way organisms acquire, recognize, manipulate, and use information in the production of behavior (the input and the output and their relationship): perceptual, affective, and cognitive
 
 Current research in the cognitive neuroscience of visual art lies at the confluence of two broad research strategies:   
-    - empirical aesthetics: examine behavioral responses to artworks.
-    - aesthetic experimentalism: the view that visual artists develop formal and compositional vocabularies by trial and error, or through a systematic exploration of the perceptual effects of different sets of marks, color schemes, and compositional arrangements. Therefore, we can learn about the operations of perceptual systems by examining the productive strategies of artists 
+ - empirical aesthetics: examine behavioral responses to artworks.
+- aesthetic experimentalism: the view that visual artists develop formal and compositional vocabularies by trial and error, or through a systematic exploration of the perceptual effects of different sets of marks, color schemes, and compositional arrangements. Therefore, we can learn about the operations of perceptual systems by examining the productive strategies of artists 
 
 cognitive neuroscience of visual art rests on the assumption that correlations between the **formal features of artworks** and basic **neurophysiological** mechanisms in the visual system can be used to explain how visual artworks work as perceptual stimuli. A good deal of research in the cognitive neuroscience of visual art is dedicated to searching out and explaining these relationships between the formal strategies employed by artists and the operations of the visual system. 
-    - visual system is a set of evolved biological mechanisms whose function is to select information from sensory inputs that is sufficient for visual recognition and action
-    - The input to the visual system is replete with information about the local environment. However, only a small fraction of this information is diagnostic for the identity of an object, action, or event at any given time.
-    - Artists’ formal methods and vocabularies are tools for selecting features sufficient for object, action, and event recognition from ordinary perceptual experience and rendering them in a medium
+- visual system is a set of evolved biological mechanisms whose function is to select information from sensory inputs that is sufficient for visual recognition and action
+- The input to the visual system is replete with information about the local environment. However, only a small fraction of this information is diagnostic for the identity of an object, action, or event at any given time.
+- Artists’ formal methods and vocabularies are tools for selecting features sufficient for object, action, and event recognition from ordinary perceptual experience and rendering them in a medium
 
 Artworks can be thought of as artifacts intentionally designed to direct attention (perceptually sailent) to their artistically salient features (perceptual features responsible for the aesthetic effects and semantic associations)
 
 ### 3 case studies 
 #### Georges Seurat’s Bathers at Asnières
 Georges Seurat used a formal technique called irradiation to enhance edges and amplify figure–ground segregation in Bathers at Asnières 
-    - Irradiation is derived from the observation of Mach bands in ordinary perception, but has been used by painters long ago. 
-        - Mach band: Lateral inhibition helps boost the perception of object edges
-            - A ganglion cell in the retina receives excitatory signals from photoreceptors and inhibitory signals from other ganglion cells that surround it. Ganglion cells along the bright side of the border between these regions receive less inhibition from their neighbors on the dark side. The overall response of these cells will therefore be higher than their neighbors
+- Irradiation is derived from the observation of Mach bands in ordinary perception, but has been used by painters long ago. 
+    - Mach band: Lateral inhibition helps boost the perception of object edges
+        - A ganglion cell in the retina receives excitatory signals from photoreceptors and inhibitory signals from other ganglion cells that surround it. Ganglion cells along the bright side of the border between these regions receive less inhibition from their neighbors on the dark side. The overall response of these cells will therefore be higher than their neighbors
+
 one function of lateral inhibition is to amplify the intensity of a feature of the sensory input that defines the boundaries between objects in perception. This in turn contributes to form recognition by enhancing the contrast between figure and ground, thereby sharpening the perception of depth in the picture plane. 
 
 An artists’ formal vocabulary => its utility in paintings is explained by neurophysiological mechanisms in the visual system. 
@@ -137,8 +140,8 @@ Sfumato is a formal technique in which artists blur the sharp edges that define 
 Smile is "represented" using sfumato in low and medium spatial frequencies: when one foveates on Mona Lisa’s smile it disappears; the smile reappears in a viewer’s peripheral field when he or she looks away. 
 
 Gombrich VS Livingstone: 
-    - Gombrich: a viewer’s interpretation of Mona Lisa’s expression should vary with his or her state of mind
-    - Livingstone: he depicted expression varies systematically with the distance of one’s focus of attention from the center of Mona Lisa’s face
+- Gombrich: a viewer’s interpretation of Mona Lisa’s expression should vary with his or her state of mind
+- Livingstone: he depicted expression varies systematically with the distance of one’s focus of attention from the center of Mona Lisa’s face
 
 However, similarly, it does not establish sfumatoed smile as **artistically salient** feature because of the same reason. 
 Nonetheless, Livingstone’s discussion contributes evidence in support of a particular hypothesis about the aesthetic quality of the painting. 
@@ -150,9 +153,9 @@ Theories about the nature of art and aesthetic experience rest ultimately on the
 Dalí’s painting is a bistable ambiguous image (like the duck/rabbit image). The bistability is an artistically salient feature of the painting that generates both the perceptual ambiguity and the range of semantic associations that are constitutive of its identity as an artwork.
 
 Bonnar and her colleagues used a technique called **frequency-specific** adaptation to demonstrate that this high- and low-spatial-frequency information was selectively used to drive the perception of either the nuns or the bust of Voltaire in the painting. 
-    - the nuns were more apparent in the high-spatial-frequency images and the bust of Voltaire was more apparent in the low-spatial-frequency images.
-    - hypothesis: Frequency-specific adaptation can be used to desensitize the visual system to the particular spatial-frequency information presented in a stimulus. participants adapted to high-spatial-frequency information should see the bust of Voltaire and participants adapted to low-spatial-frequency information should see the two nuns. 
-    - Participants were primed with either high- (first group) or low-spatial-frequency (2nd group) dynamic noise. THe first group reported seeing Voltaire; the 2nd saw nuns. 
+- the nuns were more apparent in the high-spatial-frequency images and the bust of Voltaire was more apparent in the low-spatial-frequency images.
+- hypothesis: Frequency-specific adaptation can be used to desensitize the visual system to the particular spatial-frequency information presented in a stimulus. participants adapted to high-spatial-frequency information should see the bust of Voltaire and participants adapted to low-spatial-frequency information should see the two nuns. 
+- Participants were primed with either high- (first group) or low-spatial-frequency (2nd group) dynamic noise. THe first group reported seeing Voltaire; the 2nd saw nuns. 
 
 ### Summary 
 We can come to understand the nature of art and aesthetic experience by tracking the relationship between the formal and compositional structure of particular artworks and viewers’ behavioral responses. 
