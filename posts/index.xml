@@ -6,7 +6,108 @@
     <description>Recent content in Posts on Wenxuan Zhao</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Fri, 07 Jul 2023 10:08:48 +0800</lastBuildDate><atom:link href="https://allanware.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 10 Aug 2023 14:14:39 +0800</lastBuildDate><atom:link href="https://allanware.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Visualization x Psychology</title>
+      <link>https://allanware.github.io/posts/2023/08/visualization-x-psychology/</link>
+      <pubDate>Thu, 10 Aug 2023 14:14:39 +0800</pubDate>
+      
+      <guid>https://allanware.github.io/posts/2023/08/visualization-x-psychology/</guid>
+      <description>This ariticle is intended for personal bookkeeping while I am exploring this new field.</description>
+      <content:encoded><![CDATA[<h1 id="human-perceptionvision">Human Perception/Vision</h1>
+<p>Use visualizations as a medium to study perception</p>
+<h2 id="visual-arrangements-of-bar-charts-influence-comparisons-in-viewer-takeaways-2022">Visual Arrangements of Bar Charts Influence Comparisons in Viewer Takeaways (2022)</h2>
+<ul>
+<li>Cindy Xiong, Vidya Setlur, Benjamin Bach, Kylie Lin, Eunyee Koh, and Steven Franconeri</li>
+</ul>
+<h2 id="wheres-my-data-evaluating-visualizations-with-missing-data-2019">Where&rsquo;s My Data? Evaluating Visualizations with Missing Data (2019)</h2>
+<h2 id="measuring-and-modeling-the-feature-detection-threshold-functions-of-colormaps-2019">Measuring and Modeling the Feature Detection Threshold Functions of Colormaps (2019)</h2>
+<h2 id="looks-good-to-me-visualizations-as-sanity-checks">Looks Good To Me: Visualizations As Sanity Checks</h2>
+<h2 id="lightness-constancy-in-surface-visualization-2016">Lightness Constancy in Surface Visualization (2016)</h2>
+<h2 id="a-design-space-of-vision-science-methods-for-visualization-research-2021">A Design Space of Vision Science Methods for Visualization Research (2021)</h2>
+<ul>
+<li>Madison A. Elliott, <a href="https://www.cnothelfer.com/">Christine Nothelfer</a>, <a href="https://cyxiong.com/">Cindy Xiong</a>, <a href="https://danielleszafir.com/">Danielle Albers Szafir</a></li>
+</ul>
+<h2 id="a-survey-of-perception-based-visualization-studies-by-task-2022">A Survey of Perception-Based Visualization Studies by Task (2022)</h2>
+<ul>
+<li><a href="http://jiquadcs.com/">Ghulam Jilani Quadri</a> and <a href="https://cspaul.com/wordpress/">Paul Rosen</a></li>
+</ul>
+<h2 id="at-a-glance-pixel-approximate-entropy-as-a-measure-of-line-chart-complexity-2018">At a Glance: Pixel Approximate Entropy as a Measure of Line Chart Complexity (2018)</h2>
+<h2 id="biased-average-position-estimates-in-line-and-bar-graphs-underestimation-overestimation-and-perceptual-pull-2020">Biased Average Position Estimates in Line and Bar Graphs: Underestimation, Overestimation, and Perceptual Pull (2020)</h2>
+<h2 id="correlation-judgment-and-visualization-features-a-comparative-study-2019">Correlation Judgment and Visualization Features: A Comparative Study (2019)</h2>
+<h2 id="data-visualization-saliency-model-a-tool-for-evaluating-abstract-data-visualizations-2018">Data Visualization Saliency Model: A Tool for Evaluating Abstract Data Visualizations (2018)</h2>
+<h2 id="evaluating-gradient-perception-in-color-coded-scalar-fields-2019">Evaluating Gradient Perception in Color-Coded Scalar Fields (2019)</h2>
+<h2 id="evaluating-perceptual-bias-during-geometric-scaling-of-scatterplots-2019">Evaluating Perceptual Bias During Geometric Scaling of Scatterplots (2019)</h2>
+<h2 id="evaluating-interactive-graphical-encodings-for-data-visualization-2018">Evaluating Interactive Graphical Encodings for Data Visualization (2018)</h2>
+<h2 id="face-to-face-evaluating-visual-comparison-2019">Face to Face: Evaluating Visual Comparison (2019)</h2>
+<h2 id="graphical-perception-for-immersive-analytics-2020">Graphical Perception for Immersive Analytics (2020)</h2>
+<h2 id="histogram-binning-revisited-with-a-focus-on-human-perception-2021">Histogram binning revisited with a focus on human perception (2021)</h2>
+<h2 id="jurassic-mark-inattentional-blindness-for-a-datasaurus-reveals-that-visualizations-are-explored-not-seen">Jurassic Mark: Inattentional Blindness for a Datasaurus Reveals that Visualizations are Explored, not Seen</h2>
+<h2 id="no-mark-is-an-island-precision-and-category-repulsion-biases-in-data-reproductions-2021">No Mark is an Island: Precision and Category Repulsion Biases in Data Reproductions (2021)</h2>
+<h2 id="open-vs-closed-shapes-new-perceptual-categories-2018">Open vs. Closed Shapes: New Perceptual Categories? (2018)</h2>
+<h2 id="optimizing-color-assignment-for-perception-of-class-separability-in-multiclass-scatterplots-2019">Optimizing Color Assignment for Perception of Class Separability in Multiclass Scatterplots (2019)</h2>
+<h2 id="perceptual-biases-in-font-size-as-a-data-encoding-2018">Perceptual Biases in Font Size as a Data Encoding (2018)</h2>
+<h2 id="priming-and-anchoring-effects-in-visualization-2018">Priming and Anchoring Effects in Visualization (2018)</h2>
+<h2 id="rainbow-colormaps-are-not-all-bad-2023">Rainbow Colormaps Are Not All Bad (2023)</h2>
+<h2 id="rainbow-dash-intuitiveness-interpretability-and-memorability-of-the-rainbow-color-scheme-in-visualization-2022">Rainbow Dash: Intuitiveness, Interpretability and Memorability of the Rainbow Color Scheme in Visualization (2022)</h2>
+<h2 id="rainbows-revisited-modeling-effective-colormap-design-for-graphical-inference-2021">Rainbows Revisited: Modeling Effective Colormap Design for Graphical Inference (2021)</h2>
+<h2 id="rethinking-the-ranks-of-visual-channels-2022">Rethinking the Ranks of Visual Channels (2022)</h2>
+<h2 id="revealing-perceptual-proxies-with-adversarial-examples-2021">Revealing Perceptual Proxies with Adversarial Examples (2021)</h2>
+<h2 id="studying-early-decision-making-with-progressive-bar-charts-2023">Studying Early Decision Making with Progressive Bar Charts (2023)</h2>
+<h2 id="modeling-color-difference-for-visualization-design-2018">Modeling Color Difference for Visualization Design (2018)</h2>
+<h2 id="task-based-effectiveness-of-basic-visualizations-2019">Task-Based Effectiveness of Basic Visualizations (2019)</h2>
+<h2 id="the-perceptual-proxies-of-visual-comparison-2020">The Perceptual Proxies of Visual Comparison (2020)</h2>
+<h2 id="the-weighted-average-illusion-biases-in-perceived-mean-position-in-scatterplots-2022">The Weighted Average Illusion: Biases in Perceived Mean Position in Scatterplots (2022)</h2>
+<h2 id="truth-or-square-aspect-ratio-biases-recall-of-position-encodings-2021">Truth or Square: Aspect Ratio Biases Recall of Position Encodings (2021)</h2>
+<h2 id="visquiz-exploring-feedback-mechanisms-to-improve-graphical-perception-2022">VisQuiz: Exploring Feedback Mechanisms to Improve Graphical Perception (2022)</h2>
+<h1 id="human-reasoning">Human Reasoning</h1>
+<h2 id="the-attraction-effect-in-information-visualization-2017">The Attraction Effect in Information Visualization (2017)</h2>
+<h2 id="semantic-discriminability-for-visual-communication-2021">Semantic Discriminability for Visual Communication (2021)</h2>
+<h2 id="seeing-what-you-believe-or-believing-what-you-see-belief-biases-correlation-estimation-2023">Seeing What You Believe or Believing What You See? Belief Biases Correlation Estimation (2023)</h2>
+<h2 id="unifying-effects-of-direct-and-relational-associations-for-visual-communication-2023">Unifying Effects of Direct and Relational Associations for Visual Communication (2023)</h2>
+<h2 id="scalability-of-network-visualisation-from-a-cognitive-load-perspective-2021">Scalability of Network Visualisation from a Cognitive Load Perspective (2021)</h2>
+<h2 id="professional-differences-a-comparative-study-of-visualization-task-performance-and-spatial-ability-across-disciplines-2022">Professional Differences: A Comparative Study of Visualization Task Performance and Spatial Ability Across Disciplines (2022)</h2>
+<h2 id="context-matters-a-theory-of-semantic-discriminability-for-perceptual-encoding-systems-2021">Context Matters: A Theory of Semantic Discriminability for Perceptual Encoding Systems (2021)</h2>
+<h2 id="more-of-what-dissociating-effects-of-conceptual-and-numeric-mappings-on-interpreting-colormap-data-visualizations-2023">More of what? Dissociating effects of conceptual and numeric mappings on interpreting colormap data visualizations (2023)</h2>
+<h2 id="modeling-just-noticeable-differences-in-charts-2022">Modeling Just Noticeable Differences in Charts (2022)</h2>
+<h2 id="mitigating-the-attraction-effect-with-visualizations-2019">Mitigating the Attraction Effect with Visualizations (2019)</h2>
+<h2 id="measures-of-the-benefit-of-direct-encoding-of-data-deltas-for-data-pair-relation-perception-2020">Measures of the Benefit of Direct Encoding of Data Deltas for Data Pair Relation Perception (2020)</h2>
+<h2 id="left-right-and-gender-exploring-interaction-traces-to-mitigate-human-biases-2022">Left, Right, and Gender: Exploring Interaction Traces to Mitigate Human Biases (2022)</h2>
+<h2 id="a-task-based-taxonomy-of-cognitive-biases-for-information-visualization-2020">A Task-Based Taxonomy of Cognitive Biases for Information Visualization (2020)</h2>
+<ul>
+<li><a href="https://www.evanthiadimara.com/home">Evanthia Dimara</a>, <a href="https://visualthinking.psych.northwestern.edu/index.html">Steven Franconeri</a>, <a href="https://hcil.umd.edu/catherine-plaisant/">Catherine Plaisant</a>, <a href="https://www.lri.fr/~anab/">Anastasia Bezeriano</a>, and <a href="http://dragice.fr/">Pierre Dragicevic</a></li>
+</ul>
+<h2 id="a-bayesian-cognition-approach-for-belief-updating-of-correlation-judgement-through-uncertainty-visualizations-2021">A Bayesian Cognition Approach for Belief Updating of Correlation Judgement through Uncertainty Visualizations (2021)</h2>
+<ul>
+<li>Alireza Karduni, Douglas  Markant, Ryan Wesslen, <a href="https://webpages.charlotte.edu/wdou1/">Wenwen Dou</a></li>
+</ul>
+<h2 id="bayesian-assisted-inference-from-visualized-data-2021">Bayesian-Assisted Inference from Visualized Data (2021)</h2>
+<h2 id="conceptual-metaphor-and-graphical-convention-influence-the-interpretation-of-line-graphs-2022">Conceptual Metaphor and Graphical Convention Influence the Interpretation of Line Graphs (2022)</h2>
+<h2 id="designing-with-pictographs-envision-topics-without-sacrificing-understanding-2022">Designing With Pictographs: Envision Topics Without Sacrificing Understanding (2022)</h2>
+<h2 id="estimating-color-concept-associations-from-image-statistics-2020">Estimating Color-Concept Associations from Image Statistics (2020)</h2>
+<h2 id="illusion-of-causality-in-visualized-data-2020">Illusion of Causality in Visualized Data (2020)</h2>
+<h2 id="impact-of-cognitive-biases-on-progressive-visualization2022">Impact of Cognitive Biases on Progressive Visualization(2022)</h2>
+<h2 id="mapping-color-to-meaning-in-colormap-data-visualizations-2019">Mapping Color to Meaning in Colormap Data Visualizations (2019)</h2>
+<h2 id="the-curse-of-knowledge-in-visual-data-communication-2020">The Curse of Knowledge in Visual Data Communication (2020)</h2>
+<h1 id="aesthetics">Aesthetics</h1>
+<h2 id="beauvis-a-validated-scale-for-measuring-the-aesthetic-pleasure-of-visual-representations-2023">BeauVis: A Validated Scale for Measuring the Aesthetic Pleasure of Visual Representations (2023)</h2>
+<h2 id="color-crafting-automating-the-construction-of-designer-quality-color-ramps-2020">Color Crafting: Automating the Construction of Designer Quality Color Ramps (2020)</h2>
+<h3 id="declutter-and-focus-empirically-evaluating-design-guidelines-for-effective-data-communication-2022">Declutter and Focus: Empirically Evaluating Design Guidelines for Effective Data Communication (2022)</h3>
+<h1 id="human-emotionaffect">Human Emotion/Affect</h1>
+<h2 id="affective-congruence-in-visualization-design-influences-on-reading-categorical-maps-2022">Affective Congruence in Visualization Design: Influences on Reading Categorical Maps (2022)</h2>
+<h1 id="applications-to-vis-from-psych">Applications (to Vis from Psych)</h1>
+<p>interesting papers that uses findings from psych and without quantitative psychological experiments</p>
+<h2 id="a-scanner-deeply-predicting-gaze-heatmaps-on-visualizations-using-crowdsourced-eye-movement-data-2023">A Scanner Deeply: Predicting Gaze Heatmaps on Visualizations Using Crowdsourced Eye Movement Data (2023)</h2>
+<h2 id="emotioncues-emotion-oriented-visual-summarization-of-classroom-videos-2021">EmotionCues: Emotion-Oriented Visual Summarization of Classroom Videos (2021)</h2>
+<h2 id="photosensitive-accessibility-for-interactive-data-visualizations-2023">Photosensitive Accessibility for Interactive Data Visualizations (2023)</h2>
+<h2 id="selection-bias-corrected-visualization-via-dynamic-reweighting-2021">Selection-Bias-Corrected Visualization via Dynamic Reweighting (2021)</h2>
+<h1 id="opinion-pieces">Opinion pieces</h1>
+<h2 id="vishikers-guide-to-evaluation-competing-considerations-in-study-design-2022">VisHikers’ Guide to Evaluation: Competing Considerations in Study Design (2022)</h2>
+<h2 id="towards-modeling-visualization-processes-as-dynamic-bayesian-networks-2021">Towards Modeling Visualization Processes as Dynamic Bayesian Networks (2021)</h2>
+<h2 id="why-shouldnt-all-charts-be-scatter-plots-beyond-precision-driven-visualizations-2021">Why Shouldn’t All Charts Be Scatter Plots? Beyond Precision-Driven Visualizations (2021)</h2>
+]]></content:encoded>
+    </item>
     
     <item>
       <title>The Philosophy of Art and Aesthetics, Psychology, and Neuroscience</title>
