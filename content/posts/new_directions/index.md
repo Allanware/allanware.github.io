@@ -14,6 +14,12 @@ cover:
 # Human Perception/Vision 
 Use visualizations as a medium to study perception
 
+## Visualizing Temperature Trends: Higher Sensitivity to Trend Direction With Single-Hue Palettes (2021)
+
+## Designing for Depth Perceptions in Augmented Reality (2017)
+
+## Measuring Categorical Perception in Color-Coded Scatterplots (2023)
+
 ## Visual Arrangements of Bar Charts Influence Comparisons in Viewer Takeaways (2022)
 - Cindy Xiong, Vidya Setlur, Benjamin Bach, Kylie Lin, Eunyee Koh, and Steven Franconeri
 
@@ -36,6 +42,8 @@ Use visualizations as a medium to study perception
 ## Biased Average Position Estimates in Line and Bar Graphs: Underestimation, Overestimation, and Perceptual Pull (2020)
 
 ## Correlation Judgment and Visualization Features: A Comparative Study (2019)
+
+## Measuring the Separability of Shape, Size, and Color in Scatterplots (2019)
 
 ## Data Visualization Saliency Model: A Tool for Evaluating Abstract Data Visualizations (2018)
 
@@ -166,3 +174,5 @@ interesting papers that uses findings from psych and without quantitative psycho
 ## Towards Modeling Visualization Processes as Dynamic Bayesian Networks (2021)
 
 ## Why Shouldn’t All Charts Be Scatter Plots? Beyond Precision-Driven Visualizations (2021)
+
+## The Good, the Bad, and the Biased: Five Ways Visualizations Can Mislead (and How to Fix Them) (2018)
