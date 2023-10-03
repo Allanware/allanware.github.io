@@ -1,12 +1,16 @@
 ---
 title: "My Curation of Films (as of 05/2022)"
 author: Wenxuan Zhao
-date: 2022-05-27
+date: 2022-05-27T19:35:00+08:00
 cover:
     image: fallen-angels.jpeg 
     alt: "Fallen Angles -- Wong Kar-wai"
     relative: true
 summary: My Top 25 Films
+hideMeta: true
+showReadingTime: false
+hideSummary: true
+tags: ['']
 ---
 - Cow (2021)
 - Mulholland Drive (2001)

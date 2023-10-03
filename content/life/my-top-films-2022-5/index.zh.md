@@ -1,12 +1,16 @@
 ---
 title: "我的top电影(2022-5月版)"
 author: 赵文轩
-date: 2022-05-27
+date: 2022-05-27T19:35:00+08:00
 cover:
     image: fallen-angels.jpeg 
     alt: "堕落天使 -- 王家卫"
     relative: true
 summary: 我极为主观地遴选的给我印象最深的一些电影
+hideMeta: true
+showReadingTime: false
+hideSummary: true
+tags: ['']
 ---
 
 - Cow (2021)
