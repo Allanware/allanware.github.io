@@ -1,8 +1,9 @@
 ---
-title: "Leetcode_journey"
+title: "My Leetcode Journey"
 date: 2023-10-22T11:42:45-05:00
 author: Wenxuan Zhao
 tags: ['']
+mathjax: true
 summary: This post documents my journey wading through leetcode. 
 cover:
     image: 
@@ -14,7 +15,7 @@ cover:
 
 ## Approach 1: Double pointers
 
-i, j points to word1 and word2. A while loop that does the traversing and  appending. To traverse two lists throughly, we check for i < len(words1) **or** j < len(words2). 
+i, j points to word1 and word2. A while loop that does the traversing and  appending. To traverse two lists throughly, we check for `i < len(words1)` **or** `j < len(words2)`. 
 
 Inside while loop, result list appends words1[i] if i < len(words1) and words2[j] if j < len(words2). 
 
@@ -22,17 +23,17 @@ Note: in Python, strings are immutable, we used the list `result` to append lett
 
 ### Time
 
-O(m+n): m is the length of word1, n is the length of word2.
+$O(m+n)$: m is the length of word1, n is the length of word2.
 
 ### Space 
 
-O(n): we use a temp list `result` to store the final string.  
+$O(n)$: we use a temp list `result` to store the final string.  
 
 ## Approach 2: One pointer
 
-To traverse two lists throughly, we could also check for i < max(len(word1), len(word2)). 
+To traverse two lists throughly, we could also check for `i < max(len(word1), len(word2))`. 
 
-Inside while/for loop, result list appends words1[i] if i < len(words1) and words2[j] if j < len(words2). 
+Inside while/for loop, result list appends words1[i] `if i < len(words1)` and words2[j] `if j < len(words2)`. 
 
 # [1071. Greatest Common Divisor of Strings](https://leetcode.com/problems/greatest-common-divisor-of-strings/)
 
@@ -46,11 +47,11 @@ Base case: if str1 == "", return str2; vice versa
 
 ### Time
 
-We need to scan the longest string of str1 and str2 once: O(max(m+n))
+We need to scan the longest string of str1 and str2 once: $O(max(m+n))$
 
 ### Space
 
-O(1) if we can modify string in place. 
+$O(1)$ if we can modify string in place. 
 
 # [605. Can Place Flowers](https://leetcode.com/problems/can-place-flowers/)
 
@@ -64,11 +65,11 @@ We could return True early if n is already 0 (assuming each time we find a spot 
 
 ### Time
 
-We need to scan the array once: O(n).
+We need to scan the array once: $O(n)$.
 
 ### Space
 
-O(1).
+$O(1)$
 
 # [345. Reverse Vowels of a String](https://leetcode.com/problems/reverse-vowels-of-a-string/)
 
@@ -81,11 +82,11 @@ O(1).
 
 ### Time
 
-We need to scan the string once: O(n).
+We need to scan the string once: $O(n)$.
 
 ### Space
 
-O(n).
+$O(n)$
 
 # [151. Reverse Words in a String](https://leetcode.com/problems/reverse-words-in-a-string/)
 
@@ -95,12 +96,10 @@ O(n).
 2. Use double pointers to swap. 
 
 ### Time
-
-O(n). 
+$O(n)$ 
 
 ### Space
-
-O(n).
+$O(n)$
 
 # [1137. N-th Tribonacci Number](https://leetcode.com/problems/n-th-tribonacci-number/)
 
@@ -445,5 +444,5 @@ $O(1)$
 
 ## Approach
 
-I did not figure it out myself. The most obvious solution is to use a $O(n^2)$ brute-force method. I then try to reduce it to $O(n\log{n})$  by first sorting it, and then use binary search to search for each element's complement in the list. That is another $O(n\log{n})$. This doesn't work becasue 
+I did not figure it out myself. The most obvious solution is to use a $O(n^2)$ brute-force method. I then try to reduce it to $O(n\log{n})$  by first sorting it, and then use binary search to search for each element's complement in the list. That is another $O(n\log{n})$. This doesn't work becasue the numbers could be negative and the target sum could be acheived by summing 
 
