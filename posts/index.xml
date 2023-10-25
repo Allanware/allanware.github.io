@@ -9,42 +9,42 @@
     <lastBuildDate>Sun, 22 Oct 2023 11:42:45 -0500</lastBuildDate><atom:link href="https://allanware.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
-      <title>Leetcode_journey</title>
-      <link>https://allanware.github.io/posts/2023/10/leetcode_journey/</link>
+      <title>My Leetcode Journey</title>
+      <link>https://allanware.github.io/posts/2023/10/my-leetcode-journey/</link>
       <pubDate>Sun, 22 Oct 2023 11:42:45 -0500</pubDate>
       
-      <guid>https://allanware.github.io/posts/2023/10/leetcode_journey/</guid>
+      <guid>https://allanware.github.io/posts/2023/10/my-leetcode-journey/</guid>
       <description>This post documents my journey wading through leetcode.</description>
       <content:encoded><![CDATA[<h1 id="1768-merge-strings-alternatelyhttpsleetcodecomproblemsmerge-strings-alternately"><a href="https://leetcode.com/problems/merge-strings-alternately/">1768. Merge Strings Alternately</a></h1>
 <h2 id="approach-1-double-pointers">Approach 1: Double pointers</h2>
-<p>i, j points to word1 and word2. A while loop that does the traversing and  appending. To traverse two lists throughly, we check for i &lt; len(words1) <strong>or</strong> j &lt; len(words2).</p>
+<p>i, j points to word1 and word2. A while loop that does the traversing and  appending. To traverse two lists throughly, we check for <code>i &lt; len(words1)</code> <strong>or</strong> <code>j &lt; len(words2)</code>.</p>
 <p>Inside while loop, result list appends words1[i] if i &lt; len(words1) and words2[j] if j &lt; len(words2).</p>
 <p>Note: in Python, strings are immutable, we used the list <code>result</code> to append letters and later joined the list with an empty string to return it as a string object. The <code>join</code> operation takes linear time equal to the length of <code>results</code> to merge <code>results</code> with empty string.</p>
 <h3 id="time">Time</h3>
-<p>O(m+n): m is the length of word1, n is the length of word2.</p>
+<p>$O(m+n)$: m is the length of word1, n is the length of word2.</p>
 <h3 id="space">Space</h3>
-<p>O(n): we use a temp list <code>result</code> to store the final string.</p>
+<p>$O(n)$: we use a temp list <code>result</code> to store the final string.</p>
 <h2 id="approach-2-one-pointer">Approach 2: One pointer</h2>
-<p>To traverse two lists throughly, we could also check for i &lt; max(len(word1), len(word2)).</p>
-<p>Inside while/for loop, result list appends words1[i] if i &lt; len(words1) and words2[j] if j &lt; len(words2).</p>
+<p>To traverse two lists throughly, we could also check for <code>i &lt; max(len(word1), len(word2))</code>.</p>
+<p>Inside while/for loop, result list appends words1[i] <code>if i &lt; len(words1)</code> and words2[j] <code>if j &lt; len(words2)</code>.</p>
 <h1 id="1071-greatest-common-divisor-of-stringshttpsleetcodecomproblemsgreatest-common-divisor-of-strings"><a href="https://leetcode.com/problems/greatest-common-divisor-of-strings/">1071. Greatest Common Divisor of Strings</a></h1>
 <h2 id="approach-1-analgous-to-math-gcd">Approach 1: Analgous to math GCD</h2>
 <p>Denote len(str1) = m, len(str1) = n.</p>
 <p>if m &gt; n, gcdString = gcd(str1 - str2, str2), and vice versa. str1 - str2 means deleting str2 from the start of str1. If there is any mismatch, then there is no gcd string (return &quot;&quot; as gcdString).</p>
 <p>Base case: if str1 == &ldquo;&rdquo;, return str2; vice versa</p>
 <h3 id="time-1">Time</h3>
-<p>We need to scan the longest string of str1 and str2 once: O(max(m+n))</p>
+<p>We need to scan the longest string of str1 and str2 once: $O(max(m+n))$</p>
 <h3 id="space-1">Space</h3>
-<p>O(1) if we can modify string in place.</p>
+<p>$O(1)$ if we can modify string in place.</p>
 <h1 id="605-can-place-flowershttpsleetcodecomproblemscan-place-flowers"><a href="https://leetcode.com/problems/can-place-flowers/">605. Can Place Flowers</a></h1>
 <h2 id="approach">Approach</h2>
 <p>Greedy algorithm + padding the front and the end of the array. If a spot is plantable, then +2 to find the next via spot.</p>
 <p>If the array is not allowed to change, we could create a new array with paddings, or we could handle the front and end very carefully.</p>
 <p>We could return True early if n is already 0 (assuming each time we find a spot we decrement n by 1).</p>
 <h3 id="time-2">Time</h3>
-<p>We need to scan the array once: O(n).</p>
+<p>We need to scan the array once: $O(n)$.</p>
 <h3 id="space-2">Space</h3>
-<p>O(1).</p>
+<p>$O(1)$</p>
 <h1 id="345-reverse-vowels-of-a-stringhttpsleetcodecomproblemsreverse-vowels-of-a-string"><a href="https://leetcode.com/problems/reverse-vowels-of-a-string/">345. Reverse Vowels of a String</a></h1>
 <h2 id="approach-1">Approach</h2>
 <ol>
@@ -54,9 +54,9 @@
 <li>Inside the while loop: use two while loops for i and j to find vowels, and make sure they do not touch. If they haven&rsquo;t touched after the two while loops, then they must find a pair of vowels =&gt; we do the swap.</li>
 </ol>
 <h3 id="time-3">Time</h3>
-<p>We need to scan the string once: O(n).</p>
+<p>We need to scan the string once: $O(n)$.</p>
 <h3 id="space-3">Space</h3>
-<p>O(n).</p>
+<p>$O(n)$</p>
 <h1 id="151-reverse-words-in-a-stringhttpsleetcodecomproblemsreverse-words-in-a-string"><a href="https://leetcode.com/problems/reverse-words-in-a-string/">151. Reverse Words in a String</a></h1>
 <h2 id="approach-2">Approach</h2>
 <ol>
@@ -64,9 +64,9 @@
 <li>Use double pointers to swap.</li>
 </ol>
 <h3 id="time-4">Time</h3>
-<p>O(n).</p>
+<p>$O(n)$</p>
 <h3 id="space-4">Space</h3>
-<p>O(n).</p>
+<p>$O(n)$</p>
 <h1 id="1137-n-th-tribonacci-numberhttpsleetcodecomproblemsn-th-tribonacci-number"><a href="https://leetcode.com/problems/n-th-tribonacci-number/">1137. N-th Tribonacci Number</a></h1>
 <h2 id="approach-3">Approach</h2>
 <p>To solve it and not use recursion, which is of exponential complexity, we use a dynamic programming technique:</p>
@@ -283,7 +283,7 @@
 <p>$O(1)$</p>
 <h1 id="1-two-sumhttpsleetcodecomproblemstwo-sum"><a href="https://leetcode.com/problems/two-sum/">1. Two Sum</a></h1>
 <h2 id="approach-13">Approach</h2>
-<p>I did not figure it out myself. The most obvious solution is to use a $O(n^2)$ brute-force method. I then try to reduce it to $O(n\log{n})$  by first sorting it, and then use binary search to search for each element&rsquo;s complement in the list. That is another $O(n\log{n})$. This doesn&rsquo;t work becasue</p>
+<p>I did not figure it out myself. The most obvious solution is to use a $O(n^2)$ brute-force method. I then try to reduce it to $O(n\log{n})$  by first sorting it, and then use binary search to search for each element&rsquo;s complement in the list. That is another $O(n\log{n})$. This doesn&rsquo;t work becasue the numbers could be negative and the target sum could be acheived by summing</p>
 ]]></content:encoded>
     </item>
     
