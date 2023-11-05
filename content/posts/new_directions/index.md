@@ -59,7 +59,7 @@ Use visualizations as a medium to study perception
 
 ## Histogram binning revisited with a focus on human perception (2021)
 
-## Jurassic Mark: Inattentional Blindness for a Datasaurus Reveals that Visualizations are Explored, not Seen
+## Jurassic Mark: Inattentional Blindness for a Datasaurus Reveals that Visualizations are Explored, not Seen (2021)
 
 ## No Mark is an Island: Precision and Category Repulsion Biases in Data Reproductions (2021)
 

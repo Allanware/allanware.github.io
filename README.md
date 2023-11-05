@@ -8,7 +8,7 @@
 - music shortcode: see [here](https://hugoloveit.com/zh-cn/theme-documentation-music-shortcode/) and [here](https://github.com/metowolf/MetingJS)
     - example:
         - `{{< music url="test.ogg" cover="test.jpeg" name="musicianName">}}`
-    - 仅支持本地 audio， 以及中国各大音乐平台 （不支持spotify, apple music，sound cloud)
+    - 仅支持本地 audio， 以及中国各大音乐平台（不支持spotify, apple music，sound cloud）
         - 但spotify, apple music 都在 share下有 copy embed code这个选项，然后直接把code copy到markdown 里就好了
 
 - refernce page2 inside page1: [page2]({{< ref "/page2" >}})
