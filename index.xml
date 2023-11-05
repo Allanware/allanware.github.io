@@ -326,7 +326,7 @@
 <h2 id="face-to-face-evaluating-visual-comparison-2019">Face to Face: Evaluating Visual Comparison (2019)</h2>
 <h2 id="graphical-perception-for-immersive-analytics-2020">Graphical Perception for Immersive Analytics (2020)</h2>
 <h2 id="histogram-binning-revisited-with-a-focus-on-human-perception-2021">Histogram binning revisited with a focus on human perception (2021)</h2>
-<h2 id="jurassic-mark-inattentional-blindness-for-a-datasaurus-reveals-that-visualizations-are-explored-not-seen">Jurassic Mark: Inattentional Blindness for a Datasaurus Reveals that Visualizations are Explored, not Seen</h2>
+<h2 id="jurassic-mark-inattentional-blindness-for-a-datasaurus-reveals-that-visualizations-are-explored-not-seen-2021">Jurassic Mark: Inattentional Blindness for a Datasaurus Reveals that Visualizations are Explored, not Seen (2021)</h2>
 <h2 id="no-mark-is-an-island-precision-and-category-repulsion-biases-in-data-reproductions-2021">No Mark is an Island: Precision and Category Repulsion Biases in Data Reproductions (2021)</h2>
 <h2 id="open-vs-closed-shapes-new-perceptual-categories-2018">Open vs. Closed Shapes: New Perceptual Categories? (2018)</h2>
 <h2 id="optimizing-color-assignment-for-perception-of-class-separability-in-multiclass-scatterplots-2019">Optimizing Color Assignment for Perception of Class Separability in Multiclass Scatterplots (2019)</h2>
@@ -1345,8 +1345,8 @@ relative location to the actual meters, so that the event will show
 up on the correct location on the pitch I draw.</li>
 </ul>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span>location.x <span style="color:#f92672">&lt;-</span> location.y <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">rep</span>(<span style="color:#66d9ef">NA</span>, <span style="color:#a6e22e">nrow</span>(istanbul))
-</span></span><span style="display:flex;"><span><span style="color:#a6e22e">for </span>(i in <span style="color:#ae81ff">1</span><span style="color:#f92672">:</span><span style="color:#a6e22e">nrow</span>(istanbul)) {
-</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">if </span>(<span style="color:#f92672">!</span> <span style="color:#a6e22e">is.null</span>(istanbul<span style="color:#f92672">$</span>location[[i]])) {
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">for</span> (i <span style="color:#66d9ef">in</span> <span style="color:#ae81ff">1</span><span style="color:#f92672">:</span><span style="color:#a6e22e">nrow</span>(istanbul)) {
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">if</span> (<span style="color:#f92672">!</span> <span style="color:#a6e22e">is.null</span>(istanbul<span style="color:#f92672">$</span>location[[i]])) {
 </span></span><span style="display:flex;"><span>    location.x[i] <span style="color:#f92672">&lt;-</span> istanbul<span style="color:#f92672">$</span>location[[i]][1] <span style="color:#f92672">*</span> <span style="color:#ae81ff">105</span> <span style="color:#f92672">/</span> <span style="color:#ae81ff">120</span>
 </span></span><span style="display:flex;"><span>    location.y[i] <span style="color:#f92672">&lt;-</span> istanbul<span style="color:#f92672">$</span>location[[i]][2] <span style="color:#f92672">*</span> <span style="color:#ae81ff">68</span> <span style="color:#f92672">/</span> <span style="color:#ae81ff">80</span>
 </span></span><span style="display:flex;"><span>  }
