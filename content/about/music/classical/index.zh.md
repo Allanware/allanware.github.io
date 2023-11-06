@@ -44,7 +44,7 @@ tags: ['古典乐']
     - just epic
 - Sibelius: Symphony No. 7 in C Major
 - Schubert: Symphony No. 8 in B minor
-- [Cherubini: Symphony in D Major]({{< ref "posts/concert-review-2/index.md" >}})
+- [Cherubini: Symphony in D Major]({{< relref path="posts/concert-review-2/index.md" lang="en">}})
 - Rachmaninoff: Symphony No. 2 in E minor
 - Bartók: Concerto for Orchestra
 
@@ -53,7 +53,7 @@ tags: ['古典乐']
     - if you are new to classical music, this would be the perfect place to start.
 - Rachmaninoff: Piano Concerto No. 3 in D minor
     - after listening to No. 2, the first few bars alone of No. 3 could excite me.
-- [Beethoven: Piano Concerto No. 5 in E♭ Major]({{< ref "posts/concert-review-2/index.md" >}})
+- [Beethoven: Piano Concerto No. 5 in E♭ Major]({{< relref path="posts/concert-review-2/index.md" lang="en">}})
 - Felix Mendelssohn: Concerto in E minor for Violin and Orchestra
 - Beethoven: Violin Concerto in D Major
 - Tchaikovsky: Piano Concerto No. 1 in B♭ minor
@@ -93,11 +93,11 @@ Program Music includes program symphonies, concert overtures, symphonic/tone poe
 - Prokofiev: Romeo and Juliet, Op. 64, Act I
 - Tchaikovsky: Swan Lake Suite
 - Smetana: The Moldau from Má Vlast
-- [Rachmaninoff: The Isle of the Dead]({{< ref "posts/concert-review-1/index.md" >}})
+- [Rachmaninoff: The Isle of the Dead]({{< relref path="posts/concert-review-1/index.md" lang="en">}})
 - Debussy: Prelude to the Afternoon of a Faun 
 - Felix Mendelssohn: Overture "A Midsummer Night's Dream"
 - Mussorgsky: Pictures at an Exhibition: The Great Gate of Kiev
-- [Kodály: Háry János Suite]({{< ref "posts/concert-review-1/index.md" >}})
+- [Kodály: Háry János Suite]({{< relref path="posts/concert-review-1/index.md" lang="en">}})
 - Tchaikovsky: Marche slave
 - Holst: the Planets 
 - Ravel: Boléro
@@ -120,7 +120,7 @@ The Suites here are more "absolute" than, for example, the suites extracted from
 - Brahms: Hungarian Dances
 - Rachmaninoff: Rhapsody on a Theme of Paganini, Variation 18
     - used by I don't know how many films
-- [Janácek: Suite for String Orchestra]({{< ref "posts/concert-review-2/index.md" >}})
+- [Janácek: Suite for String Orchestra]({{< relref path="posts/concert-review-2/index.md" lang="en">}})
 - Shostakovich: The Second Waltz, Op .99a
     - Shostakovich showed (maybe show is a strong word) himself that he, besides the satirical, solemn, and serious pieces, can also do this.
 - Dvořák: Humoresque No. 7 In G-flat Major (originally a piece for piano solo)

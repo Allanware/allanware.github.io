@@ -14,6 +14,8 @@
 - refernce page2 inside page1: [page2]({{< ref "/page2" >}})
     - can use {{< ref "/page2#key1" >}} to reference the key inside another page
 
+- reference the translation of a page, if it exists: `{{< relref path="" lang="en">}}`
+
 ## features 
 - mathjax 
     - in post front matter set `mathjax: true`

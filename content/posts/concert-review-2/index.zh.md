@@ -11,4 +11,4 @@ unlisted: true
 #     alt: 
 #     relative: true
 ---
-不好意思，暂时没有中文翻译，以后有时间会补上的。如想浏览英文版可以点击上方的 <ins>En</ins>。
+不好意思，暂时没有中文翻译，以后有时间会补上的。如想浏览英文版可以点击[英语版本]({{< relref path="concert-review-2/index.md" lang="en" >}})

@@ -39,9 +39,9 @@ Use visualizations as a medium to study perception
 
 ## At a Glance: Pixel Approximate Entropy as a Measure of Line Chart Complexity (2018)
 
-## Biased Average Position Estimates in Line and Bar Graphs: Underestimation, Overestimation, and Perceptual Pull (2020)
+[## Biased Average Position Estimates in Line and Bar Graphs: Underestimation, Overestimation, and Perceptual Pull (2020)]({{< ref "APAD/5/index.md" >}})
 
-## Correlation Judgment and Visualization Features: A Comparative Study (2019)
+## Correlation Judgment and Visualization Features: A Comparative Study (2019)s
 
 ## Measuring the Separability of Shape, Size, and Color in Scatterplots (2019)
 

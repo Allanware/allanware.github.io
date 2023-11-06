@@ -27,7 +27,7 @@ _家乐福里有几十种不同的法棍，还都特别便宜，我买了根后�
 _午后的 the pink city_
 
 ![](cupressus.jpg)
-_像不像 [the Isle of the Dead]({{< ref "posts/concert-review-1/index.md#isle-of-the-dead" >}}) 那幅画里的那几棵树_
+_像不像 [the Isle of the Dead]({{< relref path="posts/concert-review-1/index.md#isle-of-the-dead" lang="en">}}) 那幅画里的那几棵树_
 
 ![](venus.jpg)
 _当时刚上完希腊神话与罗马史这两节课，结果路过这个博物馆发现里面的雕像、石碑和石棺都与课上的内容有关，第一次那么认真地逛了博物馆，感觉这两节课的春游就应该设在这里_
