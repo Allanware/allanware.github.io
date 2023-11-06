@@ -6,7 +6,137 @@
     <description>Recent content on Wenxuan Zhao</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sun, 22 Oct 2023 11:42:45 -0500</lastBuildDate><atom:link href="https://allanware.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 04 Nov 2023 18:35:11 -0500</lastBuildDate><atom:link href="https://allanware.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Biased Average Position Estimates in Line and Bar Graphs</title>
+      <link>https://allanware.github.io/posts/2023/11/biased-average-position-estimates-in-line-and-bar-graphs/</link>
+      <pubDate>Sat, 04 Nov 2023 18:35:11 -0500</pubDate>
+      
+      <guid>https://allanware.github.io/posts/2023/11/biased-average-position-estimates-in-line-and-bar-graphs/</guid>
+      <description>A paper a day: Xiong et al conducts experiments on estimating averages in line and bar graphs, in which they identified systematic perceptual biases.</description>
+      <content:encoded><![CDATA[<h2 id="introduction">Introduction</h2>
+<p>Preceptual psychology reveals that preception of visual information can be systematically influenced by/biased based on <strong>context</strong> and <strong>recent history</strong>. This is also true in data visualization.</p>
+<p>Position in past literature is believed to be the most precise channel to encode information. In this paper, they will show systematica biases in perception of data using positional encodings.</p>
+<h2 id="perceptual-biases">Perceptual Biases</h2>
+<ul>
+<li>lower-levels biases: size, features that include hue, brightness, orientation, and position perception</li>
+<li>biases mechanisms: context (background, neighbor, categorical boundary, salient points), adaptation
+<ul>
+<li>Positions are encoded somewhat categorically (similar to color), so that changes to a category boundary are easier to detect, compared to equally distant changes that do not cross a category boundary</li>
+<li>he position memory of a briefly presented object can be biased by context or nearby salient points in the display. Memory for the position of an object can be biased toward the average position of an associated group of objects.</li>
+</ul>
+</li>
+</ul>
+<h2 id="cognitive-biases">Cognitive Biases</h2>
+<ul>
+<li>higher level biases: estimation, decision, judgement</li>
+<li>biases mechanisms: recent history: <em>priming</em>, and context
+<ul>
+<li>anchoring effect: uncertain target estimates can be strongly biased by other provided values, even if they are objectively irrelevant.</li>
+<li>Such higher-level cognitive influences may also affect pattern perception in data visualizations
+<ul>
+<li>slope estimate</li>
+<li>judgments of class separability</li>
+<li>eg. viewers who saw a high-intensity title recall a steeper slope than those who saw a low-intensity title</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="contributions">Contributions</h2>
+<p>Previous work on investigating perceptual biases has focused on biases within visualizations in a higher-level, cognitive context.
+- how do semantics of titles, axes, or other visualization elements, or priming influence perception.</p>
+<p>This paper focus on potential biases found in lower-level perception of data — can people accurately perceive purely graphical information?
+- possible biases within <strong>average position estimations</strong></p>
+<h2 id="study-overview">Study Overview</h2>
+<h3 id="stimuli-and-procedure">Stimuli and procedure</h3>
+<p>The stimuli could appear at top and/or bottom. 3 means of height for both top and bottom: low, medium, high
+- determined in pilot trial by two-alternative forced choice. Following conventions from psychophysics, an ideal distance between means would have participants accurately discriminating them in at least 75% of all trials: 12 pixels for line, 5 pixels for bar in a 140 pixel display frame with average viweing distance of 47 cm.</p>
+<p>Procedure:</p>
+<p><img loading="lazy" src="fig2.png" alt="fig2"  />
+</p>
+<p>Three experiments:</p>
+<ol>
+<li>One line or one set of bars: investigates whether systematic biases exist in position estimates for <em>simple graphs</em>, where a single line or a single set of bars is the only present, graphed data series.</li>
+<li>two lines or two sets of bars: how average position perception of a graphed data series can be distorted in the presence of an <em>identical</em> type of data series.</li>
+<li>one line and one set of bars: how the average perception of one type of data series can be distorted by a <em>different</em> type of data series</li>
+</ol>
+<h2 id="experiment-1">Experiment 1</h2>
+<p>This experiment establishes a <strong>baseline</strong> to understand how a single graphed data series is perceived without the potential influence of other graphed data series. These findings will be later compared to how the presence of an additional graphed data series may further bias perception.</p>
+<h3 id="design">Design</h3>
+<ol>
+<li>precue to cue the participant</li>
+<li>stimulus conditions:
+<ul>
+<li>top vs bottom</li>
+<li>noisy vs uniform</li>
+<li>line vs bar depends on the precue</li>
+</ul>
+</li>
+<li>mask</li>
+<li>use response probe to get the estimated position of lines from the participants.</li>
+</ol>
+<h3 id="analysis">Analysis</h3>
+<p>They used a mixed-effect linear model.</p>
+<h3 id="result">Result</h3>
+<p>They observed an overall *<em>underestimation</em> of line position, in which participants estimated average line positions to be lower than where the average position of the line actually appeared. They also tested their hypothesis on participants&rsquo; heuristics and negated it: for noisy lines, participants did not base their average position estimations only on the lowest point for lines on both the top and bottom half of the display.</p>
+<p>They observed an overall overestimation of bar position, where participants systematically estimated average bar positions to be higher than its actual position. They again excluded the possibility that the participants were simply averaging the highest and lowest points on the set of bars to generate their average positional estimates.</p>
+<h2 id="experiment-2">Experiment 2</h2>
+<h3 id="design-1">Design</h3>
+<ol>
+<li>preque participants to report the average position of a line or a set of bars presented at the top or bottom of the display.</li>
+<li>stimulus:
+<ul>
+<li>line vs bar half half</li>
+<li>judge the top vs bottom</li>
+<li>all noisy</li>
+<li>control trials: each participant estimated the average position of a single noisy line or a single noisy set of bars, replicating Experiment 1.</li>
+</ul>
+</li>
+</ol>
+<h3 id="result-1">Result</h3>
+<p>They replicated the results in experiment 1 in the control trials. They also observed an underestimation in average line positions and an overestimation in average bar positions in &ldquo;compound&rdquo; (two lines or two sets of bars) displays.</p>
+<p>Additionally, we also found an effect of “perceptual pull”: position estimates for a target data series (a set of bars or a line) were ‘pulled’ toward the irrelevant data series shown on the same graph: there was a significant interaction between location and display type
+- participants underestimated the top line even more compared to single-line displays; underestimation of the bottom line was reduced.
+- Overestimation of the top bars was reduced; overestimation of the bottom set of bars was exaggerated.</p>
+<h2 id="experiment-3">Experiment 3</h2>
+<h3 id="design-2">Design</h3>
+<p>Similar to experiment 2 except with different graph types in the same display: compound bar-line and compound line-bar displays.</p>
+<h3 id="result-2">Result</h3>
+<p>Results from the first 2 are replicated, and the extent of perceptual pull does not depend on data series type.</p>
+<h3 id="perceptual-pull-as-anchoring-effect">Perceptual pull as anchoring effect</h3>
+<ul>
+<li>Perceptual pull is exerted on a target data series when an irrelevant data series acts as a non-target baseline.</li>
+<li>Similar to the cognitive anchoring effect, the observed perceptual pull was greater when the baseline series appeared to be farther away (high magnitude baseline).
+<ul>
+<li>I am not sure where this comes from?</li>
+</ul>
+</li>
+</ul>
+<h2 id="future-direction">Future direction</h2>
+<ul>
+<li>Why underestimate average of line chart and overestimate average of bar charts
+<ul>
+<li>could the aspect ratio of bar charts explain?</li>
+<li>figure-ground encoding: attention biases ground, and bars are grounds and will be overestimated, and the converse is true for line?</li>
+</ul>
+</li>
+<li>the root cause
+<ul>
+<li>might they be more cognitive and strategic, leaving more room for strategy interventions to mitigate the biases? Manipulating the viewer’s task could determine whether the bias stems from averaging ensemble positions, or is more generally a bias of perceiving even a single mark position.</li>
+</ul>
+</li>
+<li>more complex stimuli</li>
+<li>alternative response probe: the current probe may also pull the reponse via &ldquo;perceptual pulling&rdquo;.</li>
+<li>test encodings other than position: underestimation and overestimation when perceive values encoded in size, orientation, saturation, etc.</li>
+</ul>
+<h2 id="design-guidelines">Design guidelines</h2>
+<ul>
+<li>Position estimation biases were smaller and judgments were more precise for bars compared to lines =&gt; in the absence of other constraints, use bars.</li>
+<li>Designers seeking the confidence of avoid- ing perceptual pull effects could avoid plotting two series in the same display.</li>
+</ul>
+]]></content:encoded>
+    </item>
     
     <item>
       <title>My Leetcode Journey</title>
@@ -316,8 +446,8 @@
 <li><a href="http://jiquadcs.com/">Ghulam Jilani Quadri</a> and <a href="https://cspaul.com/wordpress/">Paul Rosen</a></li>
 </ul>
 <h2 id="at-a-glance-pixel-approximate-entropy-as-a-measure-of-line-chart-complexity-2018">At a Glance: Pixel Approximate Entropy as a Measure of Line Chart Complexity (2018)</h2>
-<h2 id="biased-average-position-estimates-in-line-and-bar-graphs-underestimation-overestimation-and-perceptual-pull-2020">Biased Average Position Estimates in Line and Bar Graphs: Underestimation, Overestimation, and Perceptual Pull (2020)</h2>
-<h2 id="correlation-judgment-and-visualization-features-a-comparative-study-2019">Correlation Judgment and Visualization Features: A Comparative Study (2019)</h2>
+<p><a href="https://allanware.github.io/posts/2023/11/biased-average-position-estimates-in-line-and-bar-graphs/">## Biased Average Position Estimates in Line and Bar Graphs: Underestimation, Overestimation, and Perceptual Pull (2020)</a></p>
+<h2 id="correlation-judgment-and-visualization-features-a-comparative-study-2019s">Correlation Judgment and Visualization Features: A Comparative Study (2019)s</h2>
 <h2 id="measuring-the-separability-of-shape-size-and-color-in-scatterplots-2019">Measuring the Separability of Shape, Size, and Color in Scatterplots (2019)</h2>
 <h2 id="data-visualization-saliency-model-a-tool-for-evaluating-abstract-data-visualizations-2018">Data Visualization Saliency Model: A Tool for Evaluating Abstract Data Visualizations (2018)</h2>
 <h2 id="evaluating-gradient-perception-in-color-coded-scalar-fields-2019">Evaluating Gradient Perception in Color-Coded Scalar Fields (2019)</h2>
