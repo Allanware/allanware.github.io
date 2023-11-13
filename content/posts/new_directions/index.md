@@ -23,6 +23,8 @@ Use visualizations as a medium to study perception
 ## Visual Arrangements of Bar Charts Influence Comparisons in Viewer Takeaways (2022)
 - Cindy Xiong, Vidya Setlur, Benjamin Bach, Kylie Lin, Eunyee Koh, and Steven Franconeri
 
+## What Does the Chart Say? Grouping Cues Guide Viewer Comparisons and Conclusions in Bar Charts (2023)
+
 ## Where's My Data? Evaluating Visualizations with Missing Data (2019)
 
 ## Measuring and Modeling the Feature Detection Threshold Functions of Colormaps (2019)
@@ -87,7 +89,7 @@ Use visualizations as a medium to study perception
 
 ## Task-Based Effectiveness of Basic Visualizations (2019)
 
-## The Perceptual Proxies of Visual Comparison (2020)
+[## The Perceptual Proxies of Visual Comparison (2020)]({{< ref "APAD/7/index.md" >}})
 
 ## The Weighted Average Illusion: Biases in Perceived Mean Position in Scatterplots (2022)
 

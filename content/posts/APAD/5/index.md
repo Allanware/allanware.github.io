@@ -17,8 +17,8 @@ Position in past literature is believed to be the most precise channel to encode
 ## Perceptual Biases
 - lower-levels biases: size, features that include hue, brightness, orientation, and position perception 
 - biases mechanisms: context (background, neighbor, categorical boundary, salient points), adaptation
-    - Positions are encoded somewhat categorically (similar to color), so that changes to a category boundary are easier to detect, compared to equally distant changes that do not cross a category boundary
-    - he position memory of a briefly presented object can be biased by context or nearby salient points in the display. Memory for the position of an object can be biased toward the average position of an associated group of objects.
+    - Positions are encoded somewhat categorically (similar to color), so that changes to a category boundary are easier to detect, compared to equally distant changes that do not cross a category boundary.
+    - The position memory of a briefly presented object can be biased by context or nearby salient points in the display. Memory for the position of an object can be biased toward the average position of an associated group of objects.
 
 ## Cognitive Biases
 - higher level biases: estimation, decision, judgement
@@ -112,3 +112,10 @@ Results from the first 2 are replicated, and the extent of perceptual pull does 
 ## Design guidelines
 - Position estimation biases were smaller and judgments were more precise for bars compared to lines => in the absence of other constraints, use bars.
 - Designers seeking the confidence of avoid- ing perceptual pull effects could avoid plotting two series in the same display.
+
+## My takeaways
+1. Context and recent history are the two key dimensions that induce biases.
+2. The experiments (including the pilot) are built up nicely: logically coherent and make it easy for analysis. 
+3. The perceptual pull phenomenon is interesting both in and of itself and in its correspondence to the anchoring effect.
+4. The paper does not delve into why the biases it identifies happen, leaving room for future works. 
+5. The potential biase induced by response probe and small sample size may be the reason why there is conflicting result from other papers. For example: [Perception of bar graphs - A biased impression?](https://doi.org/10.1016/j.chb.2016.01.036) concludes from experiments that people tend to *underestimate* the average of a set of bars.
