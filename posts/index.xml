@@ -6,7 +6,74 @@
     <description>Recent content in Posts on Wenxuan Zhao</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sat, 04 Nov 2023 18:35:11 -0500</lastBuildDate><atom:link href="https://allanware.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 07 Nov 2023 12:42:22 -0600</lastBuildDate><atom:link href="https://allanware.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Perceptual proxies for extracting averages in data visualizations</title>
+      <link>https://allanware.github.io/posts/2023/11/perceptual-proxies-for-extracting-averages-in-data-visualizations/</link>
+      <pubDate>Tue, 07 Nov 2023 12:42:22 -0600</pubDate>
+      
+      <guid>https://allanware.github.io/posts/2023/11/perceptual-proxies-for-extracting-averages-in-data-visualizations/</guid>
+      <description>A paper a day: Yuan et al showed that when comparing averages across multiple data points, viewers use surprisingly primitive perceptual cues: the hierarchy of precision for perceptual encodings of data doesn&amp;rsquo;t hold for comparison of averages of even pairs of data.</description>
+      <content:encoded><![CDATA[<h2 id="intro">Intro</h2>
+<p>The power of visualizations is constrained by the limitations and idiosyncrasies of the human visual system.
+- this is how they use the word &ldquo;constraints&rdquo;</p>
+<p>One of the findings based on constraints is a hierarchy of judgment precision among visual features that encode data values
+- eg. spatial position encoding (eg. compare length on the common ground) &gt; length (stacked bar chart) &gt; area (treemap).</p>
+<p>The catch: The precision of these encodings was determined for comparisons between <em>single</em> values, under the assumption that what is true for comparing single values is also true for multiple values.
+- researchers therefore often decompose graph reading into elementary perceptual processes.</p>
+<p>There hypothesis is that the advantage of position encoding is not availble for comparisons involving larger sets: the visual system fails to use the most precise feature (position) and uses a less precise feature (length or even the area of the bars), because it may not be able to extract averages from multiple bar values; it may be restricted (or at least, irresistibly tempted) to considering sums only.</p>
+<h2 id="experiment-1">Experiment 1</h2>
+<h3 id="stimuli">Stimuli</h3>
+<p>Task: Participants judged which one of two variables had a higher value (1vs1) or higher mean (2vs2 and 6vs6).</p>
+<p>Three types of comparisons: 1 vs 1, 2 vs 2, and 6 vs 6.</p>
+<p>Three graph types: dot plots (position only), bar graph (position and spaial extent (length and area)), and misaligned bar graph (spaital extent only).</p>
+<p>This graph shows the stimuli usign in both experiments:
+<img loading="lazy" src="fig3.png" alt="Fig3"  />
+</p>
+<h3 id="design">Design</h3>
+<p>They used a 3 by 3 (3 comparison type by 3 graph type) with-in subject design to measure just noticeable differences (JND) using a staircase procedure.
+- A small JND means a participant can detect a small difference between two groups, reflecting higher perceptual discriminability.
+- During the staircase procedure, if participants correctly (or incorrectly) answered the previous trial, the difficulty (defined by the difference between the means of the y-axis values of each group) of the next trial increased (or decreased) by one level.
+- 12 levels of staircase.
+- The &ldquo;ceiling&rdquo; of the staircase could be determined by simulating random guess. People should do better than random guess.
+- A separate staircase was run for each of the nine conditions.</p>
+<p>They also did several manipulations in generating stimuli to rule out the possibility that participants used statistical information other than the mean in their judgment.
+- for 6vs6, for example, they randomized which set had the larger mean with which set had the larger standard deviation, largest single value, and smallest single value.</p>
+<p>The nine unique conditions were randomly presented in each block of nine trials. Each block was followed by a break that the participant could end by pressing a key. A new block of trials was then be shown in a random order, and these blocks continued until the end of the experiment. Once the 1vs1 conditions were complete, only 2vs2 and 6vs6 trials were shown.</p>
+<h3 id="procedure">Procedure</h3>
+<p>Participants were introduced to the experiment as a graph-reading task. They were told that the y-axis represented the time it took for a red and a blue team to finish a car racing game. Sometimes there was only one car within each team; sometimes there were multiple cars. Participants were told to judge which team on average took longer. For the misaligned bar graph condition, they were told explicitly that the length of the bars represented the time values.</p>
+<p>For each trial: a fixation (500ms) + a left-right judgement on which side has higher average (2s, if no response after 2s, then marked incorrect and participants were reminded to response quicker).</p>
+<p>([25 trials for 1vs1] + [49 trials for 2vs2] + [49 trials for 6vs6]) × [3 graph types] = 369 trials plus a set of two practice trials.
+- why such imbalance</p>
+<h3 id="results">Results</h3>
+<p>To prove their hypothsis, they are able to find a significant interaction between comparison type and graph type: in 1vs1, the average JND differnece of misaligned bar graph is significantly higher than the other two.
+- These results indicate that participants had relied on the spatial position information when comparing individual values on normal bar graphs.</p>
+<p>In contrast, for 2vs2 comparison, performance on the dot graphs was marginally significantly worse than on the normal bar graphs, but there was no significant performance difference between the normal bar graphs and the misaligned bar graphs. For 6vs6 comparisons, there was no significant difference among conditions.</p>
+<p>The ANOVA analysis also revealed a main effect of comparison type: comparisons between single values significantly better than 2vs2, which were significantly better than 6vs6. They did not find a main effect of graph type.</p>
+<h3 id="discussion">Discussion</h3>
+<p>In 1vs1, participants relied on the spatial position.
+In 2vs2 (pair comparison), participants had relied on the spatial extent of the bars rather than their spatial position in bar and misaligned bar graph conditions.
+For 6vs6 (mutivalue comparison), it is possible that participants treat entire set of bars as a single unit, summing the area of its shape envelope instead of the averaging the length of its bars. If so, this strategy should suffer for displays with an unequal number of bars between the groups. Thus, here comes the 2nd experiment.</p>
+<h2 id="experiment-2">Experiment 2</h2>
+<h3 id="stimuli-1">Stimuli</h3>
+<p>2 new comparison types: 10vs10 and 6vs10. They also added small set size conditions (1vs1 and 2vs2) and used them as base-line measures to exclude outliers (whoever could not perform these baseline conditions within 3 SD from mean is excluded).</p>
+<h3 id="design-1">Design</h3>
+<p>They used the staircase method with the three-down/one-up design: three correct answers in a row multiplied the staircase value by 0.75, and one incorrect answer multiplied the staircase value by 1.11.
+- These constants yielded a staircase that would converge on a JND equivalent to 68% accuracy.</p>
+<p>The experiment comprised three blocks. In each block, 16 trials of one condition were presented consecutively. Following a break, this process was repeated until all conditions were seen. The second and third blocks were the same as the first, but the order of the conditions was randomized each time. The staircase of each condition in the second and third block was a continuation of the previous bock’s staircase. The experiment included a total of (5 set sizes) × (3 graph types) × (3 blocks) × (16 trials) = 720 trials per subject. Feedback was given for the first 16 trials for all conditions (the easiest part of the staircase) to ensure that subjects understood the task.</p>
+<h3 id="results-1">Results</h3>
+<p>Anova shows no significant effect for both set size and graph type and their interaction in 6vs6 and 10vs10 set size, so they combined these 2 into the <em>same set size</em> comparison condition and treated 6vs10 as the <em>different set size</em> comparison condition.</p>
+<p>The ANOVA revealed a robust main effect between the forementioned two comparison types (same vs. different set size). The ANOVA did not detect a significant main effect of graph type.</p>
+<p>When there was unequal numbers of items between groups (different set sizes), a planned comparison between dot graphs and the normal bar graphs indicates that performance was significantly better on the dot graphs than on the normal bar graphs.</p>
+<h3 id="discussion-1">Discussion</h3>
+<p>It is possible that, for the dots in the six versus ten condition, a center-of-mass proxy might be used for the dots, as opposed to a summed area proxy for the bars.</p>
+<h2 id="conclusion--future-directions">Conclusion &amp; Future Directions</h2>
+<p>The hierarchy of encoding precision of single-value comparisons (Cleveland &amp; McGill, 1984) is typically assumed to extrapolate to more complex displays. The present results suggest that it does not, and that multivalue comparisons can rely on surprisingly different perceptual proxies for the desired statistics.</p>
+<p>Why did participants appear to rely on sums instead of averages? Their result is particularly surprising given the extensive evidence that the visual system can compute visual statistics across basic features. This incongruent result may provide a case of use-inspired basic research (Shneiderman, 2015), leading visual cognition researchers to find the limiting factors to such statistical extraction.</p>
+<p>The visual system is biased to deal with whole objects, rather than the features or parts of the objects, When asked to track multiple moving objects, observers have extreme difficulty tracking just one end of a moving bar, reflexively snapping their attention to the whole bar instead, and a similar reflex may lead viewers to bias recall of values plotted in bar graphs toward the center of the bar, instead of the top edge (with-in-the-bar-bias). In the current study, although spatial position might be the most relevant feature on a bar graph for comparing the averages between groups of values, viewers seem to be incapable of ignoring the spatial extent (length or area) information, and select the whole bars as the unit of attention.</p>
+]]></content:encoded>
+    </item>
+    
     <item>
       <title>Biased Average Position Estimates in Line and Bar Graphs</title>
       <link>https://allanware.github.io/posts/2023/11/biased-average-position-estimates-in-line-and-bar-graphs/</link>
@@ -22,8 +89,8 @@
 <li>lower-levels biases: size, features that include hue, brightness, orientation, and position perception</li>
 <li>biases mechanisms: context (background, neighbor, categorical boundary, salient points), adaptation
 <ul>
-<li>Positions are encoded somewhat categorically (similar to color), so that changes to a category boundary are easier to detect, compared to equally distant changes that do not cross a category boundary</li>
-<li>he position memory of a briefly presented object can be biased by context or nearby salient points in the display. Memory for the position of an object can be biased toward the average position of an associated group of objects.</li>
+<li>Positions are encoded somewhat categorically (similar to color), so that changes to a category boundary are easier to detect, compared to equally distant changes that do not cross a category boundary.</li>
+<li>The position memory of a briefly presented object can be biased by context or nearby salient points in the display. Memory for the position of an object can be biased toward the average position of an associated group of objects.</li>
 </ul>
 </li>
 </ul>
@@ -135,6 +202,14 @@
 <li>Position estimation biases were smaller and judgments were more precise for bars compared to lines =&gt; in the absence of other constraints, use bars.</li>
 <li>Designers seeking the confidence of avoid- ing perceptual pull effects could avoid plotting two series in the same display.</li>
 </ul>
+<h2 id="my-takeaways">My takeaways</h2>
+<ol>
+<li>Context and recent history are the two key dimensions that induce biases.</li>
+<li>The experiments (including the pilot) are built up nicely: logically coherent and make it easy for analysis.</li>
+<li>The perceptual pull phenomenon is interesting both in and of itself and in its correspondence to the anchoring effect.</li>
+<li>The paper does not delve into why the biases it identifies happen, leaving room for future works.</li>
+<li>The potential biase induced by response probe and small sample size may be the reason why there is conflicting result from other papers. For example: <a href="https://doi.org/10.1016/j.chb.2016.01.036">Perception of bar graphs - A biased impression?</a> concludes from experiments that people tend to <em>underestimate</em> the average of a set of bars.</li>
+</ol>
 ]]></content:encoded>
     </item>
     
@@ -433,6 +508,7 @@
 <ul>
 <li>Cindy Xiong, Vidya Setlur, Benjamin Bach, Kylie Lin, Eunyee Koh, and Steven Franconeri</li>
 </ul>
+<h2 id="what-does-the-chart-say-grouping-cues-guide-viewer-comparisons-and-conclusions-in-bar-charts-2023">What Does the Chart Say? Grouping Cues Guide Viewer Comparisons and Conclusions in Bar Charts (2023)</h2>
 <h2 id="wheres-my-data-evaluating-visualizations-with-missing-data-2019">Where&rsquo;s My Data? Evaluating Visualizations with Missing Data (2019)</h2>
 <h2 id="measuring-and-modeling-the-feature-detection-threshold-functions-of-colormaps-2019">Measuring and Modeling the Feature Detection Threshold Functions of Colormaps (2019)</h2>
 <h2 id="looks-good-to-me-visualizations-as-sanity-checks">Looks Good To Me: Visualizations As Sanity Checks</h2>
@@ -470,7 +546,7 @@
 <h2 id="studying-early-decision-making-with-progressive-bar-charts-2023">Studying Early Decision Making with Progressive Bar Charts (2023)</h2>
 <h2 id="modeling-color-difference-for-visualization-design-2018">Modeling Color Difference for Visualization Design (2018)</h2>
 <h2 id="task-based-effectiveness-of-basic-visualizations-2019">Task-Based Effectiveness of Basic Visualizations (2019)</h2>
-<h2 id="the-perceptual-proxies-of-visual-comparison-2020">The Perceptual Proxies of Visual Comparison (2020)</h2>
+<p><a href="https://allanware.github.io/posts/2023/11/perceptual-proxies-for-extracting-averages-in-data-visualizations/">## The Perceptual Proxies of Visual Comparison (2020)</a></p>
 <h2 id="the-weighted-average-illusion-biases-in-perceived-mean-position-in-scatterplots-2022">The Weighted Average Illusion: Biases in Perceived Mean Position in Scatterplots (2022)</h2>
 <h2 id="truth-or-square-aspect-ratio-biases-recall-of-position-encodings-2021">Truth or Square: Aspect Ratio Biases Recall of Position Encodings (2021)</h2>
 <h2 id="visquiz-exploring-feedback-mechanisms-to-improve-graphical-perception-2022">VisQuiz: Exploring Feedback Mechanisms to Improve Graphical Perception (2022)</h2>
@@ -1395,8 +1471,8 @@ relative location to the actual meters, so that the event will show
 up on the correct location on the pitch I draw.</li>
 </ul>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span>location.x <span style="color:#f92672">&lt;-</span> location.y <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">rep</span>(<span style="color:#66d9ef">NA</span>, <span style="color:#a6e22e">nrow</span>(istanbul))
-</span></span><span style="display:flex;"><span><span style="color:#a6e22e">for </span>(i in <span style="color:#ae81ff">1</span><span style="color:#f92672">:</span><span style="color:#a6e22e">nrow</span>(istanbul)) {
-</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">if </span>(<span style="color:#f92672">!</span> <span style="color:#a6e22e">is.null</span>(istanbul<span style="color:#f92672">$</span>location[[i]])) {
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">for</span> (i <span style="color:#66d9ef">in</span> <span style="color:#ae81ff">1</span><span style="color:#f92672">:</span><span style="color:#a6e22e">nrow</span>(istanbul)) {
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">if</span> (<span style="color:#f92672">!</span> <span style="color:#a6e22e">is.null</span>(istanbul<span style="color:#f92672">$</span>location[[i]])) {
 </span></span><span style="display:flex;"><span>    location.x[i] <span style="color:#f92672">&lt;-</span> istanbul<span style="color:#f92672">$</span>location[[i]][1] <span style="color:#f92672">*</span> <span style="color:#ae81ff">105</span> <span style="color:#f92672">/</span> <span style="color:#ae81ff">120</span>
 </span></span><span style="display:flex;"><span>    location.y[i] <span style="color:#f92672">&lt;-</span> istanbul<span style="color:#f92672">$</span>location[[i]][2] <span style="color:#f92672">*</span> <span style="color:#ae81ff">68</span> <span style="color:#f92672">/</span> <span style="color:#ae81ff">80</span>
 </span></span><span style="display:flex;"><span>  }
