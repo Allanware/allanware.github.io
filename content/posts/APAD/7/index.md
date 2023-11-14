@@ -4,7 +4,6 @@ date: 2023-11-07T12:42:22-06:00
 author: Wenxuan Zhao
 tags: ['APAD']
 summary: "A paper a day: Yuan et al showed that when comparing averages across multiple data points, viewers use surprisingly primitive perceptual cues: the hierarchy of precision for perceptual encodings of data doesn't hold for comparison of averages of even pairs of data."
-draft: true
 cover:
     image: 
     alt: 
