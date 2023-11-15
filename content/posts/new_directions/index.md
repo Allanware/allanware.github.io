@@ -43,6 +43,8 @@ Use visualizations as a medium to study perception
 
 [## Biased Average Position Estimates in Line and Bar Graphs: Underestimation, Overestimation, and Perceptual Pull (2020)]({{< ref "APAD/5/index.md" >}})
 
+[## Bar graphs depicting averages are perceptually misinterpreted: The within-the-bar bias]({{< ref "APAD/8/index.md" >}})
+
 ## Correlation Judgment and Visualization Features: A Comparative Study (2019)s
 
 ## Measuring the Separability of Shape, Size, and Color in Scatterplots (2019)

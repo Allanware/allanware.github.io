@@ -1,5 +1,6 @@
 ## Updating theme
-- git submodule update --remote --merge
+- `cd themes/PaperMod`
+- `git pull`
 
 ## tips 
 - youtube shortcode: `{{< youtube videoid >}}`
