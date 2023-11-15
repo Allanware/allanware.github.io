@@ -6,7 +6,100 @@
     <description>Recent content in Posts on Wenxuan Zhao</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 07 Nov 2023 12:42:22 -0600</lastBuildDate><atom:link href="https://allanware.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 14 Nov 2023 20:07:32 -0600</lastBuildDate><atom:link href="https://allanware.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>The within-the-bar bias</title>
+      <link>https://allanware.github.io/posts/2023/11/the-within-the-bar-bias/</link>
+      <pubDate>Tue, 14 Nov 2023 20:07:32 -0600</pubDate>
+      
+      <guid>https://allanware.github.io/posts/2023/11/the-within-the-bar-bias/</guid>
+      <description>A paper A day: Newman and Scholl discovered a cognitive asymmetry called the with-in-the-bar bias originated from the graphical asymmetry in the bar graph representation of mean.</description>
+      <content:encoded><![CDATA[<h2 id="introduction">Introduction</h2>
+<p>Broadly, the paper focus on how bar graphs are <em>naturally</em> interpreted.</p>
+<p>The mean value, a symmetric value that is influenced to the same degree by values that are located at equal distances above and below the mean, is represented by the farthest edge of a bar that originates from one particular axis, most typically below the mean.</p>
+<p>Visual objects are defined by the closure of their boundaries, such that attention is attracted to such objects but does not flow beyond the boundaries.</p>
+<p>==&gt; Hypothesis:
+When viewers are shown a bar graph that depicts a mean and are then asked to judge the likelihood that a particular value was part of its underlying distribution, they will judge points that fall with-in the bar as being more likely than points equidistant from the mean, but outside the bar.
+- they reflexively attend to the bars, and so to mistakenly prioritize regions within the bars over equivalent regions outside the bars</p>
+<h2 id="experiment-1-typical-bar-graph-with-error-bar">Experiment 1: typical bar graph with error bar</h2>
+<h3 id="design">Design</h3>
+<ol>
+<li>The participants were first shown a vertical bar graph with two bars originating from the lower x-axis
+<ul>
+<li>half saw this: <img loading="lazy" src="within_condition.png" alt="within-condition"  />
+</li>
+<li>The other half saw this: <img loading="lazy" src="outside_condition.png" alt="outside-condition"  />
+</li>
+<li>The actual means were the same, the y-axis (and in turn the bar height) is different between subjects.</li>
+</ul>
+</li>
+<li>Some filler items.</li>
+<li>Participants were then presented with a new page with the same graph axes as they just saw(remember, in step 1, the y-axis is different between 2 conditions) and a single test point, drawn at the midpoint of the y-axis. They then were asked to judge the likelihood from 1-9 that this value was part of the distribution that had been depicted by the bar seen earlier.
+<ul>
+<li>this graph will be shown to participants who saw the overall &ldquo;higher&rdquo; bars: the within-condition group: <img loading="lazy" src="within_test.png" alt="within-condition"  />
+</li>
+<li>the outside-bar group would see this: <img loading="lazy" src="outside_test.png" alt="outside-condition"  />
+</li>
+<li>the test point stays at the midline across all conditions. The western and the eastern, as well as whether the test point was within or outside of the bar are balanced between subjects.</li>
+</ul>
+</li>
+</ol>
+<h3 id="results">Results</h3>
+<p>Although the test point was equidistant from the initially depicted means, it was judged to be more likely to have come from the distribution when it was below the mean than when it was above the mean.</p>
+<h2 id="experiment-2">Experiment 2</h2>
+<p>A potential confounding variable in experiment 1 is that the systematic differences in behavior between conditions may also due to viewers have a more general bias to favor points that are numerically below the mean.</p>
+<p>To deconfound that, two additional y-axis sets of labels that represent the two types of &ldquo;falling&rdquo; bars were introduced. In total we have four conditions: rising-&ldquo;short&rdquo; bar, rising-&ldquo;long&rdquo; bar (short and long share the same numerical mean, one is short and one is long b/c of the manipulated y-axis labels), falling-&ldquo;short&rdquo; bar, and falling-&ldquo;long&rdquo; bar. Since the testing point is the same across conditions, participants who saw short bar are in &ldquo;outside-bar&rdquo; conditions, the same as what is in experiment 1. The catch is that the testing point will fall outside of the bars <em>and</em> below the mean in the falling-short condition.</p>
+<h3 id="result">Result</h3>
+<p>Test points that originated from within the bar again produced greater likelihood ratings, and it held for <em>both</em> rising bars and falling bars.</p>
+<h2 id="experiment-3">Experiment 3</h2>
+<p>A second alternative explanation could be that participants assigned higher likelihood values to less extreme numeric labels. In experiment 1 and 2, the within- the-bar points had less extreme numeric labels than did the outside-the-bar points.</p>
+<h3 id="method">Method</h3>
+<p>This experiment differed from the previous studies in the following ways:</p>
+<ul>
+<li>The y-axis labels were identical across all conditions;</li>
+<li>The graphs contained only a single bar with no error bar (to minimize memory load);</li>
+<li>The graph depicted a new hypothetical source of the data (freezing points of chemicals in a science class) that was amenable to both positive and negative numbers centered at zero.</li>
+</ul>
+<p>In all conditions the bar depicted a mean of zero, and y-axis are the same. Therefore, the 4 conditions are:</p>
+<ul>
+<li>falling bar, 5 (inside - not extreme)</li>
+<li>falling bar, -5 (outside, extreme)</li>
+<li>rising bar, 5 (outside, not extreme)</li>
+<li>rising bar, -5 (inside, extreme)
+I am not sure if -5 should be seen as the &ldquo;extreme&rdquo; value, compared to 5, or I am understanding incorrectly here.</li>
+</ul>
+<h3 id="result-1">Result</h3>
+<p>In both rising bar and falling bar conditions, points within the bars were judeged significantly more likely to belong to the distribution.</p>
+<h2 id="experiement-4-bar-stays-when-making-the-judgement">Experiement 4: bar stays when making the judgement</h2>
+<p>They wonder if in the &ldquo;free viewing&rdquo; condition the effect is still there: they made the graph was still present when they asked participants for their judgements. The rest of the setup is the same as that of experiment 3.</p>
+<p>The effect is still here.</p>
+<h2 id="experiment-5">Experiment 5:</h2>
+<p>They changed the between-subject design to <em>within-subject</em>. They counterbalanced the question order and maybe also the rising, falling order.
+The rest stays the same as experiment 4.
+<img loading="lazy" src="e5within.png" alt=""  />
+</p>
+<h3 id="result-2">Result</h3>
+<p>The effect is still significant: though 73% of the participants did rate the points as equally likely,
+the other 27% of participants reliably favor with-in-bar points.</p>
+<h2 id="experiment-6-effect-on-downstream-decisions">Experiment 6: effect on downstream decisions</h2>
+<h3 id="design-1">Design</h3>
+<p>A between-subject design? with 3 groups:</p>
+<ul>
+<li>control group: no graph shown, were given the same scenario as the other 2 conditions and were asked for a decision using a sliding bar (if the new tires should increase BTS ot decrease the BTS).</li>
+<li>rising bar group: the bar rises from -200 to 0 and stops at 0 to represent the mean.</li>
+<li>falling bar group: the bar falls from 200 t0 0 and stops at 0 to represent the mean.</li>
+</ul>
+<h3 id="result-3">Result</h3>
+<p>The presence of a rising bar led participants significantly increase BTS levels relative to control, while a falling bar caused participants to significantly decrease BTS levels relative to control.
+A further comparison confirmed that the resulting BTS levels differed between the rising- and falling-bar graph conditions.</p>
+<h3 id="discussion">Discussion</h3>
+<p>This confirms that the influence of the within-the-bar bias is not limited to reasoning about bar graphs and statistical distributions per se, but can also influence decisions made about the content that the bar graphs depict.</p>
+<h2 id="discussion-of-the-results">Discussion of the results</h2>
+<p>Bar graphs of means will doubtless remain ubiquitous, but in some situations means might be better represented with points rather than asymmetric bars—or, where possible, with depictions of the <em>distributions themselves</em>.</p>
+<p><strong><a href="https://static-content.springer.com/esm/art%3A10.3758%2Fs13423-012-0247-5/MediaObjects/13423_2012_247_MOESM1_ESM.pdf">The stimuli and instructions can be found at here.</a></strong></p>
+]]></content:encoded>
+    </item>
+    
     <item>
       <title>Perceptual proxies for extracting averages in data visualizations</title>
       <link>https://allanware.github.io/posts/2023/11/perceptual-proxies-for-extracting-averages-in-data-visualizations/</link>
@@ -523,6 +616,7 @@ For 6vs6 (mutivalue comparison), it is possible that participants treat entire s
 </ul>
 <h2 id="at-a-glance-pixel-approximate-entropy-as-a-measure-of-line-chart-complexity-2018">At a Glance: Pixel Approximate Entropy as a Measure of Line Chart Complexity (2018)</h2>
 <p><a href="https://allanware.github.io/posts/2023/11/biased-average-position-estimates-in-line-and-bar-graphs/">## Biased Average Position Estimates in Line and Bar Graphs: Underestimation, Overestimation, and Perceptual Pull (2020)</a></p>
+<p><a href="https://allanware.github.io/posts/2023/11/the-within-the-bar-bias/">## Bar graphs depicting averages are perceptually misinterpreted: The within-the-bar bias</a></p>
 <h2 id="correlation-judgment-and-visualization-features-a-comparative-study-2019s">Correlation Judgment and Visualization Features: A Comparative Study (2019)s</h2>
 <h2 id="measuring-the-separability-of-shape-size-and-color-in-scatterplots-2019">Measuring the Separability of Shape, Size, and Color in Scatterplots (2019)</h2>
 <h2 id="data-visualization-saliency-model-a-tool-for-evaluating-abstract-data-visualizations-2018">Data Visualization Saliency Model: A Tool for Evaluating Abstract Data Visualizations (2018)</h2>
