@@ -13,7 +13,7 @@
         - 但spotify, apple music 都在 share下有 copy embed code这个选项，然后直接把code copy到markdown 里就好了
 
 - refernce page2 inside page1: [page2]({{< ref "/page2" >}})
-    - can use {{< ref "/page2#key1" >}} to reference the key inside another page
+    - can use {{< ref "/page2#key1" >}} to reference the key inside another page.
 
 - reference the translation of a page, if it exists: `{{< relref path="" lang="en">}}`
 
