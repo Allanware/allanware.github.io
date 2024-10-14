@@ -5,9 +5,9 @@ author: 赵文轩
 tags: ['古典乐', '拉威尔']
 summary: 源于两则希腊故事的两个作品 —— 双子座 + 达芙妮与克洛伊
 cover:
-    image: dalphnis_and_chloe.jpeg
+    image: /images/daphnis_chloe.png
     alt: Daphnis and Chloe
-    relative: true
+    relative: false
 ---
 
 ## 引子
