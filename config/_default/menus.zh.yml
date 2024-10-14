@@ -3,21 +3,21 @@ main:
     identifier: posts
     name: 博客
     url: /
-  - weight: 2
-    identifier: about
-    name: 关于我
-    url: /about/
+  # - weight: 2
+  #   identifier: about
+  #   name: 关于我
+  #   url: /about/
   - weight: 3
     identifier: life
     name: 碎片
     url: /life/
   - weight: 4
     identifier: tags
-    name: 附笺
+    name: 标签
     url: /tags/
   - weight: 5
     identifier: archives
-    name: 归档
+    name: 文章
     url: /archives/
   - weight: 6
     identifier: search

@@ -6,8 +6,7 @@ defaultContentLanguage: en
 languageCode: en
 languageName: English
 theme: PaperMod
-
-paginate: 10
+pagination.pagerSize: 10
 
 googleAnalytics: G-Y7CDN6L98B
 
@@ -51,3 +50,5 @@ markup:
     renderer:
       unsafe: true
 
+params:
+  displayFullLangName: true

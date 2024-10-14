@@ -23,24 +23,21 @@ mainSections:
 
 ShowRssButtonInSectionTermList: true
 
-homeInfoParams:
-  Content: | 
-    Welcome! I am a computer science grad student at UW-Madison. Previously, I was an undergrad at UC Davis. For more info about who I am, please visit [**About**](/about), which lists my major interests that are often the inspiration of my articles. Also, you can find moments of my daily sh\*t in [**Life**](/life). Please click on [**Tags**](/tags) to navigate through articles through tags, [**Archives**](/archives) for a chronicle view of the articles, and [**Search**](/search) to find articles based on a keyphrase.  
-    如需访问中文版，请移步[**Zh**](/zh)。
-
-socialIcons:
+homeInfoParams: 
+  Content: 
+#socialIcons:
   # - name: twitter
   #   url: 
   # - name: stackoverflow
   #   url: 
-  - name: github
-    url: https://github.com/allanware
-  - name: linkedin
-    url: https://www.linkedin.com/in/allan-wenxuan-zhao
-  - name: email
-    url: mailto:xiaodoubizwx@gmail.com
-  - name: RSS
-    url: "index.xml"
+  # - name: github
+  #   url: https://github.com/allanware
+  # - name: linkedin
+  #   url: https://www.linkedin.com/in/allan-wenxuan-zhao
+  # - name: email
+  #   url: mailto:xiaodoubizwx@gmail.com
+  # - name: RSS
+  #   url: "index.xml"
   # - name: youtube 
   #   url:
   # - name: bilibili 
