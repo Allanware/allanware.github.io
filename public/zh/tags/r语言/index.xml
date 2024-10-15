@@ -1,0 +1,425 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>R语言 on 赵文轩</title>
+    <link>http://localhost:1313/zh/tags/r%E8%AF%AD%E8%A8%80/</link>
+    <description>Recent content in R语言 on 赵文轩</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh</language>
+    <lastBuildDate>Wed, 09 Jun 2021 18:24:00 -0700</lastBuildDate><atom:link href="http://localhost:1313/zh/tags/r%E8%AF%AD%E8%A8%80/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>伊斯坦布尔奇迹</title>
+      <link>http://localhost:1313/zh/posts/2021/06/%E4%BC%8A%E6%96%AF%E5%9D%A6%E5%B8%83%E5%B0%94%E5%A5%87%E8%BF%B9/</link>
+      <pubDate>Wed, 09 Jun 2021 18:24:00 -0700</pubDate>
+      
+      <guid>http://localhost:1313/zh/posts/2021/06/%E4%BC%8A%E6%96%AF%E5%9D%A6%E5%B8%83%E5%B0%94%E5%A5%87%E8%BF%B9/</guid>
+      <description>2005年欧冠决赛下半场发生了什么？这篇文章用R语言揭露了集锦与比赛没有展现的细节。</description>
+      <content:encoded><![CDATA[<h2 id="引言">引言</h2>
+<p>2005年5月25日，欧洲冠军联赛决赛在伊斯坦布尔的阿塔图尔克奥林匹克体育场举行。
+体育场的 65000 名观众和全球数亿球迷即将见证一场后来被称为<strong>伊斯坦布尔奇迹</strong>的足球比赛。
+才华横溢的AC米兰队在第一分钟就由队长马尔蒂尼先拔头筹；半场结束前，他们又进了两个球，直到 3-0 领先。
+有传言说，米兰队在中场休息时就在更衣室里开香槟以庆祝他们即将在三年内第二次夺得欧冠冠军。
+然而，下半场利物浦卷土重来，在戏剧性的6分钟内打进3球，将比分扳平为 3-3，
+并在残酷的点球大战中以 3-2 击败米兰。英国解说员在比赛结束时说：“如果这都不能证明命运存在，
+那么什么可以”。可以肯定的是，这个史诗般的逆转很难言传，但我将尝试用可视化来完成这项工作，
+并且尝试弄清楚这一切是如何发生的。</p>
+<h3 id="弱者">弱者</h3>
+<p>利物浦队长史蒂文·杰拉德在赛前将他的球队称为与全明星米兰队相比的弱者，而且他是对的。
+根据 transfermarkt.co.uk 的数据，</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span><span style="color:#75715e"># get the data for the miracle of istanbul</span>
+</span></span><span style="display:flex;"><span>Matches <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">FreeMatches</span>(<span style="color:#a6e22e">FreeCompetitions</span>())
+</span></span><span style="display:flex;"><span>istanbul <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">get.matchFree</span>(Matches<span style="color:#a6e22e">[which</span>(Matches<span style="color:#f92672">$</span>match_id <span style="color:#f92672">==</span> <span style="color:#ae81ff">2302764</span>),])
+</span></span><span style="display:flex;"><span>milanLineup <span style="color:#f92672">&lt;-</span> istanbul[[24]][[1]]<span style="color:#f92672">$</span>player.name
+</span></span><span style="display:flex;"><span>liverpoolLineup <span style="color:#f92672">&lt;-</span> istanbul[[24]][[2]]<span style="color:#f92672">$</span>player.name
+</span></span><span style="display:flex;"><span>milanmv <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">c</span>(<span style="color:#ae81ff">13.5</span>, <span style="color:#ae81ff">2.7</span>, <span style="color:#ae81ff">9.0</span>, <span style="color:#ae81ff">29.7</span>, <span style="color:#ae81ff">2.7</span>, <span style="color:#ae81ff">18.9</span>, <span style="color:#ae81ff">22.5</span>, <span style="color:#ae81ff">16.2</span>, <span style="color:#ae81ff">23.4</span>, <span style="color:#ae81ff">31.5</span>, <span style="color:#ae81ff">13.5</span>)
+</span></span><span style="display:flex;"><span>liverpoolmv <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">c</span>(<span style="color:#ae81ff">4.05</span>, <span style="color:#ae81ff">3.6</span>, <span style="color:#ae81ff">6.75</span>, <span style="color:#ae81ff">6.08</span>, <span style="color:#ae81ff">1.8</span>, <span style="color:#ae81ff">13.5</span>, <span style="color:#ae81ff">7.88</span>, <span style="color:#ae81ff">27</span>, <span style="color:#ae81ff">11.25</span>, <span style="color:#ae81ff">11.7</span>, <span style="color:#ae81ff">15.75</span>)
+</span></span><span style="display:flex;"><span>mvSums <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">data.frame</span>(name <span style="color:#f92672">=</span> <span style="color:#a6e22e">c</span>(<span style="color:#e6db74">&#34;Milan&#34;</span>, <span style="color:#e6db74">&#34;Liverpool&#34;</span>), value <span style="color:#f92672">=</span> <span style="color:#a6e22e">c</span>(<span style="color:#a6e22e">sum</span>(milanmv), <span style="color:#a6e22e">sum</span>(liverpoolmv)))
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">library</span>(RColorBrewer)
+</span></span><span style="display:flex;"><span>coul <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">suppressWarnings</span>(<span style="color:#a6e22e">brewer.pal</span>(<span style="color:#ae81ff">2</span>, <span style="color:#e6db74">&#34;Set2&#34;</span>)) 
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">barplot</span>(height<span style="color:#f92672">=</span>mvSums<span style="color:#f92672">$</span>value, names<span style="color:#f92672">=</span>mvSums<span style="color:#f92672">$</span>name, col<span style="color:#f92672">=</span>coul, main <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Market value of Starting XI&#34;</span>, sub <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;184M £ vs 109M £&#34;</span>, ylab <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;in million pounds&#34;</span>, font.sub <span style="color:#f92672">=</span> <span style="color:#ae81ff">4</span>)
+</span></span></code></pre></div><p><img loading="lazy" src="unnamed-chunk-3-1.png" alt=""  />
+</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span>mv <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">data.frame</span>(name <span style="color:#f92672">=</span> <span style="color:#a6e22e">c</span>(milanLineup, liverpoolLineup), value <span style="color:#f92672">=</span> <span style="color:#a6e22e">c</span>(milanmv, liverpoolmv))
+</span></span><span style="display:flex;"><span>mvtop10 <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">head</span>(mv<span style="color:#a6e22e">[order</span>(<span style="color:#f92672">-</span>mv<span style="color:#f92672">$</span>value), ], n <span style="color:#f92672">=</span> <span style="color:#ae81ff">10</span>)
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">library</span>(forcats)
+</span></span><span style="display:flex;"><span>mvtop10 <span style="color:#f92672">%&gt;%</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">mutate</span>(name <span style="color:#f92672">=</span> <span style="color:#a6e22e">fct_reorder</span>(name, value)) <span style="color:#f92672">%&gt;%</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">ggplot</span>( <span style="color:#a6e22e">aes</span>(x<span style="color:#f92672">=</span>name, y<span style="color:#f92672">=</span>value)) <span style="color:#f92672">+</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">geom_bar</span>(stat<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;identity&#34;</span>, fill<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;#f68060&#34;</span>, alpha<span style="color:#f92672">=</span><span style="color:#ae81ff">.6</span>, width<span style="color:#f92672">=</span><span style="color:#ae81ff">.4</span>) <span style="color:#f92672">+</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">coord_flip</span>() <span style="color:#f92672">+</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">xlab</span>(<span style="color:#e6db74">&#34;&#34;</span>) <span style="color:#f92672">+</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">theme_bw</span>()
+</span></span></code></pre></div><p><img loading="lazy" src="unnamed-chunk-3-2.png" alt=""  />
+</p>
+<p>我们可以看到米兰首发十一人的市值明显高于利物浦。单从每个球员个体而言，
+米兰球员在两队首发球员市值最高的前 10 名球员中占据 8 席。队长杰拉德和前锋巴罗斯是唯二的例外。</p>
+<p>介绍完背景后，让我们进入比赛。</p>
+<h2 id="数据">数据</h2>
+<h3 id="数据集的描述">数据集的描述</h3>
+<p>该数据集来自足球数据分析公司statsbomb的开源 github 库。他们公开了 878 个 JSON 格式的数据集，
+每场比赛一个数据集，也包括这场。每个数据集都包含数千个事件，每个事件由大约 100 个或更多的变量所描述。</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span><span style="color:#a6e22e">dim</span>(istanbul)
+</span></span></code></pre></div><pre><code>## [1] 4648  126
+</code></pre>
+<p>记录伊斯坦布尔奇迹的数据集有 4648 个事件，每个事件由 126 个变量描述。</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span><span style="color:#a6e22e">head</span>(<span style="color:#a6e22e">colnames</span>(istanbul), n <span style="color:#f92672">=</span> <span style="color:#ae81ff">10</span>)
+</span></span></code></pre></div><pre><code>##  [1] &quot;id&quot;             &quot;index&quot;          &quot;period&quot;         &quot;timestamp&quot;     
+##  [5] &quot;minute&quot;         &quot;second&quot;         &quot;possession&quot;     &quot;duration&quot;      
+##  [9] &quot;related_events&quot; &quot;location&quot;
+</code></pre>
+<p>上面显示了描述每个事件的前 10 个变量。第一个变量<code>id</code>是每个事件的唯一标识符；
+<code>period</code>表示此事件发生的时间段（例如 1 = 上半场）；<code>timestamp</code>记录每个事件的确切时间；
+<code>location</code>是另一个重要的变量，记录事件的坐标信息（即场上位置）。因此，一个示例事件是：
+球员 x 在时间 00:31:52.716 以 y 的角度在球场坐标 (24, 40) 处传了一个半高球……。
+随着文章的深入，我们将使用和可视化更多有趣的变量。</p>
+<h3 id="数据集的特征">数据集的特征</h3>
+<ul>
+<li>数据集非常稀疏（很多 NULL 或 NA 值）。这是有道理的，因为在一个时间点，
+只有一名球员能够做一个动作。例如，
+<code>dribble_nutmeg</code>这个变量只有在某个球员穿了另外一个球员裆（好痛！）的时候才有值（不是 NA）。</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span><span style="color:#a6e22e">length</span>(<span style="color:#a6e22e">which</span>(<span style="color:#f92672">!</span><span style="color:#a6e22e">is.na</span>(istanbul<span style="color:#f92672">$</span>dribble.nutmeg)))
+</span></span></code></pre></div><pre><code>## [1] 4
+</code></pre>
+<p>120 分钟内（90 分钟常规时间加上 30 分钟加时）发生了 4 次穿裆，不坏！</p>
+<ul>
+<li>我们需要特别注意<code>location</code>变量。<code>location</code>表示每个事件发生时的场上坐标，
+而坐标的默认尺寸为 120 * 80。但是，足球场大小各不相同，阿塔图尔克奥林匹克体育场的尺寸为 105 米 * 68 米。我们需要将坐标从相对位置缩放到实际距离（米），以便事件显示在我后面绘制的球场的正确位置上。</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span>location.x <span style="color:#f92672">&lt;-</span> location.y <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">rep</span>(<span style="color:#66d9ef">NA</span>, <span style="color:#a6e22e">nrow</span>(istanbul))
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">for</span> (i <span style="color:#66d9ef">in</span> <span style="color:#ae81ff">1</span><span style="color:#f92672">:</span><span style="color:#a6e22e">nrow</span>(istanbul)) {
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">if</span> (<span style="color:#f92672">!</span> <span style="color:#a6e22e">is.null</span>(istanbul<span style="color:#f92672">$</span>location[[i]])) {
+</span></span><span style="display:flex;"><span>    location.x[i] <span style="color:#f92672">&lt;-</span> istanbul<span style="color:#f92672">$</span>location[[i]][1] <span style="color:#f92672">*</span> <span style="color:#ae81ff">105</span> <span style="color:#f92672">/</span> <span style="color:#ae81ff">120</span>
+</span></span><span style="display:flex;"><span>    location.y[i] <span style="color:#f92672">&lt;-</span> istanbul<span style="color:#f92672">$</span>location[[i]][2] <span style="color:#f92672">*</span> <span style="color:#ae81ff">68</span> <span style="color:#f92672">/</span> <span style="color:#ae81ff">80</span>
+</span></span><span style="display:flex;"><span>  }
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>istanbul<span style="color:#f92672">$</span>location.x <span style="color:#f92672">&lt;-</span> location.x
+</span></span><span style="display:flex;"><span>istanbul<span style="color:#f92672">$</span>location.y <span style="color:#f92672">&lt;-</span> location.y
+</span></span></code></pre></div><h2 id="比赛时间线">比赛时间线</h2>
+<p>为了弄清楚比赛是如何演变的，我们需要知道比赛的重要时间点。一场比赛的时间线是由一系列关键事件组成的。按照惯例，这些事件包括比赛开始、进球、上半场结束、下半场开始、出示（红黄）牌、换人、以及点球。</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span><span style="color:#75715e"># get the goals and penalties  </span>
+</span></span><span style="display:flex;"><span>goalEvents <span style="color:#f92672">&lt;-</span> istanbul<span style="color:#a6e22e">[which</span>(istanbul<span style="color:#f92672">$</span>shot.outcome.id <span style="color:#f92672">==</span> <span style="color:#ae81ff">97</span> <span style="color:#f92672">|</span> istanbul<span style="color:#f92672">$</span>shot.type.name <span style="color:#f92672">==</span> <span style="color:#e6db74">&#34;Penalty&#34;</span>), ]
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># get the subs</span>
+</span></span><span style="display:flex;"><span>subEvents <span style="color:#f92672">&lt;-</span> istanbul<span style="color:#a6e22e">[which</span>(<span style="color:#f92672">!</span><span style="color:#a6e22e">is.na</span>(istanbul<span style="color:#f92672">$</span>substitution.outcome.name)), ]
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># get the cards </span>
+</span></span><span style="display:flex;"><span>cardEvents <span style="color:#f92672">&lt;-</span> istanbul<span style="color:#a6e22e">[which</span>(<span style="color:#f92672">!</span><span style="color:#a6e22e">is.na</span>(istanbul<span style="color:#f92672">$</span>foul_committed.card.name)), ]
+</span></span><span style="display:flex;"><span>keyEvents <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">rbind</span>(goalEvents, subEvents, cardEvents)
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Format the data to conform to timevis </span>
+</span></span><span style="display:flex;"><span>contents <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">c</span>(<span style="color:#e6db74">&#34;First half&#34;</span>, <span style="color:#e6db74">&#34;Second half&#34;</span>, <span style="color:#e6db74">&#34;1st half extra&#34;</span>, <span style="color:#e6db74">&#34;2nd half extra&#34;</span>, <span style="color:#e6db74">&#34;Penalty shootout&#34;</span>)
+</span></span><span style="display:flex;"><span>contents <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">c</span>(contents, <span style="color:#e6db74">&#34;yellow card&#34;</span>, <span style="color:#e6db74">&#34;yellow card&#34;</span>)
+</span></span><span style="display:flex;"><span>contents <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">c</span>(contents, <span style="color:#e6db74">&#34;Kewell out, Smicer in&#34;</span>, <span style="color:#e6db74">&#34;Finnan out, Hamann in&#34;</span>, <span style="color:#e6db74">&#34;3-1&#34;</span>, <span style="color:#e6db74">&#34;3-2&#34;</span>, <span style="color:#e6db74">&#34; 3-3&#34;</span>, <span style="color:#e6db74">&#34;Baros out, Cisse in&#34;</span>, <span style="color:#e6db74">&#34;O&#34;</span>,<span style="color:#e6db74">&#34;O&#34;</span>, <span style="color:#e6db74">&#34;X&#34;</span>,<span style="color:#e6db74">&#34;O&#34;</span>)
+</span></span><span style="display:flex;"><span>contents <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">c</span>(contents, <span style="color:#e6db74">&#34;1-0&#34;</span>, <span style="color:#e6db74">&#34;2-0&#34;</span>, <span style="color:#e6db74">&#34;3-0&#34;</span>, <span style="color:#e6db74">&#34;Crespo out, Tomasson in&#34;</span>, <span style="color:#e6db74">&#34;Seedorf out, Serginho in&#34;</span>, <span style="color:#e6db74">&#34;Gattuso out, Rui Costa in&#34;</span>, <span style="color:#e6db74">&#34;X&#34;</span>,  <span style="color:#e6db74">&#34;X&#34;</span>, <span style="color:#e6db74">&#34;O&#34;</span>,  <span style="color:#e6db74">&#34;O&#34;</span>,  <span style="color:#e6db74">&#34;X&#34;</span>)
+</span></span><span style="display:flex;"><span>contents <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">c</span>(contents, <span style="color:#e6db74">&#34;Timeout&#34;</span>)
+</span></span><span style="display:flex;"><span>start <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">c</span>(<span style="color:#e6db74">&#34;2005-5-25 19:45:00&#34;</span>, <span style="color:#e6db74">&#34;2005-5-25 20:45:00&#34;</span>, <span style="color:#e6db74">&#34;2005-5-25 21:30:00&#34;</span>, <span style="color:#e6db74">&#34;2005-5-25 21:45:00&#34;</span>, <span style="color:#e6db74">&#34;2005-5-25 22:00:00&#34;</span>)
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># liverpool</span>
+</span></span><span style="display:flex;"><span>start <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">c </span>(start, <span style="color:#e6db74">&#34;2005-5-25 21:15:28&#34;</span>, <span style="color:#e6db74">&#34;2005-5-25 21:19:58&#34;</span>
+</span></span><span style="display:flex;"><span>, <span style="color:#e6db74">&#34;2005-5-25 20:07:00&#34;</span>, <span style="color:#e6db74">&#34;2005-5-25 20:45:00&#34;</span>, <span style="color:#e6db74">&#34;2005-5-25 20:53:04&#34;</span>, <span style="color:#e6db74">&#34;2005-5-25 20:55:02&#34;</span>, <span style="color:#e6db74">&#34;2005-5-25 20:59:52&#34;</span>, <span style="color:#e6db74">&#34;2005-5-25 21:24:28&#34;</span>, <span style="color:#e6db74">&#34;2005-5-25 22:00:50&#34;</span>, <span style="color:#e6db74">&#34;2005-5-25 22:02:37&#34;</span>, <span style="color:#e6db74">&#34;2005-5-25 22:04:11&#34;</span>, <span style="color:#e6db74">&#34;2005-5-25 22:05:44&#34;</span>)
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Milan</span>
+</span></span><span style="display:flex;"><span>start <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">c</span>(start, <span style="color:#e6db74">&#34;2005-5-25 19:45:51&#34;</span>, <span style="color:#e6db74">&#34;2005-5-25 20:23:12&#34;</span>, <span style="color:#e6db74">&#34;2005-5-25 20:27:57&#34;</span>, <span style="color:#e6db74">&#34;2005-5-25 21:24:50&#34;</span>, <span style="color:#e6db74">&#34;2005-5-25 21:25:05&#34;</span>, <span style="color:#e6db74">&#34;2005-5-25 21:51:20&#34;</span>, <span style="color:#e6db74">&#34;2005-5-25 22:00:02&#34;</span>, <span style="color:#e6db74">&#34;2005-5-25 22:01:40&#34;</span>, <span style="color:#e6db74">&#34;2005-5-25 22:03:17&#34;</span>, <span style="color:#e6db74">&#34;2005-5-25 22:05:03&#34;</span>, <span style="color:#e6db74">&#34;2005-5-25 22:06:24&#34;</span>)
+</span></span><span style="display:flex;"><span>start <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">c</span>(start, <span style="color:#e6db74">&#34;2005-5-25 20:30:00&#34;</span>)
+</span></span><span style="display:flex;"><span>end <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">c</span>(<span style="color:#e6db74">&#34;2005-5-25 20:30:00&#34;</span>, <span style="color:#e6db74">&#34;2005-5-25 21:30:00&#34;</span>, <span style="color:#e6db74">&#34;2005-5-25 21:45:00&#34;</span>, <span style="color:#e6db74">&#34;2005-5-25 22:00:00&#34;</span>, <span style="color:#e6db74">&#34;2005-5-25 22:07:00&#34;</span>, <span style="color:#a6e22e">rep</span>(<span style="color:#66d9ef">NA</span>, <span style="color:#ae81ff">23</span>), <span style="color:#e6db74">&#34;2005-5-25 20:45:00&#34;</span>)
+</span></span><span style="display:flex;"><span>group <span style="color:#f92672">=</span> <span style="color:#a6e22e">c</span>(<span style="color:#a6e22e">rep</span>(<span style="color:#e6db74">&#34;time&#34;</span>, <span style="color:#ae81ff">5</span>), <span style="color:#a6e22e">rep</span>(<span style="color:#e6db74">&#34;Liverpool&#34;</span>, <span style="color:#ae81ff">12</span>), <span style="color:#a6e22e">rep</span>(<span style="color:#e6db74">&#34;Milan&#34;</span>, <span style="color:#ae81ff">11</span>), <span style="color:#66d9ef">NA</span>)
+</span></span><span style="display:flex;"><span>style <span style="color:#f92672">=</span> <span style="color:#a6e22e">c</span>(<span style="color:#a6e22e">rep</span>(<span style="color:#66d9ef">NA</span>, <span style="color:#ae81ff">5</span>), <span style="color:#a6e22e">rep</span>(<span style="color:#e6db74">&#34;color:yellow;&#34;</span>,<span style="color:#ae81ff">2</span>), <span style="color:#a6e22e">rep</span>(<span style="color:#66d9ef">NA</span>, <span style="color:#ae81ff">8</span>), <span style="color:#e6db74">&#34;color:red;&#34;</span>, <span style="color:#66d9ef">NA</span>, <span style="color:#a6e22e">rep</span>(<span style="color:#66d9ef">NA</span>, <span style="color:#ae81ff">6</span>), <span style="color:#a6e22e">rep</span>(<span style="color:#e6db74">&#34;color:red;&#34;</span>,<span style="color:#ae81ff">2</span>), <span style="color:#66d9ef">NA</span>, <span style="color:#66d9ef">NA</span>, <span style="color:#e6db74">&#34;color:red;&#34;</span>, <span style="color:#66d9ef">NA</span>)
+</span></span><span style="display:flex;"><span>data <span style="color:#f92672">=</span> <span style="color:#a6e22e">data.frame</span>(content<span style="color:#f92672">=</span>contents, start, end, group, style)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>timevisDataGroups <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">data.frame</span>(
+</span></span><span style="display:flex;"><span>  id <span style="color:#f92672">=</span> <span style="color:#a6e22e">c</span>(<span style="color:#e6db74">&#34;time&#34;</span>, <span style="color:#e6db74">&#34;Liverpool&#34;</span>, <span style="color:#e6db74">&#34;Milan&#34;</span>),
+</span></span><span style="display:flex;"><span>  content <span style="color:#f92672">=</span> <span style="color:#a6e22e">c</span>(<span style="color:#e6db74">&#34;Time&#34;</span>, <span style="color:#e6db74">&#34;Liverpool&#34;</span>, <span style="color:#e6db74">&#34;Milan&#34;</span>)
+</span></span><span style="display:flex;"><span>)
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">library</span>(timevis)
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">timevis</span>(data, groups <span style="color:#f92672">=</span> timevisDataGroups)
+</span></span></code></pre></div><p><img loading="lazy" src="timeline.png" alt=""  />
+</p>
+<p>总结一下上面的时间表。上半场，米兰在比赛开始时就立即取得进球，并在上半场快结束时又打入两球。另一方面，利物浦在上半场因伤换人。下半场开始前，利物浦已经 3-0 落后，而且被迫（非战术意图）用了 1 次换人。下半场开始，利物浦又换人。这次换人是由于利物浦主帅的战术考虑，试图扭转局面，而且确实做到了。约 10 分钟后，利物浦打进首球，将比分扳为 3-1，并且在 6 分钟的神奇表现中，他们一共打进 3 球，将比分扳成3-3。两队在比赛的后期面都没有再进球。最后利物浦在点球大战中 3-2 击败了米兰（图中的红X代表点球罚失，圆圈代表罚进）。</p>
+<p>通过这个时间表，所有的关键事件都被清晰地展示出来了。此外，我们可以找到好的角度来解释我们的问题，即奇迹是如何发生的：</p>
+<ul>
+<li>6 分钟内打进 3 个球！那 6 分钟发生了什么？</li>
+<li>从某种意义上来说，进球分布相当“均匀”，米兰上半场进 3 球，利物浦下半场进 3 球。为什么会这样？</li>
+</ul>
+<p>从时间表中突出的另一件事是整场比赛裁判只出示了 2 张黄牌（全部来自利物浦）并且没有红牌。这对于一场足球比赛来说是极其罕见的，尤其是欧冠决赛。这是一年中最大的一场比赛。这显示了两支球队是如何专注于积极地比赛，而不是被动地比赛（通过犯规来阻止对方的比赛）。这确实是一款流畅且高质量的比赛，而且具有戏剧性。</p>
+<h2 id="天堂或地狱">天堂或地狱</h2>
+<p>正如时间表所建议的那样，我们看到了上半场和下半场之间的区别。每支球队都在一个半场进了 3 个球，而另一支球队则未进一球。具体来说，上半场是米兰的天堂，利物浦的地狱；下半场与上半场完全相反。我们能可视化天堂与地狱之间的区别吗？</p>
+<h3 id="射门">射门</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span>is <span style="color:#f92672">&lt;-</span> tibble<span style="color:#f92672">::</span><span style="color:#a6e22e">as_tibble</span>(istanbul)
+</span></span><span style="display:flex;"><span>is <span style="color:#f92672">%&gt;%</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">filter</span>(minute <span style="color:#f92672">&lt;</span> <span style="color:#ae81ff">46</span>) <span style="color:#f92672">%&gt;%</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">soccerShotmap</span>(theme <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;dark&#34;</span>)
+</span></span></code></pre></div><p><img loading="lazy" src="unnamed-chunk-9-1.png" alt=""  />
+</p>
+<p>我们可以看到，上半场米兰 8 次射门（上图 8 个点），利物浦 5 次。不过，米兰的大部分射门（ 8 次中有 6 次）都在禁区内，而利物浦只有 2 次.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span>is <span style="color:#f92672">%&gt;%</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">filter</span>(minute <span style="color:#f92672">&gt;=</span> <span style="color:#ae81ff">45</span> <span style="color:#f92672">&amp;</span> minute <span style="color:#f92672">&lt;=</span> <span style="color:#ae81ff">90</span>) <span style="color:#f92672">%&gt;%</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">soccerShotmap</span>(theme <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;dark&#34;</span>)
+</span></span></code></pre></div><p><img loading="lazy" src="unnamed-chunk-10-1.png" alt=""  />
+</p>
+<p>在下半场，我们预计利物浦会在射门和禁区内射门这一项中占据主导地位。相反，米兰在射门次数和禁区射门次数上仍占主导地位。利物浦禁区内仅 2 次射门就全部入网，利物浦还打进了一个远射。米兰禁区内 6 次射门，禁区外 6 次，却无一成功。</p>
+<p>让我们看看加时赛里两队射门的对比。</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span>is <span style="color:#f92672">%&gt;%</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">filter</span>(minute <span style="color:#f92672">&gt;=</span> <span style="color:#ae81ff">90</span> <span style="color:#f92672">&amp;</span> minute <span style="color:#f92672">&lt;=</span> <span style="color:#ae81ff">120</span>) <span style="color:#f92672">%&gt;%</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">soccerShotmap</span>(theme <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;dark&#34;</span>)
+</span></span></code></pre></div><p><img loading="lazy" src="unnamed-chunk-11-1.png" alt=""  />
+</p>
+<p>令人吃惊的是（也许在看到比赛下半场的射门后并不那么令人惊讶），利物浦没有机会尝试任何射门，米兰又射门 7 次，其中 3次在禁区内，并且 1 次靠近球门柱（差一点！）。然而，米兰一球未进。</p>
+<h3 id="传球">传球</h3>
+<p>传球是足球比赛的重要组成部分。通过看传球的位置（开始位置和结束位置），我们可以看到球的位置和球员的站位。</p>
+<h4 id="上半场">上半场</h4>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span>is <span style="color:#f92672">%&gt;%</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">filter</span>(team.name <span style="color:#f92672">==</span> <span style="color:#e6db74">&#34;AC Milan&#34;</span> <span style="color:#f92672">&amp;</span> period <span style="color:#f92672">==</span> <span style="color:#ae81ff">1</span> <span style="color:#f92672">&amp;</span> minute <span style="color:#f92672">&lt;=</span> <span style="color:#ae81ff">24</span>) <span style="color:#f92672">%&gt;%</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">soccerPassmap</span>(fill <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;lightblue&#34;</span>, arrow <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;r&#34;</span>,
+</span></span><span style="display:flex;"><span>                title <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Milan&#39;s passing map in the 1st half&#34;</span>)
+</span></span></code></pre></div><p><img loading="lazy" src="unnamed-chunk-12-1.png" alt=""  />
+
+<em>图一</em></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span>is <span style="color:#f92672">%&gt;%</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">filter</span>(team.name <span style="color:#f92672">==</span> <span style="color:#e6db74">&#34;AC Milan&#34;</span> <span style="color:#f92672">&amp;</span> period <span style="color:#f92672">==</span> <span style="color:#ae81ff">1</span> <span style="color:#f92672">&amp;</span> minute <span style="color:#f92672">&gt;</span> <span style="color:#ae81ff">24</span>) <span style="color:#f92672">%&gt;%</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">soccerPassmap</span>(fill <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;lightblue&#34;</span>, arrow <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;r&#34;</span>,
+</span></span><span style="display:flex;"><span>                title <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Milan&#39;s passing map in the 1st half (25&#39; onwards)&#34;</span>)
+</span></span></code></pre></div><p><img loading="lazy" src="unnamed-chunk-12-2.png" alt=""  />
+
+<em>图二</em></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span>is <span style="color:#f92672">%&gt;%</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">filter</span>(team.name <span style="color:#f92672">==</span> <span style="color:#e6db74">&#34;Liverpool&#34;</span> <span style="color:#f92672">&amp;</span> minute <span style="color:#f92672">&lt;=</span> <span style="color:#ae81ff">24</span> <span style="color:#f92672">&amp;</span> period <span style="color:#f92672">==</span> <span style="color:#ae81ff">1</span>) <span style="color:#f92672">%&gt;%</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">soccerPassmap</span>(fill <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;lightblue&#34;</span>, arrow <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;r&#34;</span>,
+</span></span><span style="display:flex;"><span>                title <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Liverpool&#39;s passing map in the 1st half&#34;</span>)
+</span></span></code></pre></div><p><img loading="lazy" src="unnamed-chunk-12-3.png" alt=""  />
+
+<em>图三</em></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span>is <span style="color:#f92672">%&gt;%</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">filter</span>(team.name <span style="color:#f92672">==</span> <span style="color:#e6db74">&#34;Liverpool&#34;</span> <span style="color:#f92672">&amp;</span> minute <span style="color:#f92672">&gt;</span> <span style="color:#ae81ff">24</span> <span style="color:#f92672">&amp;</span> period <span style="color:#f92672">==</span> <span style="color:#ae81ff">1</span>) <span style="color:#f92672">%&gt;%</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">soccerPassmap</span>(fill <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;lightblue&#34;</span>, arrow <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;r&#34;</span>,
+</span></span><span style="display:flex;"><span>                title <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Liverpool&#39;s passing map in the 1st half (25&#39; onwards)&#34;</span>)
+</span></span></code></pre></div><p><img loading="lazy" src="unnamed-chunk-12-4.png" alt=""  />
+
+<em>图四</em></p>
+<p>我们可以将上半场分成两半。<strong>图一</strong> 是AC米兰的在前 24 分钟传球地图，皮尔洛位于图的中心（图中的最大蓝点），米兰的由守转攻以及由攻转守都依赖于他。另一件需要注意的是，米兰前锋克雷斯波这时并没有真正参与比赛。<strong>图二</strong> 是 24 分钟以后上半场结束前米兰的传球图。与第一张图相比，米兰的阵型向门前收缩了。比如在前 24 分钟，马尔蒂尼（左后卫）、加图索、西多夫都站在皮尔洛的身前；而在上半场第二阶段他们都位于皮尔洛身后。我猜想这是因为他们早早就以 1-0 领先，因此利物浦增加了的侵略性，以及米兰实施了收缩防线和反击的策略。这个策略简直太棒了！他们在利物浦非常努力地进攻时（因为他们以 1-0 落后， 在 39&rsquo; 和 44&rsquo; 的反击中又进了两个球。两个进球的得分手都是克雷斯波，他在前 24 分钟的传球中没有“参与”，在上半场第二阶段却变得致命。</p>
+<p><strong>图三图四</strong>是上半场利物浦的传球图。首先要注意的是，科威尔下场了（受伤离场），斯米切尔替补出场（科威尔在第三张图但不在第四张，而斯米切尔则相反）。而第四张和第三张对比，我们可以看出杰拉德和桑斯在向前推进并向中路靠拢，而两名边锋里瑟和斯米切尔的位置与上半场第一阶段（斯米切尔的之前是科威尔）大致相同。</p>
+<h4 id="神奇的6分钟">神奇的6分钟</h4>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span>is <span style="color:#f92672">%&gt;%</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">filter</span>(team.name <span style="color:#f92672">==</span> <span style="color:#e6db74">&#34;AC Milan&#34;</span> <span style="color:#f92672">&amp;</span> minute <span style="color:#f92672">&gt;=</span> <span style="color:#ae81ff">53</span> <span style="color:#f92672">&amp;</span> minute <span style="color:#f92672">&lt;=</span> <span style="color:#ae81ff">60</span>) <span style="color:#f92672">%&gt;%</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">soccerPassmap</span>(fill <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;lightblue&#34;</span>, arrow <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;r&#34;</span>,
+</span></span><span style="display:flex;"><span>                title <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Milan&#39;s passing map in the 6 minute spell&#34;</span>, minPass <span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span>)
+</span></span></code></pre></div><p><img loading="lazy" src="unnamed-chunk-13-1.png" alt=""  />
+
+<em>图一</em></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span><span style="color:#a6e22e">passMap</span>(is, <span style="color:#e6db74">&#34;AC Milan&#34;</span>, <span style="color:#ae81ff">2</span>, <span style="color:#ae81ff">54</span>, <span style="color:#ae81ff">60</span>)
+</span></span></code></pre></div><p><img loading="lazy" src="unnamed-chunk-13-2.png" alt=""  />
+
+<em>图二</em></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span>is <span style="color:#f92672">%&gt;%</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">filter</span>(team.name <span style="color:#f92672">==</span> <span style="color:#e6db74">&#34;Liverpool&#34;</span> <span style="color:#f92672">&amp;</span> minute <span style="color:#f92672">&gt;=</span> <span style="color:#ae81ff">53</span> <span style="color:#f92672">&amp;</span> minute <span style="color:#f92672">&lt;=</span><span style="color:#ae81ff">60</span>) <span style="color:#f92672">%&gt;%</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">soccerPassmap</span>(fill <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;lightblue&#34;</span>, arrow <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;r&#34;</span>,
+</span></span><span style="display:flex;"><span>                title <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Liverpool&#39;s passing map in the 6 minute spell&#34;</span>, minPass <span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span>)
+</span></span></code></pre></div><p><img loading="lazy" src="unnamed-chunk-13-3.png" alt=""  />
+
+<em>图三</em></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span><span style="color:#a6e22e">passMap</span>(is, <span style="color:#e6db74">&#34;Liverpool&#34;</span>, <span style="color:#ae81ff">2</span>, <span style="color:#ae81ff">54</span>, <span style="color:#ae81ff">60</span>)
+</span></span></code></pre></div><p><img loading="lazy" src="unnamed-chunk-13-4.png" alt=""  />
+
+<em>图四</em></p>
+<p>我们已经看过了利物浦的地狱，即在上半场中米兰早早领先并且利用反击又进了两球，而利物浦则在进攻中挣扎。然而，正如时间表所显示的那样，在比赛的下半场，在 6 分钟里利物浦打进了3球扳平了比分。这神奇的 6 分钟真可谓是利物浦和利物浦球迷的天堂。这之间发生了什么？让我们看看这 6 分钟里发生的所有传球。<strong>图一</strong>：米兰传球 27 次，传球完成率不到 60%。米兰只有 8 名球员参与了一次或多次传球。如果我们仔细看，<strong>图二</strong> 显示米兰从防守到中场，以及从中场传到进攻线的传球全都失败了（红色：失败，蓝色：成功）。</p>
+<p>相反，<strong>图三</strong>显示，利物浦的 10 名球员（不包括守门员）全部参与传球，传球准确率都达到了 75% 以上。<strong>图四</strong>显示了他们之间的传球。</p>
+<p>在上半场，米兰的传球准确率为 78%。是什么导致米兰方面的传球准确率和传球次数的下降，而利物浦却以某种方式保持了他们的传球准确率？让我们看看两队在这 6 分钟的防守表现。</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span>d2 <span style="color:#f92672">&lt;-</span> is <span style="color:#f92672">%&gt;%</span> 
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">filter</span>(type.name <span style="color:#f92672">%in%</span> <span style="color:#a6e22e">c</span>(<span style="color:#e6db74">&#34;Interception&#34;</span>, <span style="color:#e6db74">&#34;Block&#34;</span>, <span style="color:#e6db74">&#34;Dispossessed&#34;</span>, <span style="color:#e6db74">&#34;Ball Recovery&#34;</span>) <span style="color:#f92672">&amp;</span> team.name <span style="color:#f92672">==</span> <span style="color:#e6db74">&#34;Liverpool&#34;</span> <span style="color:#f92672">&amp;</span> period <span style="color:#f92672">==</span> <span style="color:#ae81ff">2</span> <span style="color:#f92672">&amp;</span> minute <span style="color:#f92672">&gt;=</span> <span style="color:#ae81ff">54</span> <span style="color:#f92672">&amp;</span> minute <span style="color:#f92672">&lt;=</span> <span style="color:#ae81ff">60</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">soccerPitch</span>(arrow <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;r&#34;</span>, 
+</span></span><span style="display:flex;"><span>            title <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Liverpool&#34;</span>, 
+</span></span><span style="display:flex;"><span>            subtitle <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Defensive actions&#34;</span>) <span style="color:#f92672">+</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">geom_point</span>(data <span style="color:#f92672">=</span> d2, <span style="color:#a6e22e">aes</span>(x <span style="color:#f92672">=</span> location.x, y <span style="color:#f92672">=</span> location.y, col <span style="color:#f92672">=</span> type.name), size <span style="color:#f92672">=</span> <span style="color:#ae81ff">3</span>, alpha <span style="color:#f92672">=</span> <span style="color:#ae81ff">0.5</span>)
+</span></span></code></pre></div><p><img loading="lazy" src="unnamed-chunk-14-1.png" alt=""  />
+
+<em>图一</em></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span>d2 <span style="color:#f92672">&lt;-</span> is <span style="color:#f92672">%&gt;%</span> 
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">filter</span>(type.name <span style="color:#f92672">%in%</span> <span style="color:#a6e22e">c</span>( <span style="color:#e6db74">&#34;Interception&#34;</span>, <span style="color:#e6db74">&#34;Block&#34;</span>, <span style="color:#e6db74">&#34;Dispossessed&#34;</span>, <span style="color:#e6db74">&#34;Ball Recovery&#34;</span>) <span style="color:#f92672">&amp;</span> team.name <span style="color:#f92672">==</span> <span style="color:#e6db74">&#34;AC Milan&#34;</span> <span style="color:#f92672">&amp;</span> period <span style="color:#f92672">==</span> <span style="color:#ae81ff">2</span> <span style="color:#f92672">&amp;</span> minute <span style="color:#f92672">&gt;=</span> <span style="color:#ae81ff">54</span> <span style="color:#f92672">&amp;</span> minute <span style="color:#f92672">&lt;=</span> <span style="color:#ae81ff">60</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">soccerPitch</span>(arrow <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;r&#34;</span>, 
+</span></span><span style="display:flex;"><span>            title <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Milan&#34;</span>, 
+</span></span><span style="display:flex;"><span>            subtitle <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Defensive actions&#34;</span>) <span style="color:#f92672">+</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">geom_point</span>(data <span style="color:#f92672">=</span> d2, <span style="color:#a6e22e">aes</span>(x <span style="color:#f92672">=</span> location.x, y <span style="color:#f92672">=</span> location.y, col <span style="color:#f92672">=</span> type.name), size <span style="color:#f92672">=</span> <span style="color:#ae81ff">3</span>, alpha <span style="color:#f92672">=</span> <span style="color:#ae81ff">0.5</span>)
+</span></span></code></pre></div><p><img loading="lazy" src="unnamed-chunk-14-2.png" alt=""  />
+
+<em>图二</em></p>
+<p><strong>图一</strong>是利物浦球员在这 6 分钟做的防守动作。令人咋舌的是，他们竟然做到了 7 次抢断，从而导致米兰传球准确率下降。<strong>图二</strong>则是米兰的防守动作，仅仅只有 1 次夺回球权，几乎没有影响到利物浦的控球。</p>
+<h3 id="场上位置">场上位置</h3>
+<p>之前我们已经通过传球图看到了一些球员在场上的位置，比如我们看到上半场米兰一方在领先后收缩防线。通过下面的可视化，我们可以看到更多关于整个球队（球队阵型的变化）和个别关键球员的位置变化。</p>
+<h4 id="上半场-1">上半场</h4>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span>is <span style="color:#f92672">%&gt;%</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">filter</span>(<span style="color:#f92672">!</span><span style="color:#a6e22e">is.na</span>(location.x) <span style="color:#f92672">&amp;</span> team.name <span style="color:#f92672">==</span> <span style="color:#e6db74">&#34;AC Milan&#34;</span> <span style="color:#f92672">&amp;</span> period <span style="color:#f92672">==</span> <span style="color:#ae81ff">1</span>) <span style="color:#f92672">%&gt;%</span> 
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">soccerPositionMap</span>(id <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;player.name&#34;</span>, x <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;location.x&#34;</span>, y <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;location.y&#34;</span>, 
+</span></span><span style="display:flex;"><span>                    fill1 <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;blue&#34;</span>, theme <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;grass&#34;</span>, arrow <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;r&#34;</span>, 
+</span></span><span style="display:flex;"><span>                    title <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;AC Milan&#34;</span>, 
+</span></span><span style="display:flex;"><span>                    subtitle <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Average position (1st half)&#34;</span>)
+</span></span></code></pre></div><p><img loading="lazy" src="unnamed-chunk-15-1.png" alt=""  />
+
+<em>图一</em></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span>is <span style="color:#f92672">%&gt;%</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">filter</span>(<span style="color:#f92672">!</span><span style="color:#a6e22e">is.na</span>(location.x) <span style="color:#f92672">&amp;</span> team.name <span style="color:#f92672">==</span> <span style="color:#e6db74">&#34;Liverpool&#34;</span> <span style="color:#f92672">&amp;</span> period <span style="color:#f92672">==</span> <span style="color:#ae81ff">1</span> <span style="color:#f92672">&amp;</span> minute <span style="color:#f92672">&gt;=</span> <span style="color:#ae81ff">25</span>) <span style="color:#f92672">%&gt;%</span> 
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">soccerPositionMap</span>(id <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;player.name&#34;</span>, x <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;location.x&#34;</span>, y <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;location.y&#34;</span>, 
+</span></span><span style="display:flex;"><span>                    fill1 <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;blue&#34;</span>, theme <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;grass&#34;</span>, arrow <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;r&#34;</span>, 
+</span></span><span style="display:flex;"><span>                    title <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Liverpool&#34;</span>, 
+</span></span><span style="display:flex;"><span>                    subtitle <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Average position (1st half)&#34;</span>)
+</span></span></code></pre></div><p><img loading="lazy" src="unnamed-chunk-15-2.png" alt=""  />
+
+<em>图二</em></p>
+<p><strong>图一</strong>是米兰在上半场的平均位置。平均位置是球员采取任何动作时的平均坐标，而不仅仅是传球。正如我们所见，米兰的阵型收缩在中场中央附近。除了 4 名中场球员外，其中一名前锋克雷斯波也接近中场。出于某种原因，他们在中心靠得很近（后面会解释）。</p>
+<p><strong>图二</strong>中，利物浦在上半场的阵型是比较分散的，比较注重场上宽度。这是由于他们在边路打边的战术。杰拉德和奥拉诺是双中场。然而，他们的边路进攻并不顺利，所以米兰决定不把太多的球员放在边上（如图1所示），而是集中火力进攻在中路进攻和之后的反击。</p>
+<h4 id="上半场前15分钟">上半场前15分钟</h4>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span>is <span style="color:#f92672">%&gt;%</span> 
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">filter</span>(<span style="color:#f92672">!</span><span style="color:#a6e22e">is.na</span>(location.x) <span style="color:#f92672">&amp;</span> team.name <span style="color:#f92672">==</span> <span style="color:#e6db74">&#34;AC Milan&#34;</span> <span style="color:#f92672">&amp;</span> period <span style="color:#f92672">==</span> <span style="color:#ae81ff">2</span> <span style="color:#f92672">&amp;</span> minute <span style="color:#f92672">&lt;=</span> <span style="color:#ae81ff">60</span>) <span style="color:#f92672">%&gt;%</span> 
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">soccerPositionMap</span>(id <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;player.name&#34;</span>, x <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;location.x&#34;</span>, y <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;location.y&#34;</span>, 
+</span></span><span style="display:flex;"><span>                    fill1 <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;blue&#34;</span>, theme <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;grass&#34;</span>, arrow <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;r&#34;</span>, 
+</span></span><span style="display:flex;"><span>                    title <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;AC Milan&#34;</span>, 
+</span></span><span style="display:flex;"><span>                    subtitle <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Average position (2nd half)&#34;</span>)
+</span></span></code></pre></div><p><img loading="lazy" src="unnamed-chunk-16-1.png" alt=""  />
+
+<em>图一</em></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span>is <span style="color:#f92672">%&gt;%</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">filter</span>(<span style="color:#f92672">!</span><span style="color:#a6e22e">is.na</span>(location.x) <span style="color:#f92672">&amp;</span> team.name <span style="color:#f92672">==</span> <span style="color:#e6db74">&#34;Liverpool&#34;</span> <span style="color:#f92672">&amp;</span> period <span style="color:#f92672">==</span> <span style="color:#ae81ff">2</span> <span style="color:#f92672">&amp;</span> minute <span style="color:#f92672">&lt;=</span> <span style="color:#ae81ff">60</span>) <span style="color:#f92672">%&gt;%</span> 
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">soccerPositionMap</span>(id <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;player.name&#34;</span>, x <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;location.x&#34;</span>, y <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;location.y&#34;</span>, 
+</span></span><span style="display:flex;"><span>                    fill1 <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;blue&#34;</span>, theme <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;grass&#34;</span>, arrow <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;r&#34;</span>, 
+</span></span><span style="display:flex;"><span>                    title <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Liverpool&#34;</span>, 
+</span></span><span style="display:flex;"><span>                    subtitle <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Average position (2nd half)&#34;</span>)
+</span></span></code></pre></div><p><img loading="lazy" src="unnamed-chunk-16-2.png" alt=""  />
+
+<em>图二</em></p>
+<p>当利物浦 3-0 落后后，利物浦做出了战术调整：在下半场开始时用哈曼换下右后卫芬南（因此放弃了边路进攻战术。结果我们大家都知道了。在<strong>图二</strong>，哈曼接替了杰拉德上半场的位置，并释放杰拉德。通过牺牲右后卫，利物浦将他们的阵型挤向中路。杰拉德和桑斯、巴罗斯一起，不断地冲向米兰的禁区并且不需要担心自己的身后，因为哈曼在身后负责防守。然后Boom！杰拉德通过禁区内头球攻门打进了第一个进球，并创造了一个点球（后来转换为第 3 个进球）。</p>
+<h2 id="结论">结论</h2>
+<p>有些人可能会说没有必要将足球比赛可视化，因为它本身就是一种视觉艺术/运动。我必须同意，因为我是一名足球迷，并且在观看比赛时有很多快乐和痛苦，试图可视化一个奇迹更是困难。但是我还是这样做了，因为用探索性数据分析（Exploratory data analysis）来分析足球比赛可以实现以下目标：</p>
+<ol>
+<li>提供一个视觉性的摘要。在普通比赛中，球迷通过现场画面的动作来观察球员的动作。他们的记忆力不足以记住所有内容，也没有时间总结这些信息，因为他们太专注于比赛本身。比赛结束后，球迷会看到很多关于比赛的统计数据，比如射门次数、控球率、传球次数、传球准确率等，这些数据本身其实没有多太大意义，甚至不具有可比性。一方在一场比赛中拥有 65% 的控球率与另一支球队在另一场比赛中拥有 65% 的控球率不同。去问问巴萨球迷吧。他们的球队曾经拥有 65% 的控球率并最终赢得了所有奖杯，而现在以相同的控球率却一无所获。像这样的可视化可以将视觉部分与摘要部分结合起来，从而给球迷带来更投入更具洞察力的角度来理解比赛。</li>
+<li>提供一个建立足球比赛模型的很好的起点。随着数据科学的进步，迫切需要有关足球比赛的模型。一个突出的例子是根据足球比赛的数据（事件以及描述事件的变量）预测预期进球（expected goal)的模型。此过程非常适合：
+<ol>
+<li><em>看到</em> 数据本身以及发现数据的特点。在这个数据集中，里面有很多None/NA值以及里面的位置信息是与实际场地不匹配的，所以我通过这个过程发现了问题并解决了问题。</li>
+<li>可视化能够导致进球的关键事件。</li>
+<li>发现可以继续深挖的方向。比如我在EDA的过程中发现了利物浦的神奇 6 分钟，这可能是值得探索的方向之一。</li>
+</ol>
+</li>
+</ol>
+<p>学到的主要经验: 这无疑是一个奇迹，因为：</p>
+<ol>
+<li>超级戏剧化。利物浦仅统治了比赛 6 分钟，却最终打进 3 球。米兰统治了 114 分钟，包括加时赛 7 次射门，却在上半场后一球未进。射门效率的低下影响了他们在最后的点球大战中的心态，5罚仅仅2中。而杜德克（利物浦的守门员）在第 117 分钟对舍甫琴科的扑救则被评为有史以来最伟大的欧冠时刻。</li>
+<li>戏剧性的扳平背后的一些原因。由于哈曼的上场，杰拉德得以自由进攻。米兰上半场的成功也得益于阵型因素：米兰紧实的中场 vs 利物浦松散在两边。</li>
+<li>人的因素。这是可视化的困难部分。米兰方面的心理变化，从狂喜到怀疑，最后到恐惧。当他们反复进攻但一无所获时，他们的心态发生了变化。在另一边，杰拉德和他对整个球队的影响。</li>
+</ol>
+<h2 id="引用">引用</h2>
+<h3 id="数据-1">数据</h3>
+<ul>
+<li>Statsbomb</li>
+</ul>
+<h3 id="可视化r包">可视化R包</h3>
+<ul>
+<li>soccermatics</li>
+<li>ggplot2</li>
+</ul>
+<h2 id="我的r环境">我的R环境</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span><span style="color:#a6e22e">sessionInfo</span>()
+</span></span></code></pre></div><pre><code>## R version 4.1.0 (2021-05-18)
+## Platform: x86_64-apple-darwin20.4.0 (64-bit)
+## Running under: macOS Big Sur 11.4
+## 
+## Matrix products: default
+## BLAS:   /usr/local/Cellar/openblas/0.3.15_1/lib/libopenblasp-r0.3.15.dylib
+## LAPACK: /usr/local/Cellar/r/4.1.0/lib/R/lib/libRlapack.dylib
+## 
+## locale:
+## [1] en_US.UTF-8/en_US.UTF-8/en_US.UTF-8/C/en_US.UTF-8/en_US.UTF-8
+## 
+## attached base packages:
+## [1] parallel  stats     graphics  grDevices utils     datasets  methods  
+## [8] base     
+## 
+## other attached packages:
+##  [1] forcats_0.5.1      RColorBrewer_1.1-2 soccermatics_0.9.4 StatsBombR_0.1.0  
+##  [5] tidyr_1.1.3        sp_1.4-5           purrr_0.3.4        jsonlite_1.7.2    
+##  [9] httr_1.4.2         doParallel_1.0.16  iterators_1.0.13   foreach_1.5.1     
+## [13] RCurl_1.98-1.3     rvest_1.0.0        tibble_3.1.2       stringr_1.4.0     
+## [17] stringi_1.6.2      dplyr_1.0.6        ggplot2_3.3.3     
+## 
+## loaded via a namespace (and not attached):
+##  [1] zoo_1.8-9         tidyselect_1.1.1  xfun_0.23         lattice_0.20-44  
+##  [5] colorspace_2.0-1  vctrs_0.3.8       generics_0.1.0    htmltools_0.5.1.1
+##  [9] yaml_2.2.1        utf8_1.2.1        rlang_0.4.11      R.oo_1.24.0      
+## [13] pillar_1.6.1      glue_1.4.2        withr_2.4.2       R.utils_2.10.1   
+## [17] tweenr_1.0.2      plyr_1.8.6        lifecycle_1.0.0   munsell_0.5.0    
+## [21] gtable_0.3.0      SDMTools_1.1-221  R.methodsS3_1.8.1 codetools_0.2-18 
+## [25] evaluate_0.14     knitr_1.33        fansi_0.5.0       xts_0.12.1       
+## [29] Rcpp_1.0.6        scales_1.1.1      farver_2.1.0      ggforce_0.3.3    
+## [33] digest_0.6.27     ggrepel_0.9.1     polyclip_1.10-0   grid_4.1.0       
+## [37] cowplot_1.1.1     tools_4.1.0       bitops_1.0-7      magrittr_2.0.1   
+## [41] crayon_1.4.1      pkgconfig_2.0.3   ellipsis_0.3.2    MASS_7.3-54      
+## [45] xml2_1.3.2        rmarkdown_2.8     R6_2.5.0          compiler_4.1.0
+</code></pre>
+<h2 id="源代码">源代码</h2>
+<ul>
+<li><a href="/src-code/2021-03-04-The-Miracle-of-Istanbul.Rmd">代码</a></li>
+</ul>
+]]></content:encoded>
+    </item>
+    
+    <item>
+      <title>图卢兹 2019</title>
+      <link>http://localhost:1313/zh/life/2019/07/10/%E5%9B%BE%E5%8D%A2%E5%85%B9-2019/</link>
+      <pubDate>Wed, 10 Jul 2019 16:08:00 -0500</pubDate>
+      
+      <guid>http://localhost:1313/zh/life/2019/07/10/%E5%9B%BE%E5%8D%A2%E5%85%B9-2019/</guid>
+      <description>&lt;p&gt;第一次落脚欧洲，就到了法国第五大城市（本地人宣称第四大）的城市图卢兹。我环绕着这个城市走了几圈（因为Google Map显示不出当地公交和城铁线路），逐渐确信，城市不一定越大越好，这种走路横穿只需要两个小时的大小最合适。&lt;/p&gt;
+&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;id.jpg&#34; alt=&#34;&#34;  /&gt;
+
+&lt;em&gt;当时是去参加在图卢兹举办的 useR!&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.youtube.com/watch?v=r6nd9cfm2jA&amp;list=PL0pTTgKNw7_ZIf8txy9NIQsugA7u97iW6&amp;ab_channel=RConsortium&#34;&gt;talk的视频&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;当时门牙还缺了一颗，还是最胖的时候，底下的观众还是很专业的哈哈哈（虽说还是捕捉到了一个底下观众当我开始张嘴时掩饰不住的笑意），包括 Session Chair 认真听完还鼓励我说我的 talk 是整个 session 他认为最好的。总之，感谢 Norm 对我的信任。&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.bilibili.com/video/BV1dg411X7mP/&#34;&gt;Bilibili&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;steak.jpg&#34; alt=&#34;&#34;  /&gt;
+&lt;/p&gt;
+&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;stick.jpg&#34; alt=&#34;&#34;  /&gt;
+
+&lt;em&gt;家乐福里有几十种不同的法棍，还都特别便宜，我买了根后实在咬不动（而且当时门牙也因为某些原因留在美国休假，不愿意跟过来）&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;bridge.jpg&#34; alt=&#34;&#34;  /&gt;
+&lt;/p&gt;
+&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;alley.jpg&#34; alt=&#34;&#34;  /&gt;
+
+&lt;em&gt;午后的 the pink city&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;cupressus.jpg&#34; alt=&#34;&#34;  /&gt;
+
+&lt;em&gt;像不像 &lt;a href=&#34;http://localhost:1313/posts/2022/03/isle-of-the-dead/#isle-of-the-dead&#34;&gt;the Isle of the Dead&lt;/a&gt; 那幅画里的那几棵树&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;venus.jpg&#34; alt=&#34;&#34;  /&gt;
+
+&lt;em&gt;当时刚上完希腊神话与罗马史这两节课，结果路过这个博物馆发现里面的雕像、石碑和石棺都与课上的内容有关，第一次那么认真地逛了博物馆，感觉这两节课的春游就应该设在这里&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;saxy.jpg&#34; alt=&#34;&#34;  /&gt;
+
+&lt;em&gt;如果一定要选一个乐器放进男厕，我也选萨克斯&lt;/em&gt;&lt;/p&gt;</description>
+      <content:encoded><![CDATA[<p>第一次落脚欧洲，就到了法国第五大城市（本地人宣称第四大）的城市图卢兹。我环绕着这个城市走了几圈（因为Google Map显示不出当地公交和城铁线路），逐渐确信，城市不一定越大越好，这种走路横穿只需要两个小时的大小最合适。</p>
+<p><img loading="lazy" src="id.jpg" alt=""  />
+
+<em>当时是去参加在图卢兹举办的 useR!</em></p>
+<p><a href="https://www.youtube.com/watch?v=r6nd9cfm2jA&list=PL0pTTgKNw7_ZIf8txy9NIQsugA7u97iW6&ab_channel=RConsortium">talk的视频</a></p>
+<ul>
+<li>当时门牙还缺了一颗，还是最胖的时候，底下的观众还是很专业的哈哈哈（虽说还是捕捉到了一个底下观众当我开始张嘴时掩饰不住的笑意），包括 Session Chair 认真听完还鼓励我说我的 talk 是整个 session 他认为最好的。总之，感谢 Norm 对我的信任。</li>
+<li><a href="https://www.bilibili.com/video/BV1dg411X7mP/">Bilibili</a></li>
+</ul>
+<p><img loading="lazy" src="steak.jpg" alt=""  />
+</p>
+<p><img loading="lazy" src="stick.jpg" alt=""  />
+
+<em>家乐福里有几十种不同的法棍，还都特别便宜，我买了根后实在咬不动（而且当时门牙也因为某些原因留在美国休假，不愿意跟过来）</em></p>
+<p><img loading="lazy" src="bridge.jpg" alt=""  />
+</p>
+<p><img loading="lazy" src="alley.jpg" alt=""  />
+
+<em>午后的 the pink city</em></p>
+<p><img loading="lazy" src="cupressus.jpg" alt=""  />
+
+<em>像不像 <a href="/posts/2022/03/isle-of-the-dead/#isle-of-the-dead">the Isle of the Dead</a> 那幅画里的那几棵树</em></p>
+<p><img loading="lazy" src="venus.jpg" alt=""  />
+
+<em>当时刚上完希腊神话与罗马史这两节课，结果路过这个博物馆发现里面的雕像、石碑和石棺都与课上的内容有关，第一次那么认真地逛了博物馆，感觉这两节课的春游就应该设在这里</em></p>
+<p><img loading="lazy" src="saxy.jpg" alt=""  />
+
+<em>如果一定要选一个乐器放进男厕，我也选萨克斯</em></p>
+]]></content:encoded>
+    </item>
+    
+  </channel>
+</rss>

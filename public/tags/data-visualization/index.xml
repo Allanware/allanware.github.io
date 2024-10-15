@@ -1,0 +1,534 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Data Visualization on Wenxuan Zhao</title>
+    <link>http://localhost:1313/tags/data-visualization/</link>
+    <description>Recent content in Data Visualization on Wenxuan Zhao</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Thu, 04 Mar 2021 23:33:00 -0700</lastBuildDate><atom:link href="http://localhost:1313/tags/data-visualization/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>The Miracle of Istanbul</title>
+      <link>http://localhost:1313/posts/2021/03/the-miracle-of-istanbul/</link>
+      <pubDate>Thu, 04 Mar 2021 23:33:00 -0700</pubDate>
+      
+      <guid>http://localhost:1313/posts/2021/03/the-miracle-of-istanbul/</guid>
+      <description>What happened in the 2nd half of the 2005 Champions League final, compared to the 1st half? This post uses R to expose details that the highlights and/or the match itself ignored.</description>
+      <content:encoded><![CDATA[<h2 id="introduction">Introduction</h2>
+<p>On May 25th 2005, the 2005 UEFA Champions league final took place at the
+Atatürk Olympic Stadium in Istanbul. 65000 audiences at the stadium and
+hundreds of millions of fans worldwide were about to witness a soccer
+game that would be later called the <strong>Miracle of Istanbul</strong>. The
+full-of-talent team AC Milan first took the lead within the first minute
+by their captain Maldini. They further scored two more goals before
+half-time, making it a 3-0 lead. Rumors said that the Milan team opened
+bottles of champagnes in the locker room during the half-time break to
+celebrate their soon-to-be 2nd champions league title in three years.
+However, in the second half Liverpool launched a comeback and scored 3
+goals in a dramatic six-minute spell to level the score at 3–3, and beat
+Milan 3-2 in the brutal penalty shoot-out stage. The English commentator
+said:“If this doesn’t prove fate exists, then nothing will” at the end
+of the game. To be sure, this epic comeback defies any words that try to
+describe it, but I will try to use visualizations to do this job and
+more importantly, try to figure out how the comeback happened.</p>
+<h3 id="the-underdog">The underdog</h3>
+<p>The Liverpool captain Steven Gerrard described his team as the underdog
+before the match, compared to the all-star Milan side, and he was right.
+According to data from the transfermarkt.co.uk,</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span><span style="color:#75715e"># get the data for the miracle of istanbul</span>
+</span></span><span style="display:flex;"><span>Matches <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">FreeMatches</span>(<span style="color:#a6e22e">FreeCompetitions</span>())
+</span></span><span style="display:flex;"><span>istanbul <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">get.matchFree</span>(Matches<span style="color:#a6e22e">[which</span>(Matches<span style="color:#f92672">$</span>match_id <span style="color:#f92672">==</span> <span style="color:#ae81ff">2302764</span>),])
+</span></span><span style="display:flex;"><span>milanLineup <span style="color:#f92672">&lt;-</span> istanbul[[24]][[1]]<span style="color:#f92672">$</span>player.name
+</span></span><span style="display:flex;"><span>liverpoolLineup <span style="color:#f92672">&lt;-</span> istanbul[[24]][[2]]<span style="color:#f92672">$</span>player.name
+</span></span><span style="display:flex;"><span>milanmv <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">c</span>(<span style="color:#ae81ff">13.5</span>, <span style="color:#ae81ff">2.7</span>, <span style="color:#ae81ff">9.0</span>, <span style="color:#ae81ff">29.7</span>, <span style="color:#ae81ff">2.7</span>, <span style="color:#ae81ff">18.9</span>, <span style="color:#ae81ff">22.5</span>, <span style="color:#ae81ff">16.2</span>, <span style="color:#ae81ff">23.4</span>, <span style="color:#ae81ff">31.5</span>, <span style="color:#ae81ff">13.5</span>)
+</span></span><span style="display:flex;"><span>liverpoolmv <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">c</span>(<span style="color:#ae81ff">4.05</span>, <span style="color:#ae81ff">3.6</span>, <span style="color:#ae81ff">6.75</span>, <span style="color:#ae81ff">6.08</span>, <span style="color:#ae81ff">1.8</span>, <span style="color:#ae81ff">13.5</span>, <span style="color:#ae81ff">7.88</span>, <span style="color:#ae81ff">27</span>, <span style="color:#ae81ff">11.25</span>, <span style="color:#ae81ff">11.7</span>, <span style="color:#ae81ff">15.75</span>)
+</span></span><span style="display:flex;"><span>mvSums <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">data.frame</span>(name <span style="color:#f92672">=</span> <span style="color:#a6e22e">c</span>(<span style="color:#e6db74">&#34;Milan&#34;</span>, <span style="color:#e6db74">&#34;Liverpool&#34;</span>), value <span style="color:#f92672">=</span> <span style="color:#a6e22e">c</span>(<span style="color:#a6e22e">sum</span>(milanmv), <span style="color:#a6e22e">sum</span>(liverpoolmv)))
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">library</span>(RColorBrewer)
+</span></span><span style="display:flex;"><span>coul <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">suppressWarnings</span>(<span style="color:#a6e22e">brewer.pal</span>(<span style="color:#ae81ff">2</span>, <span style="color:#e6db74">&#34;Set2&#34;</span>)) 
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">barplot</span>(height<span style="color:#f92672">=</span>mvSums<span style="color:#f92672">$</span>value, names<span style="color:#f92672">=</span>mvSums<span style="color:#f92672">$</span>name, col<span style="color:#f92672">=</span>coul, main <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Market value of Starting XI&#34;</span>, sub <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;184M £ vs 109M £&#34;</span>, ylab <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;in million pounds&#34;</span>, font.sub <span style="color:#f92672">=</span> <span style="color:#ae81ff">4</span>)
+</span></span></code></pre></div><p><img loading="lazy" src="unnamed-chunk-3-1.png" alt=""  />
+<!-- --></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span>mv <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">data.frame</span>(name <span style="color:#f92672">=</span> <span style="color:#a6e22e">c</span>(milanLineup, liverpoolLineup), value <span style="color:#f92672">=</span> <span style="color:#a6e22e">c</span>(milanmv, liverpoolmv))
+</span></span><span style="display:flex;"><span>mvtop10 <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">head</span>(mv<span style="color:#a6e22e">[order</span>(<span style="color:#f92672">-</span>mv<span style="color:#f92672">$</span>value), ], n <span style="color:#f92672">=</span> <span style="color:#ae81ff">10</span>)
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">library</span>(forcats)
+</span></span><span style="display:flex;"><span>mvtop10 <span style="color:#f92672">%&gt;%</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">mutate</span>(name <span style="color:#f92672">=</span> <span style="color:#a6e22e">fct_reorder</span>(name, value)) <span style="color:#f92672">%&gt;%</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">ggplot</span>( <span style="color:#a6e22e">aes</span>(x<span style="color:#f92672">=</span>name, y<span style="color:#f92672">=</span>value)) <span style="color:#f92672">+</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">geom_bar</span>(stat<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;identity&#34;</span>, fill<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;#f68060&#34;</span>, alpha<span style="color:#f92672">=</span><span style="color:#ae81ff">.6</span>, width<span style="color:#f92672">=</span><span style="color:#ae81ff">.4</span>) <span style="color:#f92672">+</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">coord_flip</span>() <span style="color:#f92672">+</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">xlab</span>(<span style="color:#e6db74">&#34;&#34;</span>) <span style="color:#f92672">+</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">theme_bw</span>()
+</span></span></code></pre></div><p><img loading="lazy" src="unnamed-chunk-3-2.png" alt=""  />
+<!-- -->
+we can see that the market value of Milan’s starting XI is significantly
+higher than Liverpool’s. Individually, Milan’s players took 8 places out
+of the top 10 highest market value players of the joint teams. The
+captain Steven Gerrard and the striker Baros are the 2 exceptions for
+Liverpool.</p>
+<p>After setting the stage, let us go to the actual match.</p>
+<h2 id="the-data">The Data</h2>
+<h3 id="description">Description</h3>
+<p>The dataset comes from the open-source github repository of the soccer
+data analytic company <em>statsbomb</em>. They make public 878 datasets in JSON
+format, one per game, including this one. Every dataset contains
+thousands of events, each event is characterized by about 100 or more
+variables that describe the event.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span><span style="color:#a6e22e">dim</span>(istanbul)
+</span></span></code></pre></div><pre><code>## [1] 4648  126
+</code></pre>
+<p>The dataset that records events about the miracle of Istanbul has 4648
+events, each is described by 126 variables.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span><span style="color:#a6e22e">head</span>(<span style="color:#a6e22e">colnames</span>(istanbul), n <span style="color:#f92672">=</span> <span style="color:#ae81ff">10</span>)
+</span></span></code></pre></div><pre><code>##  [1] &quot;id&quot;             &quot;index&quot;          &quot;period&quot;         &quot;timestamp&quot;     
+##  [5] &quot;minute&quot;         &quot;second&quot;         &quot;possession&quot;     &quot;duration&quot;      
+##  [9] &quot;related_events&quot; &quot;location&quot;
+</code></pre>
+<p>The above shows the first 10 variables. The first variable <code>id</code> is the
+unique identifier of each event; <code>period</code> denotes which time period this
+event occurs (eg. 1 = the first half); <code>timestamp</code> records the exact
+time of each event; <code>location</code> is another important variable that
+records the coordinate information of the event. An example event
+therefore would be: player x at time 00:31:52.716 passes the ball at the
+pitch coordinate (24, 40) at mid-height with angle y…. As I go forward, we
+will use and visualize more interesting variables.</p>
+<h3 id="characteristics-of-the-data">Characteristics of the data</h3>
+<ul>
+<li>The dataset is really sparse (lots of NULL or NA values). This makes
+sense, because at one time point only one player is able to make one
+action. For example, Variable <code>dribble_nutmeg</code> is not NA if and only
+if some player nutmugs someone else (ouch!).</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span><span style="color:#a6e22e">length</span>(<span style="color:#a6e22e">which</span>(<span style="color:#f92672">!</span><span style="color:#a6e22e">is.na</span>(istanbul<span style="color:#f92672">$</span>dribble.nutmeg)))
+</span></span></code></pre></div><pre><code>## [1] 4
+</code></pre>
+<p>4 nutmegs in 120 minutes (90 mins regular time plus 30 mins extra), not
+bad!</p>
+<ul>
+<li>We need to take special care of the <code>location</code> variable. The
+<code>location</code> denotes the pitch coordinates of each event. The
+coordinate is standardized as dimension 120 * 80. However, soccer
+pitch size varies and the Atatürk Olympic Stadium has dimension 105
+meters * 68 meters. We need to scale the coordinate from the
+relative location to the actual meters, so that the event will show
+up on the correct location on the pitch I draw.</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span>location.x <span style="color:#f92672">&lt;-</span> location.y <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">rep</span>(<span style="color:#66d9ef">NA</span>, <span style="color:#a6e22e">nrow</span>(istanbul))
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">for</span> (i <span style="color:#66d9ef">in</span> <span style="color:#ae81ff">1</span><span style="color:#f92672">:</span><span style="color:#a6e22e">nrow</span>(istanbul)) {
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">if</span> (<span style="color:#f92672">!</span> <span style="color:#a6e22e">is.null</span>(istanbul<span style="color:#f92672">$</span>location[[i]])) {
+</span></span><span style="display:flex;"><span>    location.x[i] <span style="color:#f92672">&lt;-</span> istanbul<span style="color:#f92672">$</span>location[[i]][1] <span style="color:#f92672">*</span> <span style="color:#ae81ff">105</span> <span style="color:#f92672">/</span> <span style="color:#ae81ff">120</span>
+</span></span><span style="display:flex;"><span>    location.y[i] <span style="color:#f92672">&lt;-</span> istanbul<span style="color:#f92672">$</span>location[[i]][2] <span style="color:#f92672">*</span> <span style="color:#ae81ff">68</span> <span style="color:#f92672">/</span> <span style="color:#ae81ff">80</span>
+</span></span><span style="display:flex;"><span>  }
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>istanbul<span style="color:#f92672">$</span>location.x <span style="color:#f92672">&lt;-</span> location.x
+</span></span><span style="display:flex;"><span>istanbul<span style="color:#f92672">$</span>location.y <span style="color:#f92672">&lt;-</span> location.y
+</span></span></code></pre></div><h2 id="timeline-of-the-match">Timeline of the match</h2>
+<p>To figure out how the game evolves, we need to know the milestones of
+the match. The milestones of a match are the key events, and according
+to convention, including match start, goals, 1st half ends, 2nd half
+starts, cards, substitution, penalties.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span><span style="color:#75715e"># get the goals and penalties  </span>
+</span></span><span style="display:flex;"><span>goalEvents <span style="color:#f92672">&lt;-</span> istanbul<span style="color:#a6e22e">[which</span>(istanbul<span style="color:#f92672">$</span>shot.outcome.id <span style="color:#f92672">==</span> <span style="color:#ae81ff">97</span> <span style="color:#f92672">|</span> istanbul<span style="color:#f92672">$</span>shot.type.name <span style="color:#f92672">==</span> <span style="color:#e6db74">&#34;Penalty&#34;</span>), ]
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># get the subs</span>
+</span></span><span style="display:flex;"><span>subEvents <span style="color:#f92672">&lt;-</span> istanbul<span style="color:#a6e22e">[which</span>(<span style="color:#f92672">!</span><span style="color:#a6e22e">is.na</span>(istanbul<span style="color:#f92672">$</span>substitution.outcome.name)), ]
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># get the cards </span>
+</span></span><span style="display:flex;"><span>cardEvents <span style="color:#f92672">&lt;-</span> istanbul<span style="color:#a6e22e">[which</span>(<span style="color:#f92672">!</span><span style="color:#a6e22e">is.na</span>(istanbul<span style="color:#f92672">$</span>foul_committed.card.name)), ]
+</span></span><span style="display:flex;"><span>keyEvents <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">rbind</span>(goalEvents, subEvents, cardEvents)
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Format the data to conform to timevis </span>
+</span></span><span style="display:flex;"><span>contents <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">c</span>(<span style="color:#e6db74">&#34;First half&#34;</span>, <span style="color:#e6db74">&#34;Second half&#34;</span>, <span style="color:#e6db74">&#34;1st half extra&#34;</span>, <span style="color:#e6db74">&#34;2nd half extra&#34;</span>, <span style="color:#e6db74">&#34;Penalty shootout&#34;</span>)
+</span></span><span style="display:flex;"><span>contents <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">c</span>(contents, <span style="color:#e6db74">&#34;yellow card&#34;</span>, <span style="color:#e6db74">&#34;yellow card&#34;</span>)
+</span></span><span style="display:flex;"><span>contents <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">c</span>(contents, <span style="color:#e6db74">&#34;Kewell out, Smicer in&#34;</span>, <span style="color:#e6db74">&#34;Finnan out, Hamann in&#34;</span>, <span style="color:#e6db74">&#34;3-1&#34;</span>, <span style="color:#e6db74">&#34;3-2&#34;</span>, <span style="color:#e6db74">&#34; 3-3&#34;</span>, <span style="color:#e6db74">&#34;Baros out, Cisse in&#34;</span>, <span style="color:#e6db74">&#34;O&#34;</span>,<span style="color:#e6db74">&#34;O&#34;</span>, <span style="color:#e6db74">&#34;X&#34;</span>,<span style="color:#e6db74">&#34;O&#34;</span>)
+</span></span><span style="display:flex;"><span>contents <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">c</span>(contents, <span style="color:#e6db74">&#34;1-0&#34;</span>, <span style="color:#e6db74">&#34;2-0&#34;</span>, <span style="color:#e6db74">&#34;3-0&#34;</span>, <span style="color:#e6db74">&#34;Crespo out, Tomasson in&#34;</span>, <span style="color:#e6db74">&#34;Seedorf out, Serginho in&#34;</span>, <span style="color:#e6db74">&#34;Gattuso out, Rui Costa in&#34;</span>, <span style="color:#e6db74">&#34;X&#34;</span>,  <span style="color:#e6db74">&#34;X&#34;</span>, <span style="color:#e6db74">&#34;O&#34;</span>,  <span style="color:#e6db74">&#34;O&#34;</span>,  <span style="color:#e6db74">&#34;X&#34;</span>)
+</span></span><span style="display:flex;"><span>contents <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">c</span>(contents, <span style="color:#e6db74">&#34;Timeout&#34;</span>)
+</span></span><span style="display:flex;"><span>start <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">c</span>(<span style="color:#e6db74">&#34;2005-5-25 19:45:00&#34;</span>, <span style="color:#e6db74">&#34;2005-5-25 20:45:00&#34;</span>, <span style="color:#e6db74">&#34;2005-5-25 21:30:00&#34;</span>, <span style="color:#e6db74">&#34;2005-5-25 21:45:00&#34;</span>, <span style="color:#e6db74">&#34;2005-5-25 22:00:00&#34;</span>)
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># liverpool</span>
+</span></span><span style="display:flex;"><span>start <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">c </span>(start, <span style="color:#e6db74">&#34;2005-5-25 21:15:28&#34;</span>, <span style="color:#e6db74">&#34;2005-5-25 21:19:58&#34;</span>
+</span></span><span style="display:flex;"><span>, <span style="color:#e6db74">&#34;2005-5-25 20:07:00&#34;</span>, <span style="color:#e6db74">&#34;2005-5-25 20:45:00&#34;</span>, <span style="color:#e6db74">&#34;2005-5-25 20:53:04&#34;</span>, <span style="color:#e6db74">&#34;2005-5-25 20:55:02&#34;</span>, <span style="color:#e6db74">&#34;2005-5-25 20:59:52&#34;</span>, <span style="color:#e6db74">&#34;2005-5-25 21:24:28&#34;</span>, <span style="color:#e6db74">&#34;2005-5-25 22:00:50&#34;</span>, <span style="color:#e6db74">&#34;2005-5-25 22:02:37&#34;</span>, <span style="color:#e6db74">&#34;2005-5-25 22:04:11&#34;</span>, <span style="color:#e6db74">&#34;2005-5-25 22:05:44&#34;</span>)
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Milan</span>
+</span></span><span style="display:flex;"><span>start <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">c</span>(start, <span style="color:#e6db74">&#34;2005-5-25 19:45:51&#34;</span>, <span style="color:#e6db74">&#34;2005-5-25 20:23:12&#34;</span>, <span style="color:#e6db74">&#34;2005-5-25 20:27:57&#34;</span>, <span style="color:#e6db74">&#34;2005-5-25 21:24:50&#34;</span>, <span style="color:#e6db74">&#34;2005-5-25 21:25:05&#34;</span>, <span style="color:#e6db74">&#34;2005-5-25 21:51:20&#34;</span>, <span style="color:#e6db74">&#34;2005-5-25 22:00:02&#34;</span>, <span style="color:#e6db74">&#34;2005-5-25 22:01:40&#34;</span>, <span style="color:#e6db74">&#34;2005-5-25 22:03:17&#34;</span>, <span style="color:#e6db74">&#34;2005-5-25 22:05:03&#34;</span>, <span style="color:#e6db74">&#34;2005-5-25 22:06:24&#34;</span>)
+</span></span><span style="display:flex;"><span>start <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">c</span>(start, <span style="color:#e6db74">&#34;2005-5-25 20:30:00&#34;</span>)
+</span></span><span style="display:flex;"><span>end <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">c</span>(<span style="color:#e6db74">&#34;2005-5-25 20:30:00&#34;</span>, <span style="color:#e6db74">&#34;2005-5-25 21:30:00&#34;</span>, <span style="color:#e6db74">&#34;2005-5-25 21:45:00&#34;</span>, <span style="color:#e6db74">&#34;2005-5-25 22:00:00&#34;</span>, <span style="color:#e6db74">&#34;2005-5-25 22:07:00&#34;</span>, <span style="color:#a6e22e">rep</span>(<span style="color:#66d9ef">NA</span>, <span style="color:#ae81ff">23</span>), <span style="color:#e6db74">&#34;2005-5-25 20:45:00&#34;</span>)
+</span></span><span style="display:flex;"><span>group <span style="color:#f92672">=</span> <span style="color:#a6e22e">c</span>(<span style="color:#a6e22e">rep</span>(<span style="color:#e6db74">&#34;time&#34;</span>, <span style="color:#ae81ff">5</span>), <span style="color:#a6e22e">rep</span>(<span style="color:#e6db74">&#34;Liverpool&#34;</span>, <span style="color:#ae81ff">12</span>), <span style="color:#a6e22e">rep</span>(<span style="color:#e6db74">&#34;Milan&#34;</span>, <span style="color:#ae81ff">11</span>), <span style="color:#66d9ef">NA</span>)
+</span></span><span style="display:flex;"><span>style <span style="color:#f92672">=</span> <span style="color:#a6e22e">c</span>(<span style="color:#a6e22e">rep</span>(<span style="color:#66d9ef">NA</span>, <span style="color:#ae81ff">5</span>), <span style="color:#a6e22e">rep</span>(<span style="color:#e6db74">&#34;color:yellow;&#34;</span>,<span style="color:#ae81ff">2</span>), <span style="color:#a6e22e">rep</span>(<span style="color:#66d9ef">NA</span>, <span style="color:#ae81ff">8</span>), <span style="color:#e6db74">&#34;color:red;&#34;</span>, <span style="color:#66d9ef">NA</span>, <span style="color:#a6e22e">rep</span>(<span style="color:#66d9ef">NA</span>, <span style="color:#ae81ff">6</span>), <span style="color:#a6e22e">rep</span>(<span style="color:#e6db74">&#34;color:red;&#34;</span>,<span style="color:#ae81ff">2</span>), <span style="color:#66d9ef">NA</span>, <span style="color:#66d9ef">NA</span>, <span style="color:#e6db74">&#34;color:red;&#34;</span>, <span style="color:#66d9ef">NA</span>)
+</span></span><span style="display:flex;"><span>data <span style="color:#f92672">=</span> <span style="color:#a6e22e">data.frame</span>(content<span style="color:#f92672">=</span>contents, start, end, group, style)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>timevisDataGroups <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">data.frame</span>(
+</span></span><span style="display:flex;"><span>  id <span style="color:#f92672">=</span> <span style="color:#a6e22e">c</span>(<span style="color:#e6db74">&#34;time&#34;</span>, <span style="color:#e6db74">&#34;Liverpool&#34;</span>, <span style="color:#e6db74">&#34;Milan&#34;</span>),
+</span></span><span style="display:flex;"><span>  content <span style="color:#f92672">=</span> <span style="color:#a6e22e">c</span>(<span style="color:#e6db74">&#34;Time&#34;</span>, <span style="color:#e6db74">&#34;Liverpool&#34;</span>, <span style="color:#e6db74">&#34;Milan&#34;</span>)
+</span></span><span style="display:flex;"><span>)
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">library</span>(timevis)
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">timevis</span>(data, groups <span style="color:#f92672">=</span> timevisDataGroups)
+</span></span></code></pre></div><p><img loading="lazy" src="timeline.png" alt=""  />
+</p>
+<p>To summarize the timeline that we see above. In the first half, Milan
+scored immediately when the game began, and scored two more goals
+towards the end of the first half. On the other hand, Liverpool made a
+substitute because of injury. Before the start of the 2nd half,
+Liverpool was already 3-0 down and used one (out of total 3)
+substitution involuntarily. At the beginning of the 2nd half, Liverpool
+made yet another substitution. This substitution is due to the tactical
+consideration by the Liverpool manager, trying to turn things around,
+and it did. About 10 minutes later, Liverpool score their first goal,
+making it 3-1, and in this 6 minutes spell, they score three goals in
+total, levelling the score to 3-3. Both teams did not score in the later
+parts of the game, and Liverpool beat Milan 3-2 in Penalty shootout (the
+red X denotes penalty missing or being saved by the goalkeeper).</p>
+<p>By seeing this timeline plot, all the key events are laid out clearly.
+Furthermore, we can immediately gain insights towards our question,
+which is, how the miracle happened:</p>
+<ul>
+<li>The three comeback goals were scored in 6 minutes! What happened in
+those 6 minutes?</li>
+<li>The distribution of goals are quite “even”, in that Milan scored 3
+in the first half and Liverpool scored 3 in the second half. Why
+that is the case?</li>
+</ul>
+<p>Another thing that stands out from the timeline graph is that there were
+only 2 yellow cards (all from Liverpool) and 0 red card in the game.
+That is extremely rare for a soccer game, especially for the Champions
+League final, the biggest game of the year. It shows how both teams were
+focusing on playing the game actively, not on playing the game passively
+(by fouling a lot to stop the other team’s play). It is truly a smooth
+and high quality game, and dramatic.</p>
+<h2 id="heaven-or-hell">Heaven or Hell</h2>
+<p>As the timeline suggested, we see a distinction between the 1st half and
+the 2nd half. Each team scored three goals and the other team scored
+nothing. Specifically, the 1st half is the heaven for Milan, the hell
+for Liverpool; the 2nd half is exactly the reverse of the 1st half. Can
+we visualize the difference, the difference between heaven and hell?</p>
+<h3 id="shots">Shots</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span>is <span style="color:#f92672">&lt;-</span> tibble<span style="color:#f92672">::</span><span style="color:#a6e22e">as_tibble</span>(istanbul)
+</span></span><span style="display:flex;"><span>is <span style="color:#f92672">%&gt;%</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">filter</span>(minute <span style="color:#f92672">&lt;</span> <span style="color:#ae81ff">46</span>) <span style="color:#f92672">%&gt;%</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">soccerShotmap</span>(theme <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;dark&#34;</span>)
+</span></span></code></pre></div><p><img loading="lazy" src="unnamed-chunk-9-1.png" alt=""  />
+</p>
+<p>As we can see, in the 1st half, Milan made 8 shots (8 dots on the pic
+above) and Liverpool made 5. However, most of the shots by Milan (6 out
+of 8) were inside the box, whereas Liverpool only had 2.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span>is <span style="color:#f92672">%&gt;%</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">filter</span>(minute <span style="color:#f92672">&gt;=</span> <span style="color:#ae81ff">45</span> <span style="color:#f92672">&amp;</span> minute <span style="color:#f92672">&lt;=</span> <span style="color:#ae81ff">90</span>) <span style="color:#f92672">%&gt;%</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">soccerShotmap</span>(theme <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;dark&#34;</span>)
+</span></span></code></pre></div><p><img loading="lazy" src="unnamed-chunk-10-1.png" alt=""  />
+
+In the 2nd half, we’d expect that Liverpool dominates the shots and
+shots in the box. On the contrary, Milan still dominates the number of
+shots and shots in the box. Liverpool made only 2 shots inside the box
+and they all made it into the net, and Liverpool also scored a
+long-ranger. However, Milan attempted 6 shots inside the box and 6 more
+outside the box, none of them made it.</p>
+<p>Let’s see the comparison between shots made by both teams in the extra
+time.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span>is <span style="color:#f92672">%&gt;%</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">filter</span>(minute <span style="color:#f92672">&gt;=</span> <span style="color:#ae81ff">90</span> <span style="color:#f92672">&amp;</span> minute <span style="color:#f92672">&lt;=</span> <span style="color:#ae81ff">120</span>) <span style="color:#f92672">%&gt;%</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">soccerShotmap</span>(theme <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;dark&#34;</span>)
+</span></span></code></pre></div><p><img loading="lazy" src="unnamed-chunk-11-1.png" alt=""  />
+
+Surprisingly (or not so surprisingly after seeing the shots made in the
+2nd half of the game), Liverpool made no attempts and Milan made 7 more
+shots, 3 of them inside the box with 1 near the post of the goal (so
+close!) and yet, Milan scored nothing.</p>
+<h3 id="passes">Passes</h3>
+<p>Passes are a essential part of a soccer game. By looking at the
+locations of the passes (both the starting locations and the end
+locations), we can also see the positions of the ball and the players.</p>
+<h4 id="1st-half">1st half</h4>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span>is <span style="color:#f92672">%&gt;%</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">filter</span>(team.name <span style="color:#f92672">==</span> <span style="color:#e6db74">&#34;AC Milan&#34;</span> <span style="color:#f92672">&amp;</span> period <span style="color:#f92672">==</span> <span style="color:#ae81ff">1</span> <span style="color:#f92672">&amp;</span> minute <span style="color:#f92672">&lt;=</span> <span style="color:#ae81ff">24</span>) <span style="color:#f92672">%&gt;%</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">soccerPassmap</span>(fill <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;lightblue&#34;</span>, arrow <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;r&#34;</span>,
+</span></span><span style="display:flex;"><span>                title <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Milan&#39;s passing map in the 1st half&#34;</span>)
+</span></span></code></pre></div><p><img loading="lazy" src="unnamed-chunk-12-1.png" alt=""  />
+
+<em>picture 1</em></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span>is <span style="color:#f92672">%&gt;%</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">filter</span>(team.name <span style="color:#f92672">==</span> <span style="color:#e6db74">&#34;AC Milan&#34;</span> <span style="color:#f92672">&amp;</span> period <span style="color:#f92672">==</span> <span style="color:#ae81ff">1</span> <span style="color:#f92672">&amp;</span> minute <span style="color:#f92672">&gt;</span> <span style="color:#ae81ff">24</span>) <span style="color:#f92672">%&gt;%</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">soccerPassmap</span>(fill <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;lightblue&#34;</span>, arrow <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;r&#34;</span>,
+</span></span><span style="display:flex;"><span>                title <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Milan&#39;s passing map in the 1st half (25&#39; onwards)&#34;</span>)
+</span></span></code></pre></div><p><img loading="lazy" src="unnamed-chunk-12-2.png" alt=""  />
+
+<em>picture 2</em></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span>is <span style="color:#f92672">%&gt;%</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">filter</span>(team.name <span style="color:#f92672">==</span> <span style="color:#e6db74">&#34;Liverpool&#34;</span> <span style="color:#f92672">&amp;</span> minute <span style="color:#f92672">&lt;=</span> <span style="color:#ae81ff">24</span> <span style="color:#f92672">&amp;</span> period <span style="color:#f92672">==</span> <span style="color:#ae81ff">1</span>) <span style="color:#f92672">%&gt;%</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">soccerPassmap</span>(fill <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;lightblue&#34;</span>, arrow <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;r&#34;</span>,
+</span></span><span style="display:flex;"><span>                title <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Liverpool&#39;s passing map in the 1st half&#34;</span>)
+</span></span></code></pre></div><p><img loading="lazy" src="unnamed-chunk-12-3.png" alt=""  />
+
+<em>picture 3</em></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span>is <span style="color:#f92672">%&gt;%</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">filter</span>(team.name <span style="color:#f92672">==</span> <span style="color:#e6db74">&#34;Liverpool&#34;</span> <span style="color:#f92672">&amp;</span> minute <span style="color:#f92672">&gt;</span> <span style="color:#ae81ff">24</span> <span style="color:#f92672">&amp;</span> period <span style="color:#f92672">==</span> <span style="color:#ae81ff">1</span>) <span style="color:#f92672">%&gt;%</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">soccerPassmap</span>(fill <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;lightblue&#34;</span>, arrow <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;r&#34;</span>,
+</span></span><span style="display:flex;"><span>                title <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Liverpool&#39;s passing map in the 1st half (25&#39; onwards)&#34;</span>)
+</span></span></code></pre></div><p><img loading="lazy" src="unnamed-chunk-12-4.png" alt=""  />
+<!-- -->
+<em>picture 4</em></p>
+<p>We break the 1st half into two halves. The <strong>picture 1</strong> shows the
+passing map of AC Milan in the first 24 minutes, with Pirlo being the
+center of the passing map (the biggest blue dot in the map), Milan’s
+transition (from attack to defense and vice versa) depended on him.
+Another thing to notice is that one of the Milan’s forward, Crespo, was
+not really involved in the game. The <strong>picture 2</strong> is the passing map
+of Milan in the second half of the 1st half. Compared to the first
+picture, Milan’s formation retrieved to their goal. For example, in the
+first 24 minutes, Maldini (left back), Gattuso, Seedorf, were standing
+in front of the Pirlo; they were behind Pirlo in the later half of the
+1st half. I would guess the reason was due to the increase in
+aggressiveness of Liverpool, as well as their own strategy of
+contracting their defensive lines and playing counterattack, since they
+led 1-0 as early as 1 minute into the game. And that strategy was
+fantastic! They scored two more goals on counter attack at 39’ and 44’
+when Liverpool tried really hard attacking (since they were 1-0 behind).
+The scorer of both goals is Crespo, the man who were not “involved” in
+terms of passing in the first 24 minutes, and he became lethal in the
+second part.</p>
+<p>The <strong>picture 3 and 4</strong> tell the Liverpool’s part of the story
+in the 1st half. The first thing to notice is that Kewell was out and
+Smicer was in for him (Kewell was in the 3rd pic but not in the 4th, and
+Smicer the opposite) because Kewell was injured. And compared the 4th
+with the 3rd picture, Gerrard and Sanz were pushing forward and to the
+center, while the two wingers Riise and Smicer were roughly in the same
+position as before.</p>
+<h4 id="the-six-minute-spell">The six minute spell</h4>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span>is <span style="color:#f92672">%&gt;%</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">filter</span>(team.name <span style="color:#f92672">==</span> <span style="color:#e6db74">&#34;AC Milan&#34;</span> <span style="color:#f92672">&amp;</span> minute <span style="color:#f92672">&gt;=</span> <span style="color:#ae81ff">53</span> <span style="color:#f92672">&amp;</span> minute <span style="color:#f92672">&lt;=</span> <span style="color:#ae81ff">60</span>) <span style="color:#f92672">%&gt;%</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">soccerPassmap</span>(fill <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;lightblue&#34;</span>, arrow <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;r&#34;</span>,
+</span></span><span style="display:flex;"><span>                title <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Milan&#39;s passing map in the 6 minute spell&#34;</span>, minPass <span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span>)
+</span></span></code></pre></div><p><img loading="lazy" src="unnamed-chunk-13-1.png" alt=""  />
+
+<em>picture 1</em></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span><span style="color:#a6e22e">passMap</span>(is, <span style="color:#e6db74">&#34;AC Milan&#34;</span>, <span style="color:#ae81ff">2</span>, <span style="color:#ae81ff">54</span>, <span style="color:#ae81ff">60</span>)
+</span></span></code></pre></div><p><img loading="lazy" src="unnamed-chunk-13-2.png" alt=""  />
+
+<em>picture 2</em></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span>is <span style="color:#f92672">%&gt;%</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">filter</span>(team.name <span style="color:#f92672">==</span> <span style="color:#e6db74">&#34;Liverpool&#34;</span> <span style="color:#f92672">&amp;</span> minute <span style="color:#f92672">&gt;=</span> <span style="color:#ae81ff">53</span> <span style="color:#f92672">&amp;</span> minute <span style="color:#f92672">&lt;=</span><span style="color:#ae81ff">60</span>) <span style="color:#f92672">%&gt;%</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">soccerPassmap</span>(fill <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;lightblue&#34;</span>, arrow <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;r&#34;</span>,
+</span></span><span style="display:flex;"><span>                title <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Liverpool&#39;s passing map in the 6 minute spell&#34;</span>, minPass <span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span>)
+</span></span></code></pre></div><p><img loading="lazy" src="unnamed-chunk-13-3.png" alt=""  />
+
+<em>picture 3</em></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span><span style="color:#a6e22e">passMap</span>(is, <span style="color:#e6db74">&#34;Liverpool&#34;</span>, <span style="color:#ae81ff">2</span>, <span style="color:#ae81ff">54</span>, <span style="color:#ae81ff">60</span>)
+</span></span></code></pre></div><p><img loading="lazy" src="unnamed-chunk-13-4.png" alt=""  />
+
+<em>picture 4</em></p>
+<p>We have seen the hell for Liverpool, i.e., the first half of the game,
+where Milan scored an early goal and player on counter and scored two
+more goals while Liverpool was struggling in attacking. However, as the
+timeline suggests, in the second half of the game, there was a 6-minute
+spell where Liverpool scored 3 goals. That spell was really the heaven
+for Liverpool and for Liverpool’s fans. What happened? Since we are in
+the passing section and analyzing passes are really effective in
+analyzing the whole game, let’s look at all the passes happened in that
+spell. In the <strong>picture 1</strong>, Milan achieved 27 passes with less than
+60% of them completed. Only 8 players of Milan were involved in passing
+the ball one or more times. Looking more closely, the <strong>picture 2</strong>
+indicated that the passes from defense to midfield and midfield to
+attack all failed (red: failure, blue: success).</p>
+<p>On the contrary, the <strong>picture 3</strong> shows that all 10 players
+(excluding the goalkeeper) were involved in passing, and they achieved
+more than 75% passing accuracy. The <strong>picture 4</strong> shows the exact
+passes.</p>
+<p>In the 1st half, the passing accuracy was 78% for Milan. What causes
+this decline in passing accuracy and number of passes on the Milan side,
+whereas Liverpool somehow maintained their passing accuracy? I then look
+at the defensive acts by both teams in that six minutes.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span>d2 <span style="color:#f92672">&lt;-</span> is <span style="color:#f92672">%&gt;%</span> 
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">filter</span>(type.name <span style="color:#f92672">%in%</span> <span style="color:#a6e22e">c</span>(<span style="color:#e6db74">&#34;Interception&#34;</span>, <span style="color:#e6db74">&#34;Block&#34;</span>, <span style="color:#e6db74">&#34;Dispossessed&#34;</span>, <span style="color:#e6db74">&#34;Ball Recovery&#34;</span>) <span style="color:#f92672">&amp;</span> team.name <span style="color:#f92672">==</span> <span style="color:#e6db74">&#34;Liverpool&#34;</span> <span style="color:#f92672">&amp;</span> period <span style="color:#f92672">==</span> <span style="color:#ae81ff">2</span> <span style="color:#f92672">&amp;</span> minute <span style="color:#f92672">&gt;=</span> <span style="color:#ae81ff">54</span> <span style="color:#f92672">&amp;</span> minute <span style="color:#f92672">&lt;=</span> <span style="color:#ae81ff">60</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">soccerPitch</span>(arrow <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;r&#34;</span>, 
+</span></span><span style="display:flex;"><span>            title <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Liverpool&#34;</span>, 
+</span></span><span style="display:flex;"><span>            subtitle <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Defensive actions&#34;</span>) <span style="color:#f92672">+</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">geom_point</span>(data <span style="color:#f92672">=</span> d2, <span style="color:#a6e22e">aes</span>(x <span style="color:#f92672">=</span> location.x, y <span style="color:#f92672">=</span> location.y, col <span style="color:#f92672">=</span> type.name), size <span style="color:#f92672">=</span> <span style="color:#ae81ff">3</span>, alpha <span style="color:#f92672">=</span> <span style="color:#ae81ff">0.5</span>)
+</span></span></code></pre></div><p><img loading="lazy" src="unnamed-chunk-14-1.png" alt=""  />
+
+<em>picture 1</em></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span>d2 <span style="color:#f92672">&lt;-</span> is <span style="color:#f92672">%&gt;%</span> 
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">filter</span>(type.name <span style="color:#f92672">%in%</span> <span style="color:#a6e22e">c</span>( <span style="color:#e6db74">&#34;Interception&#34;</span>, <span style="color:#e6db74">&#34;Block&#34;</span>, <span style="color:#e6db74">&#34;Dispossessed&#34;</span>, <span style="color:#e6db74">&#34;Ball Recovery&#34;</span>) <span style="color:#f92672">&amp;</span> team.name <span style="color:#f92672">==</span> <span style="color:#e6db74">&#34;AC Milan&#34;</span> <span style="color:#f92672">&amp;</span> period <span style="color:#f92672">==</span> <span style="color:#ae81ff">2</span> <span style="color:#f92672">&amp;</span> minute <span style="color:#f92672">&gt;=</span> <span style="color:#ae81ff">54</span> <span style="color:#f92672">&amp;</span> minute <span style="color:#f92672">&lt;=</span> <span style="color:#ae81ff">60</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">soccerPitch</span>(arrow <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;r&#34;</span>, 
+</span></span><span style="display:flex;"><span>            title <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Milan&#34;</span>, 
+</span></span><span style="display:flex;"><span>            subtitle <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Defensive actions&#34;</span>) <span style="color:#f92672">+</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">geom_point</span>(data <span style="color:#f92672">=</span> d2, <span style="color:#a6e22e">aes</span>(x <span style="color:#f92672">=</span> location.x, y <span style="color:#f92672">=</span> location.y, col <span style="color:#f92672">=</span> type.name), size <span style="color:#f92672">=</span> <span style="color:#ae81ff">3</span>, alpha <span style="color:#f92672">=</span> <span style="color:#ae81ff">0.5</span>)
+</span></span></code></pre></div><p><img loading="lazy" src="unnamed-chunk-14-2.png" alt=""  />
+
+<em>picture 2</em></p>
+<p>The <strong>picture 1</strong> is the defensive actions done by Liverpool players
+in 6 minutes. What is staggering is that they managed to achieve 7 ball
+retrievals, leading to the decline in Milan’s passing accuracy. The
+<strong>picture 2</strong> shows the defensive actions done by Milan. The mere 1
+ball retrieve hardly influenced Liverpool’s passing and possession.</p>
+<h3 id="position">Position</h3>
+<p>We have seen some visual information about the position of the players
+in the passing maps earlier, to the point that we saw some deliberate
+position shifts from the Milan side in the 1st half when they contracted
+their defense lines. Through the viualizations below, we can see more
+about the shifts in positions in terms of the whole team (i.e. shifts in
+team formation) and individual key players.</p>
+<h4 id="1st-half-1">1st half</h4>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span>is <span style="color:#f92672">%&gt;%</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">filter</span>(<span style="color:#f92672">!</span><span style="color:#a6e22e">is.na</span>(location.x) <span style="color:#f92672">&amp;</span> team.name <span style="color:#f92672">==</span> <span style="color:#e6db74">&#34;AC Milan&#34;</span> <span style="color:#f92672">&amp;</span> period <span style="color:#f92672">==</span> <span style="color:#ae81ff">1</span>) <span style="color:#f92672">%&gt;%</span> 
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">soccerPositionMap</span>(id <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;player.name&#34;</span>, x <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;location.x&#34;</span>, y <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;location.y&#34;</span>, 
+</span></span><span style="display:flex;"><span>                    fill1 <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;blue&#34;</span>, theme <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;grass&#34;</span>, arrow <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;r&#34;</span>, 
+</span></span><span style="display:flex;"><span>                    title <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;AC Milan&#34;</span>, 
+</span></span><span style="display:flex;"><span>                    subtitle <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Average position (1st half)&#34;</span>)
+</span></span></code></pre></div><p><img loading="lazy" src="unnamed-chunk-15-1.png" alt=""  />
+
+<em>picture 1</em></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span>is <span style="color:#f92672">%&gt;%</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">filter</span>(<span style="color:#f92672">!</span><span style="color:#a6e22e">is.na</span>(location.x) <span style="color:#f92672">&amp;</span> team.name <span style="color:#f92672">==</span> <span style="color:#e6db74">&#34;Liverpool&#34;</span> <span style="color:#f92672">&amp;</span> period <span style="color:#f92672">==</span> <span style="color:#ae81ff">1</span> <span style="color:#f92672">&amp;</span> minute <span style="color:#f92672">&gt;=</span> <span style="color:#ae81ff">25</span>) <span style="color:#f92672">%&gt;%</span> 
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">soccerPositionMap</span>(id <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;player.name&#34;</span>, x <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;location.x&#34;</span>, y <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;location.y&#34;</span>, 
+</span></span><span style="display:flex;"><span>                    fill1 <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;blue&#34;</span>, theme <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;grass&#34;</span>, arrow <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;r&#34;</span>, 
+</span></span><span style="display:flex;"><span>                    title <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Liverpool&#34;</span>, 
+</span></span><span style="display:flex;"><span>                    subtitle <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Average position (1st half)&#34;</span>)
+</span></span></code></pre></div><p><img loading="lazy" src="unnamed-chunk-15-2.png" alt=""  />
+
+<em>picture 2</em></p>
+<p>The <strong>picture 1</strong> is the average position of the Milan in the 1st
+half. The average position is defined as the average coordinates of
+players when they take any actions, not only the passing ones. As we can
+see, the Milan’s formation were really tight in the center of the
+midfield. In addition to the 4 midfielders, one of the forwards Crespo
+was close to midfield as well. And they were close together in the
+center for a reason (as explained below).</p>
+<p>In the <strong>picture 2</strong>, Liverpool’s formation in the 1st half was rather
+scattered acrossthe width of the field. This was due to their tactics of
+playing wide on the sides. Gerrard and Olano were together as a pair,
+sitting in the midfield. However, their attacks on the sides were not
+going very well, so Milan decided not to put too many players on the
+sides (indicated by the 1st pic) and focused their attacks and later
+their counter attacks in the center.</p>
+<h4 id="first-15-mins-at-2nd-half">first 15 mins at 2nd half</h4>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span>is <span style="color:#f92672">%&gt;%</span> 
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">filter</span>(<span style="color:#f92672">!</span><span style="color:#a6e22e">is.na</span>(location.x) <span style="color:#f92672">&amp;</span> team.name <span style="color:#f92672">==</span> <span style="color:#e6db74">&#34;AC Milan&#34;</span> <span style="color:#f92672">&amp;</span> period <span style="color:#f92672">==</span> <span style="color:#ae81ff">2</span> <span style="color:#f92672">&amp;</span> minute <span style="color:#f92672">&lt;=</span> <span style="color:#ae81ff">60</span>) <span style="color:#f92672">%&gt;%</span> 
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">soccerPositionMap</span>(id <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;player.name&#34;</span>, x <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;location.x&#34;</span>, y <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;location.y&#34;</span>, 
+</span></span><span style="display:flex;"><span>                    fill1 <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;blue&#34;</span>, theme <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;grass&#34;</span>, arrow <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;r&#34;</span>, 
+</span></span><span style="display:flex;"><span>                    title <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;AC Milan&#34;</span>, 
+</span></span><span style="display:flex;"><span>                    subtitle <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Average position (2nd half)&#34;</span>)
+</span></span></code></pre></div><p><img loading="lazy" src="unnamed-chunk-16-1.png" alt=""  />
+
+<em>picture 1</em></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span>is <span style="color:#f92672">%&gt;%</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">filter</span>(<span style="color:#f92672">!</span><span style="color:#a6e22e">is.na</span>(location.x) <span style="color:#f92672">&amp;</span> team.name <span style="color:#f92672">==</span> <span style="color:#e6db74">&#34;Liverpool&#34;</span> <span style="color:#f92672">&amp;</span> period <span style="color:#f92672">==</span> <span style="color:#ae81ff">2</span> <span style="color:#f92672">&amp;</span> minute <span style="color:#f92672">&lt;=</span> <span style="color:#ae81ff">60</span>) <span style="color:#f92672">%&gt;%</span> 
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">soccerPositionMap</span>(id <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;player.name&#34;</span>, x <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;location.x&#34;</span>, y <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;location.y&#34;</span>, 
+</span></span><span style="display:flex;"><span>                    fill1 <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;blue&#34;</span>, theme <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;grass&#34;</span>, arrow <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;r&#34;</span>, 
+</span></span><span style="display:flex;"><span>                    title <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Liverpool&#34;</span>, 
+</span></span><span style="display:flex;"><span>                    subtitle <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Average position (2nd half)&#34;</span>)
+</span></span></code></pre></div><p><img loading="lazy" src="unnamed-chunk-16-2.png" alt=""  />
+
+<em>picture 2</em></p>
+<p>With 3-0 down, Liverpool took right back Finnan down (therefore
+forfeiting the attacking on the sides tactics) and put Hamman up
+immediately in the beginning of the 2nd half, and the result was
+astonishing! In the <strong>picture 2</strong>, Hamann took the position of where
+Gerrard was in the 1st half, and freed Gerrard. By sacrificing the right
+back, the Liverpool squeezed their formation towards the center.
+Gerrard, together with Sanz and Baros, were constantly charging to the
+Milan’s box carefree, since Hamann took care of his defensive duties.
+And Boom! Gerrard scored the first goal, a header inside the box, and
+created a penalty (later converted to the 3rd goal).</p>
+<h2 id="conclusion">Conclusion</h2>
+<p>Some may say that there is no need to visualize a soccer match, since it
+is a visual art/sport in itself. I have to agree since I am a soccer fan
+and have had so much joy and pain watching the games. It is especially
+hard to try to visualize a miracle. However, I did it anyway because an
+EDA process on a soccer match dataset can achieve the following things:</p>
+<ol>
+<li>A visual summary. In normal games, audiences see the motions of
+players in terms of motions of pictures, and they do not have good
+enough memory to remember everything and do not have time to
+summarize those information, as they are concentrated on the game
+itself. After the match, audiences will see lots of statistics about
+the game, such as the number of shots, the possession rate, number
+of passes, pass accuracy, etc, and they do not make much sense and
+they are not even comparable. A 65% possession rate in a game by a
+side is not the same thing as another team having 65% in another
+game. Go ask Barcelona fans. Their team used to have 65% possession
+and ended up winning all trophies, and now win nothing with the same
+possession rate. Visualizations like this can combine the visual
+part with the summary part, providing fans with a more immersive and
+insightful perspective towards understanding the game.</li>
+<li>A good starting point for models about soccer game. As the advance
+of data science, models about soccer games are in dire need. A
+prominent example would be the model to predict expected goals given
+the data about soccer games. This EDA process is great for:
+<ol>
+<li>See the data and find the characteristics of the data. In my example, it would be a lot of None values in the dataset and incompatible field dimension that I need to manually change.</li>
+<li>Visualize the key events that may lead to goals.</li>
+<li>Find out directions that may worth pursuing. I find out the 6 minute Liverpool spell and think this may be the direction to look further into.</li>
+</ol>
+</li>
+</ol>
+<p>Main lessons learnt: It is no doubt a miracle, because:</p>
+<ol>
+<li>Super dramatic. Liverpool dominated the game for only 6 minutes, and
+ended up scoring three goals. Milan took the show for 114 minutes,
+including 7 shots in extra time, and they failed to score any after the 1st
+half. The inefficiency in shooting influenced their mindset in the final
+penality shoot out, missing 3 out of 5. And Dudek’s (Liverpool’s
+goalkeeper) double save from Shevchenko in the 117th minute was
+voted the greatest Champions League moment of all time.</li>
+<li>Some reasons behind the comeback drama. 6 minutes spell because of
+the introduce of Hamann that freed Gerrard to attack. Milan’s
+success in the 1st half was also due to the formation factor, where
+Milan was tight in the center and Liverpool scattered.</li>
+<li>Human factor. The hard part to visualize. The psychological change
+of the Milan side as they went from ecstasy to doubt, and to fear.
+Their change in mindset when they repeatedly attack but scored
+nothing. On the other side, Gerrard and his influence on the
+whole team.</li>
+</ol>
+<h2 id="credits">Credits</h2>
+<h3 id="data">Data</h3>
+<ul>
+<li>Statsbomb</li>
+</ul>
+<h3 id="visualization-package">Visualization package</h3>
+<ul>
+<li>soccermatics</li>
+<li>ggplot2</li>
+</ul>
+<h2 id="my-working-session">My working session</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span><span style="color:#a6e22e">sessionInfo</span>()
+</span></span></code></pre></div><pre><code>## R version 4.1.0 (2021-05-18)
+## Platform: x86_64-apple-darwin20.4.0 (64-bit)
+## Running under: macOS Big Sur 11.4
+## 
+## Matrix products: default
+## BLAS:   /usr/local/Cellar/openblas/0.3.15_1/lib/libopenblasp-r0.3.15.dylib
+## LAPACK: /usr/local/Cellar/r/4.1.0/lib/R/lib/libRlapack.dylib
+## 
+## locale:
+## [1] en_US.UTF-8/en_US.UTF-8/en_US.UTF-8/C/en_US.UTF-8/en_US.UTF-8
+## 
+## attached base packages:
+## [1] parallel  stats     graphics  grDevices utils     datasets  methods  
+## [8] base     
+## 
+## other attached packages:
+##  [1] forcats_0.5.1      RColorBrewer_1.1-2 soccermatics_0.9.4 StatsBombR_0.1.0  
+##  [5] tidyr_1.1.3        sp_1.4-5           purrr_0.3.4        jsonlite_1.7.2    
+##  [9] httr_1.4.2         doParallel_1.0.16  iterators_1.0.13   foreach_1.5.1     
+## [13] RCurl_1.98-1.3     rvest_1.0.0        tibble_3.1.2       stringr_1.4.0     
+## [17] stringi_1.6.2      dplyr_1.0.6        ggplot2_3.3.3     
+## 
+## loaded via a namespace (and not attached):
+##  [1] zoo_1.8-9         tidyselect_1.1.1  xfun_0.23         lattice_0.20-44  
+##  [5] colorspace_2.0-1  vctrs_0.3.8       generics_0.1.0    htmltools_0.5.1.1
+##  [9] yaml_2.2.1        utf8_1.2.1        rlang_0.4.11      R.oo_1.24.0      
+## [13] pillar_1.6.1      glue_1.4.2        withr_2.4.2       R.utils_2.10.1   
+## [17] tweenr_1.0.2      plyr_1.8.6        lifecycle_1.0.0   munsell_0.5.0    
+## [21] gtable_0.3.0      SDMTools_1.1-221  R.methodsS3_1.8.1 codetools_0.2-18 
+## [25] evaluate_0.14     knitr_1.33        fansi_0.5.0       xts_0.12.1       
+## [29] Rcpp_1.0.6        scales_1.1.1      farver_2.1.0      ggforce_0.3.3    
+## [33] digest_0.6.27     ggrepel_0.9.1     polyclip_1.10-0   grid_4.1.0       
+## [37] cowplot_1.1.1     tools_4.1.0       bitops_1.0-7      magrittr_2.0.1   
+## [41] crayon_1.4.1      pkgconfig_2.0.3   ellipsis_0.3.2    MASS_7.3-54      
+## [45] xml2_1.3.2        rmarkdown_2.8     R6_2.5.0          compiler_4.1.0
+</code></pre>
+<h2 id="source-code">source code</h2>
+<ul>
+<li><a href="/src-code/2021-03-04-The-Miracle-of-Istanbul.Rmd">code</a></li>
+</ul>
+]]></content:encoded>
+    </item>
+    
+  </channel>
+</rss>

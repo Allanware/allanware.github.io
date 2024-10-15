@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>车 on 赵文轩</title>
+    <link>http://localhost:1313/zh/tags/%E8%BD%A6/</link>
+    <description>Recent content in 车 on 赵文轩</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh</language>
+    <lastBuildDate>Sat, 30 Apr 2022 10:58:19 -0500</lastBuildDate><atom:link href="http://localhost:1313/zh/tags/%E8%BD%A6/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>我的gti兄弟</title>
+      <link>http://localhost:1313/zh/life/2022/04/30/%E6%88%91%E7%9A%84gti%E5%85%84%E5%BC%9F/</link>
+      <pubDate>Sat, 30 Apr 2022 10:58:19 -0500</pubDate>
+      
+      <guid>http://localhost:1313/zh/life/2022/04/30/%E6%88%91%E7%9A%84gti%E5%85%84%E5%BC%9F/</guid>
+      <description>&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;gti.jpg&#34; alt=&#34;&#34;  /&gt;
+&lt;/p&gt;</description>
+      <content:encoded><![CDATA[<p><img loading="lazy" src="gti.jpg" alt=""  />
+</p>
+]]></content:encoded>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Music on Wenxuan Zhao</title>
+    <link>http://localhost:1313/tags/music/</link>
+    <description>Recent content in Music on Wenxuan Zhao</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Mon, 23 May 2022 13:13:00 -0500</lastBuildDate><atom:link href="http://localhost:1313/tags/music/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Books to Read in Summer 2022</title>
+      <link>http://localhost:1313/life/2022/05/23/books-to-read-in-summer-2022/</link>
+      <pubDate>Mon, 23 May 2022 13:13:00 -0500</pubDate>
+      
+      <guid>http://localhost:1313/life/2022/05/23/books-to-read-in-summer-2022/</guid>
+      <description>books to read during summer 2022</description>
+      <content:encoded><![CDATA[<h2 id="unclassifiable">Unclassifiable</h2>
+<ul>
+<li>[] GEB (1979)
+<ul>
+<li>An Introduction to Formal Logic</li>
+<li>Gödel Without (Too Many) Tears</li>
+<li>An Introduction to Gödel&rsquo;s Theorems</li>
+</ul>
+</li>
+</ul>
+<h2 id="meta-music--music">Meta-music &amp; Music</h2>
+<ul>
+<li>[] The Aesthetics of Music</li>
+<li>[] The Complete Idiot&rsquo;s Guide to Music Theory, 3E</li>
+<li>[] The Complete Idiot’s Guide to Music Composition</li>
+</ul>
+<h2 id="football">Football</h2>
+<ul>
+<li>[] Inverted Pyramid</li>
+</ul>
+]]></content:encoded>
+    </item>
+    
+  </channel>
+</rss>

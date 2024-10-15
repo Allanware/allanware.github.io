@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Pop Music on Wenxuan Zhao</title>
+    <link>http://localhost:1313/tags/pop-music/</link>
+    <description>Recent content in Pop Music on Wenxuan Zhao</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language><atom:link href="http://localhost:1313/tags/pop-music/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Pop</title>
+      <link>http://localhost:1313/about/music/pop/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/about/music/pop/</guid>
+      <description>&lt;h1 id=&#34;singerband&#34;&gt;Singer/Band&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;Desserts Chang/Anpu&lt;/li&gt;
+&lt;li&gt;Vast &amp;amp; Hazy&lt;/li&gt;
+&lt;li&gt;Sweet John&lt;/li&gt;
+&lt;li&gt;李想 Evelyn&lt;/li&gt;
+&lt;li&gt;Uru&lt;/li&gt;
+&lt;li&gt;Aimer&lt;/li&gt;
+&lt;li&gt;Shirley Kwan&lt;/li&gt;
+&lt;li&gt;icyball&lt;/li&gt;
+&lt;li&gt;朴树&lt;/li&gt;
+&lt;li&gt;ARY&lt;/li&gt;
+&lt;li&gt;Amy Winehouse&lt;/li&gt;
+&lt;li&gt;告五人&lt;/li&gt;
+&lt;/ul&gt;</description>
+      <content:encoded><![CDATA[<h1 id="singerband">Singer/Band</h1>
+<ul>
+<li>Desserts Chang/Anpu</li>
+<li>Vast &amp; Hazy</li>
+<li>Sweet John</li>
+<li>李想 Evelyn</li>
+<li>Uru</li>
+<li>Aimer</li>
+<li>Shirley Kwan</li>
+<li>icyball</li>
+<li>朴树</li>
+<li>ARY</li>
+<li>Amy Winehouse</li>
+<li>告五人</li>
+</ul>
+]]></content:encoded>
+    </item>
+    
+  </channel>
+</rss>

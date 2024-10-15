@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Book on Wenxuan Zhao</title>
+    <link>http://localhost:1313/en/about/book/</link>
+    <description>Recent content in Book on Wenxuan Zhao</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language><atom:link href="http://localhost:1313/en/about/book/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title></title>
+      <link>http://localhost:1313/en/about/book/biography/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/en/about/book/biography/</guid>
+      <description>&lt;h2 id=&#34;composers&#34;&gt;Composers&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Tchaikovsky: The Quest for the Inner Man&lt;/li&gt;
+&lt;li&gt;Tchaikovsky: The Man Revealed&lt;/li&gt;
+&lt;li&gt;Tchaikovsky: The Man and His Music&lt;/li&gt;
+&lt;li&gt;Sergei Rachmaninoff: A Lifetime in Music&lt;/li&gt;
+&lt;li&gt;Memoirs of Hector Berlioz : From 1803 to 1865, Comprising His Travels in Germany, Italy, Russia, and England&lt;/li&gt;
+&lt;/ul&gt;</description>
+      <content:encoded><![CDATA[<h2 id="composers">Composers</h2>
+<ul>
+<li>Tchaikovsky: The Quest for the Inner Man</li>
+<li>Tchaikovsky: The Man Revealed</li>
+<li>Tchaikovsky: The Man and His Music</li>
+<li>Sergei Rachmaninoff: A Lifetime in Music</li>
+<li>Memoirs of Hector Berlioz : From 1803 to 1865, Comprising His Travels in Germany, Italy, Russia, and England</li>
+</ul>
+]]></content:encoded>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://localhost:1313/en/about/book/china/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/en/about/book/china/</guid>
+      <description>&lt;h2 id=&#34;cultural-revolution&#34;&gt;Cultural Revolution&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Mao&amp;rsquo;s last revolution&lt;/li&gt;
+&lt;li&gt;Origins of the Cultural Revolution
+&lt;ul&gt;
+&lt;li&gt;[] Volumn I&lt;/li&gt;
+&lt;li&gt;[] Volumn II&lt;/li&gt;
+&lt;li&gt;[] Volumn III&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;may-fourth&#34;&gt;May Fourth&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;The May Fourth Movement: Intellectual Revolution in Modern China&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;economics&#34;&gt;Economics&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;置身事内&lt;/li&gt;
+&lt;/ul&gt;</description>
+      <content:encoded><![CDATA[<h2 id="cultural-revolution">Cultural Revolution</h2>
+<ul>
+<li>Mao&rsquo;s last revolution</li>
+<li>Origins of the Cultural Revolution
+<ul>
+<li>[] Volumn I</li>
+<li>[] Volumn II</li>
+<li>[] Volumn III</li>
+</ul>
+</li>
+</ul>
+<h2 id="may-fourth">May Fourth</h2>
+<ul>
+<li>The May Fourth Movement: Intellectual Revolution in Modern China</li>
+</ul>
+<h2 id="economics">Economics</h2>
+<ul>
+<li>置身事内</li>
+</ul>
+]]></content:encoded>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://localhost:1313/en/about/book/dh/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/en/about/book/dh/</guid>
+      <description>&lt;ul&gt;
+&lt;li&gt;Gödel, Escher, Bach: an Eternal Golden Braid (1979)&lt;/li&gt;
+&lt;li&gt;The Mind’s I: Fantasies and Reflections on Self and Soul (1981)&lt;/li&gt;
+&lt;li&gt;Metamagical Themas: Questing for the Essence of Mind and Pattern (1985)&lt;/li&gt;
+&lt;li&gt;Fluid Concepts and Creative Analogies (1991)&lt;/li&gt;
+&lt;li&gt;Le Ton beau de Marot: In Praise of the Music of Language (1997)&lt;/li&gt;
+&lt;li&gt;I Am a Strange Loop (2008)&lt;/li&gt;
+&lt;li&gt;Surfaces and Essences: Analogy as the Fuel and Fire of Thinking (2011)&lt;/li&gt;
+&lt;/ul&gt;</description>
+      <content:encoded><![CDATA[<ul>
+<li>Gödel, Escher, Bach: an Eternal Golden Braid (1979)</li>
+<li>The Mind’s I: Fantasies and Reflections on Self and Soul (1981)</li>
+<li>Metamagical Themas: Questing for the Essence of Mind and Pattern (1985)</li>
+<li>Fluid Concepts and Creative Analogies (1991)</li>
+<li>Le Ton beau de Marot: In Praise of the Music of Language (1997)</li>
+<li>I Am a Strange Loop (2008)</li>
+<li>Surfaces and Essences: Analogy as the Fuel and Fire of Thinking (2011)</li>
+</ul>
+]]></content:encoded>
+    </item>
+    
+  </channel>
+</rss>
