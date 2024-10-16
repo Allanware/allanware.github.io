@@ -31,3 +31,7 @@
 
 - id: code_copied
   translation: "copied!"
+
+- id: updated
+  translation: 
+    other: "(updated {{ . }})"

@@ -1,8 +1,12 @@
 en:
   weight: 1
   languageName: English
+  params:
+      dateFormat: "January 2, 2006"
 zh:
   weight: 2
   languageName: 中文
   title: 赵文轩
+  params:
+      dateFormat: "2006年1月2日"
 

@@ -31,3 +31,7 @@
 
 - id: code_copied
   translation: "已复制！"
+
+- id: updated
+  translation: 
+    other: "更新于 {{ . }}"
