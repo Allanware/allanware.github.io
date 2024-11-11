@@ -7,6 +7,7 @@ cover:
     relative: true
 summary: Books that change and inspire me
 weight: 3
+draft: true
 ShowRssButtonInSectionTermList: false
 ---
 - [Douglas Hofstadter](dh)

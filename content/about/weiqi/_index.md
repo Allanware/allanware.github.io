@@ -7,5 +7,6 @@ cover:
     relative: true
 summary: My Go game library & some famous Go games
 weight: 5
+draft: true
 ShowRssButtonInSectionTermList: false
 ---

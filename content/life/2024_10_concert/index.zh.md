@@ -1,5 +1,5 @@
 ---
-title: "2024_10_concert"
+title: "麦迪逊交响乐团音乐会"
 date: 2024-10-20T20:32:19-05:00
 author: 赵文轩
 hideMeta: true

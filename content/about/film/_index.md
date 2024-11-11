@@ -7,6 +7,7 @@ cover:
     relative: true
 summary: Cinema, the art of light and shadow 
 weight: 1
+draft: true
 ShowRssButtonInSectionTermList: false
 ---
 # My Films

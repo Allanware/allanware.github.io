@@ -3,10 +3,10 @@ main:
     identifier: posts
     name: 博客
     url: /
-  # - weight: 2
-  #   identifier: about
-  #   name: 关于我
-  #   url: /about/
+  - weight: 2
+    identifier: about
+    name: 关于我
+    url: /about/
   - weight: 3
     identifier: life
     name: 碎片

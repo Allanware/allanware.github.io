@@ -1,11 +1,11 @@
 ---
 title: "Music"
 hybrid: true
-cover:
-    image: bird_singing.png
-    alt: "a bird that can read and sing"
-    relative: true
-summary: Music pieces I absolutely enjoy
+# cover:
+#     image: bird_singing.png
+#     alt: "a bird that can read and sing"
+#     relative: true
+summary:  #Music pieces I absolutely enjoy
 weight: 2
 ShowRssButtonInSectionTermList: false
 ---

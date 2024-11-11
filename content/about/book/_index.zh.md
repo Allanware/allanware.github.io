@@ -7,6 +7,7 @@ cover:
     relative: true
 summary: 
 weight: 3
+draft: true
 ShowRssButtonInSectionTermList: false
 ---
 
