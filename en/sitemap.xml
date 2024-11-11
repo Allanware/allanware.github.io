@@ -2,21 +2,8 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://allanware.github.io/about/film/</loc>
-    <lastmod>2023-10-02T21:26:21-05:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh"
-                href="https://allanware.github.io/zh/about/film/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://allanware.github.io/about/film/"
-                />
-  </url><url>
     <loc>https://allanware.github.io/about/music/</loc>
-    <lastmod>2023-10-02T19:58:34-05:00</lastmod>
+    <lastmod>2024-11-11T14:45:28-06:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh"
@@ -26,45 +13,6 @@
                 rel="alternate"
                 hreflang="en"
                 href="https://allanware.github.io/about/music/"
-                />
-  </url><url>
-    <loc>https://allanware.github.io/about/book/</loc>
-    <lastmod>2023-10-02T19:58:34-05:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh"
-                href="https://allanware.github.io/zh/about/book/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://allanware.github.io/about/book/"
-                />
-  </url><url>
-    <loc>https://allanware.github.io/about/football/</loc>
-    <lastmod>2023-10-02T19:58:34-05:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh"
-                href="https://allanware.github.io/zh/about/football/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://allanware.github.io/about/football/"
-                />
-  </url><url>
-    <loc>https://allanware.github.io/about/weiqi/</loc>
-    <lastmod>2023-10-02T19:58:34-05:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh"
-                href="https://allanware.github.io/zh/about/weiqi/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://allanware.github.io/about/weiqi/"
                 />
   </url><url>
     <loc>https://allanware.github.io/tags/apad/</loc>
@@ -100,7 +48,7 @@
     <lastmod>2023-11-15T13:56:03-06:00</lastmod>
   </url><url>
     <loc>https://allanware.github.io/</loc>
-    <lastmod>2024-10-14T16:06:27-05:00</lastmod>
+    <lastmod>2024-11-11T14:45:28-06:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh"

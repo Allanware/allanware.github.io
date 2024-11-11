@@ -2,9 +2,9 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>电影 on 赵文轩</title>
-    <link>https://allanware.github.io/zh/about/film/</link>
+    <link>http://localhost:1313/zh/about/film/</link>
     <description>Recent content in 电影 on 赵文轩</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>zh</language><atom:link href="https://allanware.github.io/zh/about/film/index.xml" rel="self" type="application/rss+xml" />
+    <language>zh</language><atom:link href="http://localhost:1313/zh/about/film/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>
