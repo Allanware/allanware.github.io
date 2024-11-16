@@ -3,7 +3,7 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>http://localhost:1313/zh/about/music/</loc>
-    <lastmod>2023-10-02T19:58:34-05:00</lastmod>
+    <lastmod>2024-11-11T14:45:28-06:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -15,11 +15,8 @@
                 href="http://localhost:1313/zh/about/music/"
                 />
   </url><url>
-    <loc>http://localhost:1313/zh/life/2024/10/23/uber-%E5%8F%B8%E6%9C%BA/</loc>
-    <lastmod>2024-10-23T13:41:14-05:00</lastmod>
-  </url><url>
     <loc>http://localhost:1313/zh/</loc>
-    <lastmod>2024-10-23T13:41:14-05:00</lastmod>
+    <lastmod>2024-11-11T14:45:28-06:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -32,7 +29,7 @@
                 />
   </url><url>
     <loc>http://localhost:1313/zh/life/2024/10/20/%E9%BA%A6%E8%BF%AA%E9%80%8A%E4%BA%A4%E5%93%8D%E4%B9%90%E5%9B%A2%E9%9F%B3%E4%B9%90%E4%BC%9A/</loc>
-    <lastmod>2024-10-20T20:53:31-05:00</lastmod>
+    <lastmod>2024-11-11T14:45:28-06:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/zh/life/2023/08/05/%E5%8A%A0%E7%BC%AA%E7%9A%84%E8%8D%92%E8%AF%9E%E4%BA%BA/</loc>
     <lastmod>2023-10-02T19:58:34-05:00</lastmod>
